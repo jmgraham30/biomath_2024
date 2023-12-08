@@ -6,8 +6,9 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Course Home
+      - href: about.qmd
+        text: Syllabus
 
 format:
   html:
