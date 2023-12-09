@@ -19,12 +19,19 @@ library(kableExtra)
 
 ## Instructor Information
 
+::: {layout="[30,70]"}
+
+![](https://www.dropbox.com/scl/fi/0zg0j0n394jj8hrsyjqcb/IMG_0571.jpeg?rlkey=oubphrcdet6otvy1n4e8ksplk&raw=1)
+
 * **Instructor:** [Jason M. Graham](https://sites.google.com/site/jasonmgrahamus/)
 
-* **Office:** LSC 319A 
-    + **Office Hours:**  You may also make an appointment to meet with me outside of scheduled office hours. Appointments are not necessary for regularly scheduled office hours.
+* **Office Location:** LSC 319A 
     
-* **Instructor Schedule:** [View my weekly schedule]()
+* **Office Hours:**  Mondays 1:30 - 2:30; Wednesdays 10:30 - 11:30 and 1:30 - 2:30. You may also make an appointment via email to meet with me outside of scheduled office hours. Appointments are not necessary for regularly scheduled office hours.
+
+* **Instructor Schedule:** [View my general schedule]()
+
+:::
 
 * **Email:** <jason.graham@scranton.edu>
 
