@@ -71,7 +71,9 @@ library(kableExtra)
 
 ![](https://m.media-amazon.com/images/I/618Ro+QvQdL._AC_UF1000,1000_QL80_.jpg){width=160}
 
-* [*Solving Differential Equations in R*]() by Karline Soetaert, Jeff Cash, and Francesca Mazzia. ISBN: 978-3-642-28069-6.
+* [*Solving Differential Equations in R*]() by [Karline Soetaert](https://www.nioz.nl/en/about/organisation/staff/karline-soetaert), [Jeff Cash](https://dl.acm.org/profile/81100328323), and [Francesca Mazzia](https://archimede.uniba.it/~mazzia/mazzia/). ISBN: 978-3-642-28069-6.
+
+* This book covers practical aspects of using [R](https://www.r-project.org/) in solving numerically the types of differential equations we will study in this course as mathematical models for biological systems. 
 
 
 * Electronic access to this book is available through the [Weinberg Memorial Library](https://www.scranton.edu/academics/wml/index.shtml). [Access the book](https://link-springer-com.ezp.scranton.edu/book/10.1007/978-3-642-28070-2).  
