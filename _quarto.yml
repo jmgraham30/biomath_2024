@@ -7,8 +7,7 @@ website:
     left:
       - href: index.qmd
         text: Syllabus
-      - href: links.qmd
-        text: Links
+
 
 format:
   html:
