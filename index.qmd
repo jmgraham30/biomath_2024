@@ -37,7 +37,7 @@ library(kableExtra)
 
 * **Phone:** (570) 941-7491
 
-* **Course Page:** [View course page](https://biomath2024.netlify.app/)
+* **Course Page:** [https://biomath2024.netlify.app/](https://biomath2024.netlify.app/)
 
 ## Course Materials
 
@@ -91,7 +91,7 @@ library(kableExtra)
 
 :::
 
-* [Spring 2022 MATH 463 Course Page](https://topicsinbiomath.netlify.app/) contains links to course notes and other materials. 
+* **Spring 2022 MATH 463 Course Page:**  [https://topicsinbiomath.netlify.app/](https://topicsinbiomath.netlify.app/) contains links to course notes and other materials. 
 
 ### Further Reading
 
