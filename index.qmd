@@ -1,5 +1,6 @@
 ---
-title: "Biomath 2024"
+title: "MATH 463 Topics in Biomathematics"
+subtitle: "Spring 2024"
 ---
 
 This is a Quarto website.
