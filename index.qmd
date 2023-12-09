@@ -91,6 +91,8 @@ library(kableExtra)
 
 :::
 
+* [Spring 2022 MATH 463 Course Page](https://topicsinbiomath.netlify.app/) contains links to course notes and other materials. 
+
 ### Further Reading
 
 
