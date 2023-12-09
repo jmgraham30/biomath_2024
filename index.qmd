@@ -1,12 +1,53 @@
 ---
 title: "MATH 463 Topics in Biomathematics"
 subtitle: "Spring 2024"
+license: "CC BY-NC-SA 4.0"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```{r}
-1 + 1
+#| label: package-loads
+#| include: false
+#| message: false
+
+library(tidyverse)
+library(kableExtra)
 ```
+
+# Syllabus
+
+
+## Instructor Information
+
+* **Instructor:** [Jason M. Graham](https://sites.google.com/site/jasonmgrahamus/)
+
+* **Office:** LSC 319A 
+    + **Office Hours:**  You may also make an appointment to meet with me outside of scheduled office hours. Appointments are not necessary for regularly scheduled office hours.
+    
+* **Instructor Schedule:** [View my weekly schedule]()
+
+* **Email:** <jason.graham@scranton.edu>
+
+* **Phone:** (570) 941-7491
+
+* **Course Page:** [View course page](https://biomath2024.netlify.app/)
+
+## Course Materials
+
+### Required Readings
+
+
+
+
+
+
+
+
+
+
+## Final Note
+
+The instructor reserve the right to modify this syllabus; students will immediately be notified of any such changes and an updated syllabus will be made available to the class via the course learning management system.
+
+
+[![](http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png?raw=1){fig-align="left" width=15%}](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
