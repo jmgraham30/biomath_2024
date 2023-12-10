@@ -14,7 +14,7 @@ library(tidyverse)
 library(kableExtra)
 ```
 
-# Syllabus
+# Course Syllabus
 
 ## What is Biomathematics? 
 
