@@ -16,6 +16,10 @@ library(kableExtra)
 
 # Syllabus
 
+## What is Biomathematics? 
+
+[Biomathematics](https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology#:~:text=Mathematical%20and%20theoretical%20biology%2C%20or,opposed%20to%20experimental%20biology%20which) is concerned with the use of mathematical methods (*e.g.*, linear algebra, differential equations, dynamical systems, and probability theory) to understand phenomenon in the life sciences, it is part of the larger field of [mathematical and theoretical biology](https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology#:~:text=Mathematical%20and%20theoretical%20biology%20is,biology%20which%20deals%20with%20the). Mathematical and theoretical biology provide a solid foundation for computational and quantitative approaches to investigations in biology and medicine.
+
 
 ## Instructor Information
 
@@ -102,26 +106,108 @@ library(kableExtra)
 
 ### Course Description
 
+A study of discrete and continuous mathematical models in biology.  Topics include: population dynamics of single species and interacting species, infectious diseases, population genetics, and cell populations with tumor modeling.
+
 
 ### Prerequisites
+
+The prerequisites for this course is MATH 341 *Differential Equations* and MATH 351 *Linear Algebra*. Specifically, the student is expected to have a solid foundation in calculus, elementary linear algebra, and basic ordinary differential equations (ODEs).
 
 
 ## Student Learning Objectives and Assessment
 
+```{r,include=FALSE}
+objectives <- c("Use mathematical tools from calculus, differential equations, and linear algebra to analyze foundational mathematical models arising in the life sciences.","Interpret the meaning of mathematical equations or models representing various biological processes.","Utilize computing tools such as R to analyze and interpret data-driven mathematical models.","Communicate effectively in writing their work in applying the techniques of applied mathematics to problems arising in the life sciences. ")
+assessments <- c("Homework assignments and in-class written exams.","Homework assignments, model reports, and final project.","Homework assignments, model reports, and final project. ","Homework, model reports, and final project consisting of a written paper.")
+slos_assess <- tibble::tibble("After taking this course, the student should be able to:"=objectives,"Methods of assessment"=assessments)
+```
+
+
+
+```{r,echo=FALSE}
+kbl(slos_assess) %>%
+  kable_paper(full_width = F) %>%
+  column_spec(1, width = "30em",border_left=TRUE,border_right=TRUE) %>%
+  column_spec(2, width = "30em",border_right=TRUE)
+```
+
+### Link with Mathematics Program Learning Outcomes
+
+The student learning objectives of this course are linked with the Mathematics Program Learning Outcome 
+
+- "Demonstrate competence in analytical and critical reasoning."
+
+- "Demonstrate college-level knowledge in applied mathematics."
+
+### Link with General Education Goals and Objectives
+
+MATH 463 has been designated an [EPW Level II](https://www.scranton.edu/academics/provost/EP%20Level%20II%20Rhetorical.shtml) course. In order to fulfill the learning objectives for EPW Level II students will be asked to complete two writing intensive assignments. These are 
+
+* a model report assignment, 
+* and a final project. 
+
+Details for these assignments are described below and additional guidelines are posted on the course learning management system. 
+
 
 ## Course Policies and Procedures
+
+### Attendance
+
+Class attendance and active participation in class discussion is strongly encouraged. If absence is necessary, please inform the instructor and develop a plan to make up for missing content as soon as possible.  
 
 
 ###  Grading
 
 #### Grade Policy
 
+The course grade will be based on two in-class exams (totaling 50% and evenly distributed), approximately ten weekly homework assignments (20%), one model report (10%), and a final project (20%).
+
+
 #### Grade Scale
+
+```{r,include=FALSE}
+grade_values <- c("94-100","90-93","87-89","83-86","80-82","76-79","72-75","69-71","65-68","60-64","<60")
+grade_letters <- c("A","A-","B+","B","B-","C+","C","C-","D+","D","F")
+grades_df <- tibble::tibble("Grade Range"=grade_values,"Letter Grade"=grade_letters)
+```
+
+Letter grades will be assigned based on the following scale:
+
+```{r,echo=FALSE}
+kbl(grades_df) %>%
+  kable_paper("striped",full_width=FALSE) 
+```
+
 
 
 ## Assignments
 
-### Homework Assignments
+### Homework
+
+There will be weekly homework assignments. Assignments will be posted on the course learning management system and made up of problems relating to or extending the material covered in class discussions.  Working problems is essential to learning the material and doing well on exams. 
+
+Do not underestimate the value (and joy) of carefully working through homework problems.
+
+
+### Exams
+
+The in-class exams are meant to assess  1) students' understanding of the material covered in class and in homework assignments, 2) students' understanding of the core concepts, 3) students' problem solving abilities, and 4) students' ability to think independently. Exam 1 is scheduled for March 6, and Exam 2 is scheduled for May 1. In writing the tests, I assume that you have been studying the material at least 6 hours per week outside of class. 
+
+### Model Report
+
+As part of the required coursework for *Topics in Biomathematics*, students are required to submit a model report. The goal of this assignment is for students to read, understand, assess, and explain modeling results from a recently published paper in biology or biomathematics. The model report will make up 10% of the course grade. Students must submit at least two drafts of a model report. A model report should be three-five typed pages and prepared using $\LaTeX$ or [R Markdown](https://rmarkdown.rstudio.com/).  The first draft is due March 25 and the final draft is due May 3. A set of guidelines for the model report is posted on the course learning management system.
+
+
+### Final Project
+
+It should be recognized that the mathematical techniques developed in class are applicable in broader situations than can be covered in lectures and homework. Thus, students are asked to individually explore a topic in biomathematics beyond what is covered in lecture by means of a final project. Final projects should be an 8-12 page manuscript typed using $\LaTeX$ or [R Markdown](https://rmarkdown.rstudio.com/),  and students must submit at least two drafts of their written final projects. The final draft is **due no later than 5:00pm on Wednesday May 15.** All written and presented work must be original, explained in your own words, and use proper citation for works referenced. 
+
+A set of guidelines for the final project is posted on the course learning management system. **You must choose a topic for your final project and submit a one to two paragraph description of your proposed project along with at least two scholarly references to me no later than 5:00pm on March 1.**
+
+### Use of Digital Technology
+
+Work and research in Biomathematics requires professionals in the field to make use of digital technology. The primary uses of digital technology in Biomathematics is for producing and importing data, scientific computing, visualization of data and model-based simulations, and preparing written documents to explain mathematical results. Two of the most commonly used technological tools are R for scientific computing and $\LaTeX$ for written document preparation. Students in this course will be expected to use R, and $\LaTeX$.  R can be installed to any platform via the downloads available [here](https://www.r-project.org/). R is best used with the integrative development environment RStudio which can be installed from [here](https://www.rstudio.com/). 
+
 
 
 ## Course Timeline
