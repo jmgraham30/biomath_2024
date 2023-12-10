@@ -56,6 +56,18 @@ library(kableExtra)
 
 ### Additional Readings 
 
+
+::: {layout="[30,70]"}
+
+![](https://m.media-amazon.com/images/I/51s38BLS-pL._AC_UF1000,1000_QL80_.jpg){width=155}
+
+* [*A Course in Mathematical Biology: Quantitative Modeling with Mathematical and Computational Methods*](https://epubs.siam.org/doi/book/10.1137/1.9780898718256) by [Gerda de Vries](https://apps.ualberta.ca/directory/person/gerda), [Thomas Hillen](https://www.math.ualberta.ca/~thillen/), [Mark Lewis](https://lewisresearchlab.org/), [Johannes Müller](https://www.math.cit.tum.de/en/math/people/professors/mueller-johannes/), and [Birgitt Schönfisch](https://homepage.uni-tuebingen.de/birgitt.schoenfisch/). ISBN: 978-0-89871-612-2.
+
+* *A Course in Mathematical Biology* (ACMB) covers common approaches to the mathematical modeling of biological systems. We will study select topics from the book based on the interests of the students and instructor, and as time permits.  
+
+:::
+
+
 ::: {layout="[30,70]"}
 
 ![](https://ebus.ams.org/ProductImages/amstext-50-e-cov-1.jpg){width=170}
@@ -75,23 +87,12 @@ library(kableExtra)
 
 * This book covers practical aspects of using [R](https://www.r-project.org/) in solving numerically the types of differential equations we will study in this course as mathematical models for biological systems. 
 
-* Electronic access to *Solving Differential Equations in R* is available through the [Weinberg Memorial Library](https://www.scranton.edu/academics/wml/index.shtml). [Access the book](https://link-springer-com.ezp.scranton.edu/book/10.1007/978-3-642-28070-2).  
-
-* See also the article [Solving Differential Equations in R](https://journal.r-project.org/archive/2010-2/RJournal_2010-2_Soetaert~et~al.pdf).
+* Electronic access to *Solving Differential Equations in R* is available through the [Weinberg Memorial Library](https://www.scranton.edu/academics/wml/index.shtml). [Access the book](https://link-springer-com.ezp.scranton.edu/book/10.1007/978-3-642-28070-2).   See also the article [Solving Differential Equations in R](https://journal.r-project.org/archive/2010-2/RJournal_2010-2_Soetaert~et~al.pdf).
 
 :::
 
-::: {layout="[30,70]"}
 
-![](https://m.media-amazon.com/images/I/51s38BLS-pL._AC_UF1000,1000_QL80_.jpg){width=155}
-
-* [*A Course in Mathematical Biology: Quantitative Modeling with Mathematical and Computational Methods*](https://epubs.siam.org/doi/book/10.1137/1.9780898718256) by [Gerda de Vries](https://apps.ualberta.ca/directory/person/gerda), [Thomas Hillen](https://www.math.ualberta.ca/~thillen/), [Mark Lewis](https://lewisresearchlab.org/), [Johannes Müller](https://www.math.cit.tum.de/en/math/people/professors/mueller-johannes/), and [Birgitt Schönfisch](https://homepage.uni-tuebingen.de/birgitt.schoenfisch/). ISBN: 978-0-89871-612-2.
-
-* *A Course in Mathematical Biology* (ACMB) covers common approaches to the mathematical modeling of biological systems. We will study select topics from the book based on the interests of the students and instructor, and as time permits.  
-
-:::
-
-* **Spring 2022 MATH 463 Course Page:**  [https://topicsinbiomath.netlify.app/](https://topicsinbiomath.netlify.app/) contains links to course notes and other materials. 
+* **Spring 2022 MATH 463 Course Page:**  [https://topicsinbiomath.netlify.app/](https://topicsinbiomath.netlify.app/) contains links to course notes and other materials from when the course was taught in Sprign 2022. 
 
 ### Further Reading
 
