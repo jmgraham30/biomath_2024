@@ -116,7 +116,10 @@ The prerequisites for this course is MATH 341 *Differential Equations* and MATH 
 
 ## Student Learning Objectives and Assessment
 
-```{r,include=FALSE}
+```{r}
+#| include: false
+
+
 objectives <- c("Use mathematical tools from calculus, differential equations, and linear algebra to analyze foundational mathematical models arising in the life sciences.","Interpret the meaning of mathematical equations or models representing various biological processes.","Utilize computing tools such as R to analyze and interpret data-driven mathematical models.","Communicate effectively in writing their work in applying the techniques of applied mathematics to problems arising in the life sciences. ")
 assessments <- c("Homework assignments and in-class written exams.","Homework assignments, model reports, and final project.","Homework assignments, model reports, and final project. ","Homework, model reports, and final project consisting of a written paper.")
 slos_assess <- tibble::tibble("After taking this course, the student should be able to:"=objectives,"Methods of assessment"=assessments)
@@ -124,7 +127,12 @@ slos_assess <- tibble::tibble("After taking this course, the student should be a
 
 
 
-```{r,echo=FALSE}
+```{r}
+#| label: tbl-objectives
+#| tbl-cap: Course objectives and assessment.
+#| echo: false
+
+
 kbl(slos_assess) %>%
   kable_paper(full_width = F) %>%
   column_spec(1, width = "30em",border_left=TRUE,border_right=TRUE) %>%
@@ -165,7 +173,10 @@ The course grade will be based on two in-class exams (totaling 50% and evenly di
 
 #### Grade Scale
 
-```{r,include=FALSE}
+```{r}
+#| include: false
+
+
 grade_values <- c("94-100","90-93","87-89","83-86","80-82","76-79","72-75","69-71","65-68","60-64","<60")
 grade_letters <- c("A","A-","B+","B","B-","C+","C","C-","D+","D","F")
 grades_df <- tibble::tibble("Grade Range"=grade_values,"Letter Grade"=grade_letters)
@@ -173,7 +184,12 @@ grades_df <- tibble::tibble("Grade Range"=grade_values,"Letter Grade"=grade_lett
 
 Letter grades will be assigned based on the following scale:
 
-```{r,echo=FALSE}
+```{r}
+#| label: tbl-grades
+#| tbl-cap: Letter grade scale.
+#| echo: false
+
+
 kbl(grades_df) %>%
   kable_paper("striped",full_width=FALSE) 
 ```
