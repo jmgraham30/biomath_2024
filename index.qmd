@@ -194,6 +194,11 @@ kbl(grades_df) %>%
   kable_paper("striped",full_width=FALSE) 
 ```
 
+
+### Use of Digital Technology
+
+Work and research in Biomathematics requires professionals in the field to make use of digital technology. The primary uses of digital technology in Biomathematics is for producing and importing data, scientific computing, visualization of data and model-based simulations, and preparing written documents to explain mathematical results. Two of the most commonly used technological tools are R for scientific computing and $\LaTeX$ for written document preparation. Students in this course will be expected to use R, and $\LaTeX$.  R can be installed to any platform via the downloads available [here](https://www.r-project.org/). R is best used with the integrative development environment RStudio which can be installed from [here](https://www.rstudio.com/). 
+
 ### Use of AI
 
 Artificial intelligence (AI) can be an effective tool in science. For example, AI-based programming assistants like [GitHub Copilot](https://github.com/features/copilot) or generative model platforms like [ChatGPT](https://openai.com/blog/chatgpt) now help programmers and developers to write better code in less time. Learning to use AI is essentially becoming a basic skill for the modern scientist. Because of this, I do not want to completely discourage the use of AI assistance. 
@@ -203,6 +208,8 @@ However, I ask that you avoid using AI platforms or tools in a manner that is in
 In particular, it is expected that students will be able to explain independently and in detail what any line of code submitted as part of an assignment this semester does. Also, it is expected that students can explain independently and in detail the solution to any problem submitted as part of an assignment this semester.  
 
 If you have any doubts about your use of AI, then either ask the instructor if your use of AI is acceptable or just don't use AI.
+
+
 
 ## Assignments
 
@@ -227,11 +234,6 @@ As part of the required coursework for *Topics in Biomathematics*, students are 
 It should be recognized that the mathematical techniques developed in class are applicable in broader situations than can be covered in lectures and homework. Thus, students are asked to individually explore a topic in biomathematics beyond what is covered in lecture by means of a final project. Final projects should be an 8-12 page manuscript typed using $\LaTeX$ or [R Markdown](https://rmarkdown.rstudio.com/),  and students must submit at least two drafts of their written final projects. The final draft is **due no later than 5:00pm on Wednesday May 15.** All written and presented work must be original, explained in your own words, and use proper citation for works referenced. 
 
 A set of guidelines for the final project is posted on the course learning management system. **You must choose a topic for your final project and submit a one to two paragraph description of your proposed project along with at least two scholarly references to me no later than 5:00pm on March 1.**
-
-### Use of Digital Technology
-
-Work and research in Biomathematics requires professionals in the field to make use of digital technology. The primary uses of digital technology in Biomathematics is for producing and importing data, scientific computing, visualization of data and model-based simulations, and preparing written documents to explain mathematical results. Two of the most commonly used technological tools are R for scientific computing and $\LaTeX$ for written document preparation. Students in this course will be expected to use R, and $\LaTeX$.  R can be installed to any platform via the downloads available [here](https://www.r-project.org/). R is best used with the integrative development environment RStudio which can be installed from [here](https://www.rstudio.com/). 
-
 
 
 ## Course Timeline
