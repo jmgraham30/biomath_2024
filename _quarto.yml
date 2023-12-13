@@ -7,7 +7,11 @@ website:
     left:
       - href: index.qmd
         text: Syllabus
-
+      - href: links.qmd
+        text: Links
+    right:
+      - href: biomath_r.qmd
+        text: R for Biomath
 
 format:
   html:
