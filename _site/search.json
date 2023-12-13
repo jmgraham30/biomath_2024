@@ -89,5 +89,19 @@
     "title": "MATH 463 Topics in Biomathematics",
     "section": "",
     "text": "There will be weekly homework assignments. Assignments will be posted on the course learning management system and made up of problems relating to or extending the material covered in class discussions. Working problems is essential to learning the material and doing well on exams.\nDo not underestimate the value (and joy) of carefully working through homework problems.\n\n\n\nThe in-class exams are meant to assess 1) students’ understanding of the material covered in class and in homework assignments, 2) students’ understanding of the core concepts, 3) students’ problem solving abilities, and 4) students’ ability to think independently. Exam 1 is scheduled for March 6, and Exam 2 is scheduled for May 1. In writing the tests, I assume that you have been studying the material at least 6 hours per week outside of class.\n\n\n\nAs part of the required coursework for Topics in Biomathematics, students are required to submit a model report. The goal of this assignment is for students to read, understand, assess, and explain modeling results from a recently published paper in biology or biomathematics. The model report will make up 10% of the course grade. Students must submit at least two drafts of a model report. A model report should be three-five typed pages and prepared using \\(\\LaTeX\\) or R Markdown. The first draft is due March 25 and the final draft is due May 3. A set of guidelines for the model report is posted on the course learning management system.\n\n\n\nIt should be recognized that the mathematical techniques developed in class are applicable in broader situations than can be covered in lectures and homework. Thus, students are asked to individually explore a topic in biomathematics beyond what is covered in lecture by means of a final project. Final projects should be an 8-12 page manuscript typed using \\(\\LaTeX\\) or R Markdown, and students must submit at least two drafts of their written final projects. The final draft is due no later than 5:00pm on Wednesday May 15. All written and presented work must be original, explained in your own words, and use proper citation for works referenced.\nA set of guidelines for the final project is posted on the course learning management system. You must choose a topic for your final project and submit a one to two paragraph description of your proposed project along with at least two scholarly references to me no later than 5:00pm on March 1."
+  },
+  {
+    "objectID": "biomath_julia.html",
+    "href": "biomath_julia.html",
+    "title": "Julia for Biomathematics",
+    "section": "",
+    "text": "import Pkg\nPkg.status()\n\nStatus `~/Documents/GitHub/biomath_2024/Project.toml`\n  [634d3b9d] DrWatson v2.13.0"
+  },
+  {
+    "objectID": "biomath_python.html",
+    "href": "biomath_python.html",
+    "title": "Python for Biomathematics",
+    "section": "",
+    "text": "from pde import DiffusionPDE, ScalarField, UnitGrid\n\n\ngrid = UnitGrid([64, 64])  # generate grid\nstate = ScalarField.random_uniform(grid, 0.2, 0.3)  # generate initial condition\n\neq = DiffusionPDE(diffusivity=0.1)  # define the pde\nresult = eq.solve(state, t_range=10)\nresult.plot()\n\n\n\n\nExplicit stepper with a fixed time step did not receive any initial value for `dt`. Using dt=0.001, but specifying a value or enabling adaptive stepping is advisable.\n\n\n\n\n\n&lt;pde.tools.plotting.PlotReference at 0x1570836c0&gt;"
   }
 ]

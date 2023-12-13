@@ -12,6 +12,10 @@ website:
     right:
       - href: biomath_r.qmd
         text: R for Biomath
+      - href: biomath_julia.qmd
+        text: Julia for Biomath
+      - href: biomath_python.qmd
+        text: Python for Biomath
 
 format:
   html:

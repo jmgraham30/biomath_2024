@@ -1,0 +1,18 @@
+---
+title: "Julia for Biomathematics"
+jupyter: julia-1.9
+---
+
+```{julia}
+#| include: false 
+
+using DrWatson
+
+@quickactivate "biomath_2024"
+```
+
+
+```{julia}
+import Pkg
+Pkg.status()
+```

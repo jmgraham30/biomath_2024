@@ -1,0 +1,11 @@
+---
+title: "Python for Biomathematics"
+jupyter: 
+  kernelspec:
+    language: "python"
+    name: "biomath_py"
+    display_name: "biomath_py"
+---
+
+
+
