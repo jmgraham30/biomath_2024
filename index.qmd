@@ -31,9 +31,7 @@ library(kableExtra)
 
 * **Office Location:** LSC 319A 
     
-* **Office Hours:**  Mondays 1:30 - 2:30; Wednesdays 10:30 - 11:30 and 1:30 - 2:30. You may also make an appointment via email to meet with me outside of scheduled office hours. Appointments are not necessary for regularly scheduled office hours.
-
-* **Instructor Schedule:** [View my general schedule](https://docs.google.com/spreadsheets/d/1TXacgUViXiMl8rC39qHEOTM71S7E357LDN9jbugmUC4/edit?usp=sharing)
+* **Office Hours for Students:**  Students are welcome and encouraged to visit my office Mondays 1:30 - 2:30; Wednesdays 10:30 - 11:30 and 1:30 - 2:30. You may also make an appointment via email to meet with me outside of these scheduled office hours, [view my general schedule](https://docs.google.com/spreadsheets/d/1TXacgUViXiMl8rC39qHEOTM71S7E357LDN9jbugmUC4/edit?usp=sharing). Appointments are not necessary for regularly scheduled office hours.
 
 :::
 
