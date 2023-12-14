@@ -41,6 +41,8 @@ library(kableExtra)
 
 * **Course Page:** [https://biomath2024.netlify.app/](https://biomath2024.netlify.app/)
 
+* **Course Repository:** [https://github.com/jmgraham30/biomath_2024](https://github.com/jmgraham30/biomath_2024)
+
 ## Course Materials
 
 ### Required Readings

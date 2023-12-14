@@ -16,6 +16,9 @@ website:
         text: Julia for Biomath
       - href: biomath_python.qmd
         text: Python for Biomath
+      - icon: github
+        href: https://github.com/jmgraham30/biomath_2024
+        aria-label: GitHub
 
 format:
   html:
