@@ -1,4 +1,70 @@
 ---
-title: "Links"
+title: "Links and Additional Resources"
 ---
 
+```{r}
+#| include: false
+#| message: false
+library(tidyverse)
+```
+
+
+This page contains links to additional resources for learning and using the tools and techniques related to MATH 463.
+
+## Applied Math Resources
+
+### Websites
+
+### Readings
+
+### Videos
+
+## R Resources
+
+### Websites
+
+* [swirl](https://swirlstats.com/) - Learn R, in R.
+
+### Readings
+
+* [Introduction to Scientific Programming and Simulation Using R](https://nyu-cdsc.github.io/learningr/assets/simulation.pdf)
+
+* [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
+
+### Videos
+
+*  Learn R in 39 minutes YouTube video, [watch video on YouTube](https://youtu.be/yZ0bV2Afkjc?si=EkmPjn5veIWGptY3).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="yZ0bV2Afkjc?si=EkmPjn5veIWGptY3",height=450) %>%
+  vembedr::use_align("center")
+```
+
+*  R Programming Full Course for 2023 YouTube video, [watch the video on YouTube](https://www.youtube.com/live/Q5g6lYUn6Q4?si=Q3XZljkTGRrbACKP).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="Q5g6lYUn6Q4?si=Q3XZljkTGRrbACKP",height=450) %>%
+  vembedr::use_align("center")
+```
+
+## Julia Resources
+
+### Websites
+
+### Readings
+
+### Videos
+
+
+## Python Resources
+
+
+### Websites
+
+### Readings
+
+### Videos

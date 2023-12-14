@@ -16,9 +16,9 @@
   {
     "objectID": "links.html",
     "href": "links.html",
-    "title": "Links",
+    "title": "Links and Additional Resources",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "This page contains links to additional resources for learning and using the tools and techniques related to MATH 463."
   },
   {
     "objectID": "index.html#final-note",
@@ -103,5 +103,117 @@
     "title": "Python for Biomathematics",
     "section": "",
     "text": "from pde import DiffusionPDE, ScalarField, UnitGrid\n\n\ngrid = UnitGrid([64, 64])  # generate grid\nstate = ScalarField.random_uniform(grid, 0.2, 0.3)  # generate initial condition\n\neq = DiffusionPDE(diffusivity=0.1)  # define the pde\nresult = eq.solve(state, t_range=10)\nresult.plot()\n\n\n\n\nExplicit stepper with a fixed time step did not receive any initial value for `dt`. Using dt=0.001, but specifying a value or enabling adaptive stepping is advisable.\n\n\n\n\n\n&lt;pde.tools.plotting.PlotReference at 0x1570836c0&gt;"
+  },
+  {
+    "objectID": "links.html#websites-1",
+    "href": "links.html#websites-1",
+    "title": "Links and Additional Resources",
+    "section": "Websites",
+    "text": "Websites\n\nswirl - Learn R, in R."
+  },
+  {
+    "objectID": "links.html#readings-1",
+    "href": "links.html#readings-1",
+    "title": "Links and Additional Resources",
+    "section": "Readings",
+    "text": "Readings\n\nIntroduction to Scientific Programming and Simulation Using R\nHands-On Programming with R"
+  },
+  {
+    "objectID": "links.html#videos-1",
+    "href": "links.html#videos-1",
+    "title": "Links and Additional Resources",
+    "section": "Videos",
+    "text": "Videos\n\nLearn R in 39 minutes YouTube video, watch video on YouTube.\n\n\n\n\n\n\n\n\n\n\n\nR Programming Full Course for 2023 YouTube video, watch the video on YouTube."
+  },
+  {
+    "objectID": "links.html#websites-2",
+    "href": "links.html#websites-2",
+    "title": "Links and Additional Resources",
+    "section": "Websites",
+    "text": "Websites"
+  },
+  {
+    "objectID": "links.html#readings-2",
+    "href": "links.html#readings-2",
+    "title": "Links and Additional Resources",
+    "section": "Readings",
+    "text": "Readings"
+  },
+  {
+    "objectID": "links.html#videos-2",
+    "href": "links.html#videos-2",
+    "title": "Links and Additional Resources",
+    "section": "Videos",
+    "text": "Videos"
+  },
+  {
+    "objectID": "links.html#websites-3",
+    "href": "links.html#websites-3",
+    "title": "Links and Additional Resources",
+    "section": "Websites",
+    "text": "Websites"
+  },
+  {
+    "objectID": "links.html#readings-3",
+    "href": "links.html#readings-3",
+    "title": "Links and Additional Resources",
+    "section": "Readings",
+    "text": "Readings"
+  },
+  {
+    "objectID": "links.html#videos-3",
+    "href": "links.html#videos-3",
+    "title": "Links and Additional Resources",
+    "section": "Videos",
+    "text": "Videos"
+  },
+  {
+    "objectID": "links.html#websites",
+    "href": "links.html#websites",
+    "title": "Links and Additional Resources",
+    "section": "Websites",
+    "text": "Websites"
+  },
+  {
+    "objectID": "links.html#readings",
+    "href": "links.html#readings",
+    "title": "Links and Additional Resources",
+    "section": "Readings",
+    "text": "Readings"
+  },
+  {
+    "objectID": "links.html#videos",
+    "href": "links.html#videos",
+    "title": "Links and Additional Resources",
+    "section": "Videos",
+    "text": "Videos"
+  },
+  {
+    "objectID": "links.html#applied-math-resources",
+    "href": "links.html#applied-math-resources",
+    "title": "Links and Additional Resources",
+    "section": "Applied Math Resources",
+    "text": "Applied Math Resources\n\nWebsites\n\n\nReadings\n\n\nVideos"
+  },
+  {
+    "objectID": "links.html#r-resources",
+    "href": "links.html#r-resources",
+    "title": "Links and Additional Resources",
+    "section": "R Resources",
+    "text": "R Resources\n\nWebsites\n\nswirl - Learn R, in R.\n\n\n\nReadings\n\nIntroduction to Scientific Programming and Simulation Using R\nHands-On Programming with R\n\n\n\nVideos\n\nLearn R in 39 minutes YouTube video, watch video on YouTube.\n\n\n\n\n\n\n\n\n\n\n\nR Programming Full Course for 2023 YouTube video, watch the video on YouTube."
+  },
+  {
+    "objectID": "links.html#julia-resources",
+    "href": "links.html#julia-resources",
+    "title": "Links and Additional Resources",
+    "section": "Julia Resources",
+    "text": "Julia Resources\n\nWebsites\n\n\nReadings\n\n\nVideos"
+  },
+  {
+    "objectID": "links.html#python-resources",
+    "href": "links.html#python-resources",
+    "title": "Links and Additional Resources",
+    "section": "Python Resources",
+    "text": "Python Resources\n\nWebsites\n\n\nReadings\n\n\nVideos"
   }
 ]
