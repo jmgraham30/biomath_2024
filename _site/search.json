@@ -207,13 +207,13 @@
     "href": "links.html#julia-resources",
     "title": "Links and Additional Resources",
     "section": "Julia Resources",
-    "text": "Julia Resources\n\nWebsites\n\n\nReadings\n\n\nVideos"
+    "text": "Julia Resources\n\nWebsites\n\n\nReadings\n\n\nVideos\n\nProgramming for Mathematicians with Julia (2023) YouTube video, watch the video on YouTube.\n\n\n\n\n\n\n\n\n\n\n\nPlotting in Julia YouTube video, watch the video on YouTube.\n\n\n\n\n\n\n\n\n\n\n\nBasic Linear Algebra with Julia YouTube video, watch the video on YouTube.\n\n\n\n\n\n\n\n\n\n\n\nIntro to Differential Equations in Julia YouTube video, watch the video on YouTube."
   },
   {
     "objectID": "links.html#python-resources",
     "href": "links.html#python-resources",
     "title": "Links and Additional Resources",
     "section": "Python Resources",
-    "text": "Python Resources\n\nWebsites\n\n\nReadings\n\n\nVideos"
+    "text": "Python Resources\n\nWebsites\n\nNumpy documentation page.\nScipy documentation page.\nMatplotlib documentation page.\nPy-pde documentation page.\n\n\n\nReadings\n\nGetting started with python for science.\n\n\n\nVideos\n\nMatplotlib Tutorial (Part 1): Creating and Customizing Our First Plots, watch the video on YouTube."
   }
 ]

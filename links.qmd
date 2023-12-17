@@ -59,12 +59,71 @@ vembedr::embed_youtube(id="Q5g6lYUn6Q4?si=Q3XZljkTGRrbACKP",height=450) %>%
 
 ### Videos
 
+*  Programming for Mathematicians with Julia (2023) YouTube video, [watch the video on YouTube](https://youtu.be/RWIMwqQFEPM?si=veR2KXfUeZlyMp3s).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="RWIMwqQFEPM?si=veR2KXfUeZlyMp3s",height=450) %>%
+  vembedr::use_align("center")
+```
+
+
+*  Plotting in Julia YouTube video, [watch the video on YouTube](https://youtu.be/yZRw1uP41zI?si=99kK2vu8Adgv_YfH).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="yZRw1uP41zI?si=99kK2vu8Adgv_YfH",height=450) %>%
+  vembedr::use_align("center")
+```
+
+
+*  Basic Linear Algebra with Julia YouTube video, [watch the video on YouTube](https://youtu.be/IFkQ0aB6eHs?si=aCXwqUZKeB8yLNGh).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="IFkQ0aB6eHs?si=aCXwqUZKeB8yLNGhs",height=450) %>%
+  vembedr::use_align("center")
+```
+
+
+*  Intro to Differential Equations in Julia YouTube video, [watch the video on YouTube](https://youtu.be/lWmKCa6ih9Y?si=R_j8LMw1wg_YFI_p).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="lWmKCa6ih9Y?si=R_j8LMw1wg_YFI_p",height=450) %>%
+  vembedr::use_align("center")
+```
+
 
 ## Python Resources
 
 
 ### Websites
 
+* [Numpy documentation page](https://numpy.org/).
+
+* [Scipy documentation page](https://scipy.org/).
+
+* [Matplotlib documentation page](https://matplotlib.org/).
+
+* [Py-pde documentation page](https://py-pde.readthedocs.io/en/latest/getting_started.html).
+
 ### Readings
 
+* [Getting started with python for science](https://scipy-lectures.org/intro/).
+
 ### Videos
+
+
+*  Matplotlib Tutorial (Part 1): Creating and Customizing Our First Plots, [watch the video on YouTube](https://youtu.be/UO98lJQ3QGI?si=K_RhZhYrGPPoeTFF).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="UO98lJQ3QGI?si=K_RhZhYrGPPoeTFF",height=450) %>%
+  vembedr::use_align("center")
+```
