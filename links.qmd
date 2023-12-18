@@ -15,9 +15,54 @@ This page contains links to additional resources for learning and using the tool
 
 ### Websites
 
+* [Society for Mathematical Biology](https://smb.org/).
+
+* [European Society for Mathematical and Theoretical Biology](https://www.esmtb.org/).
+
 ### Readings
 
+* [Mathematical and Theoretical Biology Wikipedia article](https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology).
+
 ### Videos
+
+*  Differential Equations and Dynamical Systems YouTube video, [watch video on YouTube](https://youtu.be/9fQkLQZe3u8?si=6iPn8xaxqv3QzhKl).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="9fQkLQZe3u8?si=6iPn8xaxqv3QzhKl",height=450) %>%
+  vembedr::use_align("center")
+```
+
+
+*  Dynamical Systems YouTube video, [watch video on YouTube](https://youtu.be/41P4vFP7RWo?si=4RJdK9wZPuoZFkCY).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="41P4vFP7RWo?si=4RJdK9wZPuoZFkCY",height=450) %>%
+  vembedr::use_align("center")
+```
+
+
+*  Topics in Dynamical Systems YouTube video, [watch video on YouTube](https://youtu.be/0H1gWTaWva4?si=Ux1yN3eFPbIgcT5C).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="0H1gWTaWva4?si=Ux1yN3eFPbIgcT5C",height=450) %>%
+  vembedr::use_align("center")
+```
+
+
+*  Mathematical Biology at UC Irvine YouTube video, [watch video on YouTube](https://youtu.be/Lp3T4DtAyOo?si=BMXNovnJXUZRFn5L).
+  
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="Lp3T4DtAyOo?si=BMXNovnJXUZRFn5L",height=450) %>%
+  vembedr::use_align("center")
+```
 
 ## R Resources
 
@@ -54,6 +99,8 @@ vembedr::embed_youtube(id="Q5g6lYUn6Q4?si=Q3XZljkTGRrbACKP",height=450) %>%
 ## Julia Resources
 
 ### Websites
+
+* [Julia programming for mathematics students](https://courses.smp.uq.edu.au/MATH2504/2023/).
 
 ### Readings
 
