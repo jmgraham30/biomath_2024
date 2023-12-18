@@ -11,7 +11,7 @@ library(tidyverse)
 
 This page contains links to additional resources for learning and using the tools and techniques related to MATH 463.
 
-## Applied Math Resources
+## Biomathematics Resources
 
 ### Websites
 
@@ -19,9 +19,25 @@ This page contains links to additional resources for learning and using the tool
 
 * [European Society for Mathematical and Theoretical Biology](https://www.esmtb.org/).
 
+* [Journal of Mathematical Biology](https://www-springer-com.ezp.scranton.edu/journal/285).
+
+* [Bulletin of Mathematical Biology](https://www-springer-com.ezp.scranton.edu/journal/11538).
+
+* [Journal of Theoretical Biology](https://www-sciencedirect-com.ezp.scranton.edu/journal/journal-of-theoretical-biology).
+
+* [Mathematical Biosciences and Engineering](https://www.aimsciences.org/mbe).
+
+* [PLoS Computational Biology](https://journals.plos.org/ploscompbiol/).
+
+* [Mathematical Biosciences Institute](https://mbi.osu.edu/).
+
 ### Readings
 
 * [Mathematical and Theoretical Biology Wikipedia article](https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology).
+
+* [Mathematical Biology Scholarpedia article](http://www.scholarpedia.org/article/Mathematical_biology).
+
+* [Introducing Mathematical Biology Open Textbook](https://sheffield.pressbooks.pub/introducingmathematicalbiology/).
 
 ### Videos
 
@@ -103,6 +119,8 @@ vembedr::embed_youtube(id="Q5g6lYUn6Q4?si=Q3XZljkTGRrbACKP",height=450) %>%
 * [Julia programming for mathematics students](https://courses.smp.uq.edu.au/MATH2504/2023/).
 
 ### Readings
+
+* [Julia Language Documentation](https://docs.julialang.org/en/v1/).
 
 ### Videos
 
