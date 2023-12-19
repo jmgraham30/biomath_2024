@@ -104,6 +104,14 @@ Welcome to MATH 463 *Topics in Biomathematics* for the Spring, 2024 semester! Th
 
 ::: {layout="[70,30]"}
 
+
+* [*Mathematical Biology*](https://link.springer.com/book/10.1007/b98868) by [J.D. Murray](https://en.wikipedia.org/wiki/James_D._Murray), ISBN: 978-0-387-95223-9
+
+* *Mathematical Biology* is an influential text covering a wide range of topics in mathematical biology. The most recent third edition of the book consists of two volumes, see [the Wikipedia article on the book](https://en.wikipedia.org/wiki/Mathematical_Biology) for more details. 
+
+![](https://media.springernature.com/full/springer-static/cover-hires/book/978-0-387-22437-4?as=webp){width=160}
+
+
 * [*An Introduction to Modeling Neuronal Dynamics*](https://link-springer-com.ezp.scranton.edu/book/10.1007/978-3-319-51171-9) by [Christoph Börgers](https://christophborgers.com/about), ISBN: 978-3-319-84585-2
 
 * *An Introduction to Modeling Neuronal Dynamics* covers the basics of mathematical and computational neuroscience. In particular, the book covers the [Hodgkin-Huxley](https://en.wikipedia.org/wiki/Hodgkin%E2%80%93Huxley_model) model of the action potential, the [FitzHugh-Nagumo](https://en.wikipedia.org/wiki/FitzHugh%E2%80%93Nagumo_model) model, and the [Wilson-Cowan](https://en.wikipedia.org/wiki/Wilson%E2%80%93Cowan_model) model of interacting populations of neurons. The book also covers some mathematical techniques for analyzing nonlinear dynamical systems models for neuroscience.
