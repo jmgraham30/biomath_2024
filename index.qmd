@@ -47,7 +47,7 @@ Welcome to MATH 463 *Topics in Biomathematics* for the Spring, 2024 semester! Th
 
 ## Course Materials
 
-### Required Readings
+### Required Course Textbook
 
 ::: {layout="[70,30]"}
 
@@ -60,7 +60,7 @@ Welcome to MATH 463 *Topics in Biomathematics* for the Spring, 2024 semester! Th
 :::
 
 
-### Additional Readings 
+### Recommended Texts
 
 
 ::: {layout="[30,70]"}
@@ -98,9 +98,9 @@ Welcome to MATH 463 *Topics in Biomathematics* for the Spring, 2024 semester! Th
 :::
 
 
-* **Spring 2022 MATH 463 Course Page:**  [https://topicsinbiomath.netlify.app/](https://topicsinbiomath.netlify.app/) contains links to course notes and other materials from when the course was taught in Sprign 2022. 
+* **Spring 2022 MATH 463 Course Page:**  [https://topicsinbiomath.netlify.app/](https://topicsinbiomath.netlify.app/) contains links to course notes and other materials from when the course was taught in Spring 2022. 
 
-### Further Reading
+### Suggestions for Further Reading
 
 ::: {layout="[70,30]"}
 
