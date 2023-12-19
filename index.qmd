@@ -110,6 +110,15 @@ Welcome to MATH 463 *Topics in Biomathematics* for the Spring, 2024 semester! Th
 
 ![](https://media.springernature.com/full/springer-static/cover-hires/book/978-3-319-51171-9?as=webp){width=160}
 
+
+* [*An Introduction to Undergraduate Research in Computational and Mathematical Biology
+From Birdsongs to Viscosities*](https://link.springer.com/book/10.1007/978-3-030-33645-5) edited by [Hannah Callender Highlander](https://www.up.edu/academics/faculty-profiles/2020-new-faculty-profiles1/hannah-callender-highlander.html), [Alex Capaldi](https://sites.google.com/view/alex-capaldi), and [Carrie Diaz Eaton](https://inquire.catapult.bates.edu/), ISBN: 978-3-030-33647-9
+
+* *An Introduction to Undergraduate Research in Computational and Mathematical Biology
+From Birdsongs to Viscosities* contains chapters covering a variety of topics in current research in computational and mathematical biology meant to engage undergraduate students.
+
+![](https://media.springernature.com/full/springer-static/cover-hires/book/978-3-030-33645-5?as=webp){width=160}
+
 :::
 
 
