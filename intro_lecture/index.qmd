@@ -1,0 +1,47 @@
+---
+author: "Jason M. Graham"
+title: "MATH 463 Topics in Biomathematics"
+subtitle: "An Introduction to Biomath and Course Overview"
+format: 
+  revealjs:
+    logo: https://academicminute.org/wp-content/uploads/2015/01/MA.png
+    footer: Jason M. Graham
+    theme: [default, custom.scss]
+    preview-links: true
+    multiplex: true
+    scrollable: true
+    slide-number: true
+    show-slide-number: print
+    chalkboard: true
+---
+
+
+```{r}
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(tidymodels)
+library(latex2exp)
+library(kableExtra)
+
+tidymodels_prefer()
+
+theme_set(theme_minimal(base_size = 12))
+```
+
+
+## Slides
+
+![](lecture_slides.jpeg){#fig-qr fig-align="center" width=4in height=3in}
+
+Slides at: [https://biomath2024.netlify.app/intro_lecture](https://biomath2024.netlify.app/intro_lecture)
+
+
+## Overview
+
+
+
+
+
