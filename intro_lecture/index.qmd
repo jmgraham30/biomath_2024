@@ -38,6 +38,12 @@ theme_set(theme_minimal(base_size = 12))
 
 Slides at: [https://biomath2024.netlify.app/intro_lecture](https://biomath2024.netlify.app/intro_lecture)
 
+## Course Syllabus
+
+![](syllabus_page.jpeg){#fig-syllabus fig-align="center" width=4in height=3in}
+
+Course syllabus at: [https://biomath2024.netlify.app/](https://biomath2024.netlify.app/)
+
 
 ## Overview
 
