@@ -4,8 +4,6 @@ title: "MATH 463 Topics in Biomathematics"
 subtitle: "An Introduction to Biomath and Course Overview"
 format: 
   revealjs:
-    logo: https://academicminute.org/wp-content/uploads/2015/01/MA.png
-    footer: Jason M. Graham
     theme: [default, custom.scss]
     preview-links: true
     multiplex: true
