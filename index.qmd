@@ -16,7 +16,7 @@ library(kableExtra)
 
 # Course Syllabus
 
-Welcome to MATH 463 *Topics in Biomathematics* for the Spring, 2024 semester! This page contains the syllabus for the course. We begin with a brief description of biomathematics, followed by information about the instructor, course materials, and course policies.
+Welcome to MATH 463 *Topics in Biomathematics* for Spring 2024! This page contains the syllabus for the course. We begin with a brief description of biomathematics, followed by information about the instructor, course materials, and course policies.
 
 ## What is Biomathematics? 
 
@@ -49,6 +49,8 @@ Welcome to MATH 463 *Topics in Biomathematics* for the Spring, 2024 semester! Th
 
 ### Required Course Textbook
 
+All students in MATH 463 from Spring, 2024 will be expected to have access to the following required textbook:
+
 ::: {layout="[70,30]"}
 
 * [*Topics in Applied Mathematics and Modeling: Concise Theory with Case Studies*](https://bookstore.ams.org/view?ProductCode=AMSTEXT/59) by [Oscar Gonzalez](https://web.ma.utexas.edu/users/og/), ISBN: 978-1-4704-6991-7
@@ -61,6 +63,8 @@ Welcome to MATH 463 *Topics in Biomathematics* for the Spring, 2024 semester! Th
 
 
 ### Recommended Texts
+
+Occasionally in the course we will make reference to topics from the following recommended texts. These books are not required for the course and students are not expected to purchase them. 
 
 
 ::: {layout="[30,70]"}
@@ -98,9 +102,11 @@ Welcome to MATH 463 *Topics in Biomathematics* for the Spring, 2024 semester! Th
 :::
 
 
-* **Spring 2022 MATH 463 Course Page:**  [https://topicsinbiomath.netlify.app/](https://topicsinbiomath.netlify.app/) contains links to course notes and other materials from when the course was taught in Spring 2022. 
+Additionally, you may find the **Spring 2022 MATH 463 Course Page:**  [https://topicsinbiomath.netlify.app/](https://topicsinbiomath.netlify.app/) useful. It contains links to course notes and other materials from when the course was taught in Spring 2022. 
 
 ### Suggestions for Further Reading
+
+To go deeper into the topics covered in this course, the following books are recommended. These books are not required for the course and students are not expected to purchase them. However, these may be valuable sources for topics for a final project or for further study. 
 
 ::: {layout="[70,30]"}
 
@@ -126,6 +132,13 @@ From Birdsongs to Viscosities*](https://link.springer.com/book/10.1007/978-3-030
 From Birdsongs to Viscosities* contains chapters covering a variety of topics in current research in computational and mathematical biology meant to engage undergraduate students.
 
 ![](https://media.springernature.com/full/springer-static/cover-hires/book/978-3-030-33645-5?as=webp){width=160}
+
+
+* [*Dynamics of cancer*](https://link.springer.com/book/10.1007/978-3-030-33645-5) by [Natalia Komarova](https://www.math.uci.edu/~komarova/) and [Dominik Woodarz](https://faculty.sites.uci.edu/wodarz/), ISBN: 978-981-4566-36-0
+
+* *Dynamics of cancer* aims to provide an introduction to mathematical models that describe the dynamics of tumor growth and the evolution of tumor cells. The book has a strong evolutionary component and reflects the viewpoint that cancer can be understood rationally through a combination of mathematical and biological tools. 
+
+![](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71dktcR71NL._AC_UF1000,1000_QL80_.jpg){width=160}
 
 :::
 
