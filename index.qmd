@@ -47,7 +47,7 @@ Welcome to MATH 463 *Topics in Biomathematics* for Spring 2024! This page contai
 
 ## Course Materials
 
-### Required Course Textbook
+### Required Course Materials
 
 All students in MATH 463 from Spring, 2024 will be expected to have access to the following required textbook:
 
@@ -61,8 +61,12 @@ All students in MATH 463 from Spring, 2024 will be expected to have access to th
 
 :::
 
+* [**Susceptible-Infected-Susceptible type COVID-19 spread with collective effects**](https://www.nature.com/articles/s41598-023-49949-7), Amanda Crocker and Daniel Strömbom, *Scientific Reports* **13**, Article number 22600 (2023).
 
-### Recommended Texts
+* [**Why Wolbachia-induced cytoplasmic incompatibility is so common**](https://www.pnas.org/doi/full/10.1073/pnas.2211637119), Turelli, Michael, Andrew Katznelson, and Paul S. Ginsberg. Proceedings of the National Academy of Sciences 119, no. 47 (2022): e2211637119.
+
+
+### Recommended Texts and Readings
 
 Occasionally in the course we will make reference to topics from the following recommended texts. These books are not required for the course and students are not expected to purchase them. 
 
