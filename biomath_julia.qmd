@@ -18,6 +18,13 @@ using DrWatson
 
 ### Envinronment Setup
 
+
+*  Julia environments YouTube video, [watch video on YouTube](https://youtu.be/MC-wjQTXOOA?si=mdtPngyDg-m4I1Wa).
+  
+{{< video https://youtu.be/MC-wjQTXOOA?si=mdtPngyDg-m4I1Wa width="800" height="500" >}}
+
+
+
 ```{julia}
 import Pkg
 Pkg.status()

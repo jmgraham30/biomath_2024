@@ -14,6 +14,10 @@ jupyter:
 ### Envinronment Setup
 
 
+*  Master the basics of Conda environments in Python YouTube video, [watch video on YouTube](https://youtu.be/1VVCd0eSkYc?si=KMrEskiA8SJoja_W).
+
+{{< video https://youtu.be/1VVCd0eSkYc?si=KMrEskiA8SJoja_W width="800" height="500" >}}
+  
 
 ## Plotting 
 
