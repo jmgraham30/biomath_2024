@@ -8,4 +8,39 @@ jupyter:
 ---
 
 
+## Overview
+
+
+### Envinronment Setup
+
+
+
+## Plotting 
+
+
+
+## Matrices and Solving Linear Systems
+
+
+
+
+## Root Finding
+
+
+
+## Optimization
+
+
+
+## Differential Equations
+
+
+
+## Dynamical Systems
+
+
+
+## Partial Differential Equations
+
+
 

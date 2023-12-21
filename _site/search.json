@@ -95,7 +95,7 @@
     "href": "biomath_julia.html",
     "title": "Julia for Biomathematics",
     "section": "",
-    "text": "import Pkg\nPkg.status()\n\nStatus `~/Documents/GitHub/biomath_2024/Project.toml`\n  [13f3f980] CairoMakie v0.11.3\n  [a93c6f00] DataFrames v1.6.1\n  [0c46a032] DifferentialEquations v7.11.0\n  [31c24e10] Distributions v0.25.104\n⌅ [5b8099bc] DomainSets v0.6.7\n  [634d3b9d] DrWatson v2.13.0\n  [61744808] DynamicalSystems v3.2.3\n  [94925ecb] MethodOfLines v0.10.4\n  [961ee093] ModelingToolkit v8.73.2\n⌃ [1dea7af3] OrdinaryDiffEq v6.59.3\n  [91a5bcdd] Plots v1.39.0\n⌃ [0c5d862f] Symbolics v5.11.0\nInfo Packages marked with ⌃ and ⌅ have new versions available. Those with ⌃ may be upgradable, but those with ⌅ are restricted by compatibility constraints from upgrading. To see why use `status --outdated`"
+    "text": "import Pkg\nPkg.status()\n\nStatus `~/Documents/GitHub/biomath_2024/Project.toml`\n  [13f3f980] CairoMakie v0.11.3\n  [a93c6f00] DataFrames v1.6.1\n  [0c46a032] DifferentialEquations v7.11.0\n  [31c24e10] Distributions v0.25.104\n⌅ [5b8099bc] DomainSets v0.6.7\n  [634d3b9d] DrWatson v2.13.0\n  [61744808] DynamicalSystems v3.2.3\n  [94925ecb] MethodOfLines v0.10.4\n⌃ [961ee093] ModelingToolkit v8.73.2\n⌃ [1dea7af3] OrdinaryDiffEq v6.59.3\n  [91a5bcdd] Plots v1.39.0\n⌃ [0c5d862f] Symbolics v5.11.0\nInfo Packages marked with ⌃ and ⌅ have new versions available. Those with ⌃ may be upgradable, but those with ⌅ are restricted by compatibility constraints from upgrading. To see why use `status --outdated`"
   },
   {
     "objectID": "biomath_python.html",
@@ -243,5 +243,159 @@
     "title": "MATH 463 Topics in Biomathematics",
     "section": "Course Syllabus",
     "text": "Course Syllabus\n\n\n\n\n\nCourse syllabus at: https://biomath2024.netlify.app/"
+  },
+  {
+    "objectID": "biomath_r.html#plotting",
+    "href": "biomath_r.html#plotting",
+    "title": "R for Biomathematics",
+    "section": "Plotting",
+    "text": "Plotting"
+  },
+  {
+    "objectID": "biomath_r.html#matrices-and-solving-linear-systems",
+    "href": "biomath_r.html#matrices-and-solving-linear-systems",
+    "title": "R for Biomathematics",
+    "section": "Matrices and Solving Linear Systems",
+    "text": "Matrices and Solving Linear Systems"
+  },
+  {
+    "objectID": "biomath_r.html#root-finding",
+    "href": "biomath_r.html#root-finding",
+    "title": "R for Biomathematics",
+    "section": "Root Finding",
+    "text": "Root Finding"
+  },
+  {
+    "objectID": "biomath_r.html#optimization",
+    "href": "biomath_r.html#optimization",
+    "title": "R for Biomathematics",
+    "section": "Optimization",
+    "text": "Optimization"
+  },
+  {
+    "objectID": "biomath_r.html#differential-equations",
+    "href": "biomath_r.html#differential-equations",
+    "title": "R for Biomathematics",
+    "section": "Differential Equations",
+    "text": "Differential Equations"
+  },
+  {
+    "objectID": "biomath_r.html#dynamical-systems",
+    "href": "biomath_r.html#dynamical-systems",
+    "title": "R for Biomathematics",
+    "section": "Dynamical Systems",
+    "text": "Dynamical Systems"
+  },
+  {
+    "objectID": "biomath_r.html#partial-differential-equations",
+    "href": "biomath_r.html#partial-differential-equations",
+    "title": "R for Biomathematics",
+    "section": "Partial Differential Equations",
+    "text": "Partial Differential Equations"
+  },
+  {
+    "objectID": "biomath_julia.html#overview",
+    "href": "biomath_julia.html#overview",
+    "title": "Julia for Biomathematics",
+    "section": "",
+    "text": "import Pkg\nPkg.status()\n\nStatus `~/Documents/GitHub/biomath_2024/Project.toml`\n  [13f3f980] CairoMakie v0.11.3\n  [a93c6f00] DataFrames v1.6.1\n  [0c46a032] DifferentialEquations v7.11.0\n  [31c24e10] Distributions v0.25.104\n⌅ [5b8099bc] DomainSets v0.6.7\n  [634d3b9d] DrWatson v2.13.0\n  [61744808] DynamicalSystems v3.2.3\n  [94925ecb] MethodOfLines v0.10.4\n⌃ [961ee093] ModelingToolkit v8.73.2\n⌃ [1dea7af3] OrdinaryDiffEq v6.59.3\n  [91a5bcdd] Plots v1.39.0\n⌃ [0c5d862f] Symbolics v5.11.0\nInfo Packages marked with ⌃ and ⌅ have new versions available. Those with ⌃ may be upgradable, but those with ⌅ are restricted by compatibility constraints from upgrading. To see why use `status --outdated`"
+  },
+  {
+    "objectID": "biomath_julia.html#plotting",
+    "href": "biomath_julia.html#plotting",
+    "title": "Julia for Biomathematics",
+    "section": "Plotting",
+    "text": "Plotting"
+  },
+  {
+    "objectID": "biomath_julia.html#matrices-and-solving-linear-systems",
+    "href": "biomath_julia.html#matrices-and-solving-linear-systems",
+    "title": "Julia for Biomathematics",
+    "section": "Matrices and Solving Linear Systems",
+    "text": "Matrices and Solving Linear Systems"
+  },
+  {
+    "objectID": "biomath_julia.html#root-finding",
+    "href": "biomath_julia.html#root-finding",
+    "title": "Julia for Biomathematics",
+    "section": "Root Finding",
+    "text": "Root Finding"
+  },
+  {
+    "objectID": "biomath_julia.html#optimization",
+    "href": "biomath_julia.html#optimization",
+    "title": "Julia for Biomathematics",
+    "section": "Optimization",
+    "text": "Optimization"
+  },
+  {
+    "objectID": "biomath_julia.html#differential-equations",
+    "href": "biomath_julia.html#differential-equations",
+    "title": "Julia for Biomathematics",
+    "section": "Differential Equations",
+    "text": "Differential Equations"
+  },
+  {
+    "objectID": "biomath_julia.html#dynamical-systems",
+    "href": "biomath_julia.html#dynamical-systems",
+    "title": "Julia for Biomathematics",
+    "section": "Dynamical Systems",
+    "text": "Dynamical Systems"
+  },
+  {
+    "objectID": "biomath_julia.html#partial-differential-equations",
+    "href": "biomath_julia.html#partial-differential-equations",
+    "title": "Julia for Biomathematics",
+    "section": "Partial Differential Equations",
+    "text": "Partial Differential Equations"
+  },
+  {
+    "objectID": "biomath_python.html#plotting",
+    "href": "biomath_python.html#plotting",
+    "title": "Python for Biomathematics",
+    "section": "Plotting",
+    "text": "Plotting"
+  },
+  {
+    "objectID": "biomath_python.html#matrices-and-solving-linear-systems",
+    "href": "biomath_python.html#matrices-and-solving-linear-systems",
+    "title": "Python for Biomathematics",
+    "section": "Matrices and Solving Linear Systems",
+    "text": "Matrices and Solving Linear Systems"
+  },
+  {
+    "objectID": "biomath_python.html#root-finding",
+    "href": "biomath_python.html#root-finding",
+    "title": "Python for Biomathematics",
+    "section": "Root Finding",
+    "text": "Root Finding"
+  },
+  {
+    "objectID": "biomath_python.html#optimization",
+    "href": "biomath_python.html#optimization",
+    "title": "Python for Biomathematics",
+    "section": "Optimization",
+    "text": "Optimization"
+  },
+  {
+    "objectID": "biomath_python.html#differential-equations",
+    "href": "biomath_python.html#differential-equations",
+    "title": "Python for Biomathematics",
+    "section": "Differential Equations",
+    "text": "Differential Equations"
+  },
+  {
+    "objectID": "biomath_python.html#dynamical-systems",
+    "href": "biomath_python.html#dynamical-systems",
+    "title": "Python for Biomathematics",
+    "section": "Dynamical Systems",
+    "text": "Dynamical Systems"
+  },
+  {
+    "objectID": "biomath_python.html#partial-differential-equations",
+    "href": "biomath_python.html#partial-differential-equations",
+    "title": "Python for Biomathematics",
+    "section": "Partial Differential Equations",
+    "text": "Partial Differential Equations"
   }
 ]
