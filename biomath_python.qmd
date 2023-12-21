@@ -44,3 +44,11 @@ jupyter:
 
 
 
+
+## References
+
+::: {#refs}
+:::
+
+
+[![](http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png?raw=1){fig-align="left" width=15%}](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
