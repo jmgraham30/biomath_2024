@@ -61,6 +61,12 @@ All students in MATH 463 from Spring, 2024 will be expected to have access to th
 
 :::
 
+* [*Susceptible-Infected-Susceptible type COVID-19 spread with collective effects*](https://www.nature.com/articles/s41598-023-49949-7), Amanda Crocker and Daniel Strömbom, *Scientific Reports* **13**, Article number 22600 (2023).
+
+* [*Why Wolbachia-induced cytoplasmic incompatibility is so common*](https://www.pnas.org/doi/full/10.1073/pnas.2211637119), Michael Turelli, Andrew Katznelson, and Paul S. Ginsberg. *Proceedings of the National Academy of Sciences*, 119, no. 47 (2022): e2211637119.
+
+* [*General model of inflammation*](https://link-springer-com.ezp.scranton.edu/content/pdf/10.1007/s11538-009-9468-9.pdf), Megan C. Herald, *Bulletin of mathematical biology*, 72, (2010) pp. 765-779.
+
 
 ### Recommended Texts and Readings
 
@@ -269,10 +275,6 @@ The in-class exams are meant to assess  1) students' understanding of the materi
 
 As part of the required coursework for *Topics in Biomathematics*, students are asked to submit a model report. The goal of this assignment is for students to read, understand, assess, and explain modeling results from a recently published paper in theoretical or quantitative biology or biomathematics. The model report will make up 10% of the course grade. Students must submit at least two drafts of a model report. A model report should be four to five typed pages and prepared using $\LaTeX$ or [R Markdown](https://rmarkdown.rstudio.com/).  The first draft is due March 25 and the final draft is due May 3. A set of guidelines for the model report can be found on the course learning management system.
 
-
-* [*Susceptible-Infected-Susceptible type COVID-19 spread with collective effects*](https://www.nature.com/articles/s41598-023-49949-7), Amanda Crocker and Daniel Strömbom, *Scientific Reports* **13**, Article number 22600 (2023).
-
-* [*Why Wolbachia-induced cytoplasmic incompatibility is so common*](https://www.pnas.org/doi/full/10.1073/pnas.2211637119), Michael Turelli, Andrew Katznelson, and Paul S. Ginsberg. Proceedings of the National Academy of Sciences 119, no. 47 (2022): e2211637119.
 
 
 ### Final Project
