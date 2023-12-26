@@ -5,7 +5,7 @@ bibliography: biomath_2024.bib
 license: "CC BY-NC-SA 4.0"
 ---
 
-[![Artwork by Luxor](https://docs.juliahub.com/Luxor/HA9ps/2.13.0/assets/figures/juliaspinner.gif){fig-alt="A gif showing the logo for the Julia progrmmin language." width=150 fig-align="left"}](https://docs.juliahub.com/Luxor/HA9ps/2.13.0/tutorial/simple-animation/)
+[![Artwork by Luxor](https://docs.juliahub.com/Luxor/HA9ps/2.13.0/assets/figures/juliaspinner.gif){fig-alt="A gif showing the logo for the Julia progrmmin language." width=130 fig-align="left"}](https://docs.juliahub.com/Luxor/HA9ps/2.13.0/tutorial/simple-animation/)
 
 ```{julia}
 #| include: false 
