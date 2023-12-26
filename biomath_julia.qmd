@@ -27,6 +27,11 @@ using DrWatson
 
 
 
+*  Managing Packages in Julia YouTube video, [watch video on YouTube](https://youtu.be/KldNhe4kvuk?si=63h0lTFtiPkKQWjL).
+  
+{{< video https://youtu.be/KldNhe4kvuk?si=63h0lTFtiPkKQWjL width="800" height="500" >}}
+
+
 ```{julia}
 import Pkg
 Pkg.status()
@@ -54,6 +59,11 @@ Pkg.status()
 ## Differential Equations
 
 
+*  Intro to Differential Equations in Julia YouTube video, [watch video on YouTube](https://youtu.be/lWmKCa6ih9Y?si=HU-JBSqsP-v1lX4q).
+  
+{{< video https://youtu.be/lWmKCa6ih9Y?si=HU-JBSqsP-v1lX4q width="800" height="500" >}}
+
+
 
 ## Dynamical Systems
 
@@ -68,6 +78,10 @@ Pkg.status()
 
 
 ## Symbolic Math
+
+*  Symbolic Computation in Julia YouTube video, [watch video on YouTube](https://youtu.be/L47k2zjPU9s?si=MIiUEqrL-dPzM__l).
+  
+{{< video https://youtu.be/L47k2zjPU9s?si=MIiUEqrL-dPzM__l width="800" height="500" >}}
 
 
 
