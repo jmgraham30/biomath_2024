@@ -57,7 +57,7 @@ library(phaseR)
 ## Symbolic Math
 
 
-
+* [Ryacas](https://r-cas.github.io/ryacas/) package for symbolic math in R.
 
 ## References
 
