@@ -6,6 +6,24 @@ license: "CC BY-NC-SA 4.0"
 
 ## Overview
 
+Scientific computing software plays a major role in biomathematics for many reasons some of which include:
+
+* The complexity of biological systems leads to models or equations that are difficult to work with analytically. 
+
+* The need to synthesize theoretical models and data from experiments.
+
+* Graphs and visualizations are important for understanding and communicating results.
+
+* Computing allows us to use theoretical models to conduct experiments [*in silico*](https://en.wikipedia.org/wiki/In_silico) that would be difficult or impossible to conduct otherwise. 
+
+Thus, this course will make use of scientific computing software. Three commonly used languages for scientific computing in biomathematics are [R](https://www.r-project.org/), [Julia](https://julialang.org/), and [Python](https://www.python.org/). This course will emphasize the use of R, but it's worth knowing at least a little about scientific computing in all three languages. The goal is not to become an expert in any of these languages, but rather to become familiar with the basics of each language and to learn how to use them to solve problems in biomathematics.
+
+This page will focus on R. The other two languages have their own pages:
+
+* [Julia for Biomathematics](https://biomath2024.netlify.app/biomath_julia)
+
+* [Python for Biomathematics](https://biomath2024.netlify.app/biomath_python)
+
 
 ```{r}
 #| echo: true
