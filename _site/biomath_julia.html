@@ -265,7 +265,7 @@ div.csl-indent {
 </section>
 <section id="envinronment-setup" class="level3">
 <h3 class="anchored" data-anchor-id="envinronment-setup">Envinronment Setup</h3>
-<p>One thing that is a little different working in Julia (as also Python) compared to R is that it’s common practice to utilize a separate environment for each project. This is done to avoid conflicts between packages and package versions that might be used in different projects. Basically, a project consists of a folder that contains files named <code>Project.toml</code> and <code>Manifest.toml</code>. You can learn the details about Julia environments by reading the <a href="https://docs.julialang.org/en/v1/manual/code-loading/#Environments-1">environment documentation</a> or get a short tutorial by watching the following video:</p>
+<p>One thing that is a little different working in Julia (and also Python) compared to R is that it’s common practice to utilize a separate environment for each project. This is done to avoid conflicts between packages and package versions that might be used in different projects. Basically, a project consists of a folder that contains files named <code>Project.toml</code> and <code>Manifest.toml</code>. You can learn the details about Julia environments by reading the <a href="https://docs.julialang.org/en/v1/manual/code-loading/#Environments-1">environment documentation</a> or get a short tutorial by watching the following video:</p>
 <ul>
 <li>Julia environments YouTube video, <a href="https://youtu.be/MC-wjQTXOOA?si=mdtPngyDg-m4I1Wa">watch video on YouTube</a>.</li>
 </ul>
@@ -309,7 +309,7 @@ div.csl-indent {
 Info Packages marked with ⌃ and ⌅ have new versions available. Those with ⌃ may be upgradable, but those with ⌅ are restricted by compatibility constraints from upgrading. To see why use `status --outdated`</code></pre>
 </div>
 </div>
-<p>The nice thing about working with Julia environments is that we can easily share the environment with others. The <code>Project.toml</code> and <code>Manifest.toml</code> files contain all the information needed to recreate the environment. If you download the project folder for <code>biomath_2024</code> from the <a href="">GitHub repository</a>, then all you have to do is:</p>
+<p>The nice thing about working with Julia environments is that we can easily share the environment with others. The <code>Project.toml</code> and <code>Manifest.toml</code> files contain all the information needed to recreate the environment. If you download the project folder for <code>biomath_2024</code> from the <a href="https://github.com/jmgraham30/biomath_2024/tree/main">GitHub repository</a>, then all you have to do is:</p>
 <ol type="1">
 <li><p>Start Julia in the <code>biomath_2024</code> folder which contains the <code>Project.toml</code> and <code>Manifest.toml</code> files.</p></li>
 <li><p>Activate the environment using <code>DrWatson.jl</code> as shown above.</p></li>
