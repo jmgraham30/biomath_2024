@@ -33,7 +33,7 @@ Scientific computing software plays a major role in biomathematics for many reas
 
 * Computing allows us to use theoretical models to conduct experiments [*in silico*](https://en.wikipedia.org/wiki/In_silico) that would be difficult or impossible to conduct otherwise. 
 
-Thus, this course will make use of scientific computing software. Three commonly used free and open-source languages for scientific computing in biomathematics are [R](https://www.r-project.org/), [Julia](https://julialang.org/), and [Python](https://www.python.org/). In this course, we will mostly use R, but it's worth knowing at least a little about scientific computing in all three languages as each of them has its own strengths and weaknesses in the context of scientific computing for biomathematics. The goal is not to teach you to  become an expert in any of these languages, but rather to become familiar with how to use them to solve some basic problems in biomathematics. 
+Thus, this course will make use of scientific computing software. Three commonly used free and open-source languages for scientific computing in biomathematics are [R](https://www.r-project.org/), [Julia](https://julialang.org/), and [Python](https://www.python.org/). In this course, we will mostly use R, but it's worth knowing at least a little about scientific computing in all three languages as each of them has its own strengths and weaknesses in the context of scientific computing for biomathematics. The goal is not to teach you to  become an expert in any of these languages, but rather to become familiar with how to use them to solve some basic problems in biomathematics. Thus, this document is more of a reference than a tutorial. 
 
 This page will focus on Python. The other two languages have their own pages:
 
@@ -46,7 +46,7 @@ Each of these pages will have a similar structure to this one. We do not provide
 
 The section titles listed in the table of contents for the page should indicate the topics or types of problems we provide examples for. For some of the more involved code, we provide links to additional webpages that provide more details. In some cases, we provide links to potentially helpful videos or web sites where the reader can learn more.
 
-### Python 
+## Python 
 
 [Python](https://www.python.org/) is an elegant an mature general-purpose programming language [@python3]. You can learn more about the history of Python [here](https://en.wikipedia.org/wiki/Python_(programming_language)).
 

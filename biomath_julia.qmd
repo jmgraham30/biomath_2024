@@ -28,7 +28,7 @@ Scientific computing software plays a major role in biomathematics for many reas
 
 * Computing allows us to use theoretical models to conduct experiments [*in silico*](https://en.wikipedia.org/wiki/In_silico) that would be difficult or impossible to conduct otherwise. 
 
-Thus, this course will make use of scientific computing software. Three commonly used free and open-source languages for scientific computing in biomathematics are [R](https://www.r-project.org/), [Julia](https://julialang.org/), and [Python](https://www.python.org/). In this course, we will mostly use R, but it's worth knowing at least a little about scientific computing in all three languages as each of them has its own strengths and weaknesses in the context of scientific computing for biomathematics. The goal is not to teach you to  become an expert in any of these languages, but rather to become familiar with how to use them to solve some basic problems in biomathematics. 
+Thus, this course will make use of scientific computing software. Three commonly used free and open-source languages for scientific computing in biomathematics are [R](https://www.r-project.org/), [Julia](https://julialang.org/), and [Python](https://www.python.org/). In this course, we will mostly use R, but it's worth knowing at least a little about scientific computing in all three languages as each of them has its own strengths and weaknesses in the context of scientific computing for biomathematics. The goal is not to teach you to  become an expert in any of these languages, but rather to become familiar with how to use them to solve some basic problems in biomathematics. Thus, this document is more of a reference than a tutorial. 
 
 This page will focus on Julia. The other two languages have their own pages:
 
@@ -42,11 +42,40 @@ Each of these pages will have a similar structure to this one. We do not provide
 The section titles listed in the table of contents for the page should indicate the topics or types of problems we provide examples for. For some of the more involved code, we provide links to additional webpages that provide more details. In some cases, we provide links to potentially helpful videos or web sites where the reader can learn more.
 
 
-### Julia
+## Julia
 
 The [Julia language](https://julialang.org/) is at the forefront of high-performance numerical and scientific computing  [@bezanson2017julia]. You can learn more about the history of Julia [here](https://en.wikipedia.org/wiki/Julia_(programming_language)).
 
+### Functions and Packages
+
+As in R, most of the algorithms and methods we will want to use in solving problems in biomathematics are implemented as functions in Julia. Base Julia contains a number of functions including many that are useful for scientific computing. For example, base Julia contains a function `sin` that implements the mathematical function $\sin(x)$. It is called as follows:
+
+```{julia}
+sin(pi/4.0)
+```
+
+However, most of the functions we will use are not in base Julia but rather are contained in packages. A package is a collection of functions and other objects that can be loaded into Julia and used. Julia comes with a built-in package manager that allows you to install and manage packages. You can learn about the package manager through either the [package manager documentation](https://docs.julialang.org/en/v1/stdlib/Pkg/) of the following video:
+
+*  Managing Packages in Julia YouTube video, [watch video on YouTube](https://youtu.be/KldNhe4kvuk?si=63h0lTFtiPkKQWjL).
+  
+{{< video https://youtu.be/KldNhe4kvuk?si=63h0lTFtiPkKQWjL width="800" height="500" >}}
+
+
+
 ### Envinronment Setup
+
+One thing that is a little different working in Julia (as also Python) compared to R is that it's common practice to utilize a separate environment for each project. This is done to avoid conflicts between packages and package versions that might be used in different projects. Basically, a project consists of a folder that contains files named `Project.toml` and `Manifest.toml`. You can learn the details about Julia environments by reading the [environment documentation](https://docs.julialang.org/en/v1/manual/code-loading/#Environments-1) or get a short tutorial by watching the following video:
+
+
+*  Julia environments YouTube video, [watch video on YouTube](https://youtu.be/MC-wjQTXOOA?si=mdtPngyDg-m4I1Wa).
+  
+{{< video https://youtu.be/MC-wjQTXOOA?si=mdtPngyDg-m4I1Wa width="800" height="500" >}}
+
+The `DrWatson.jl` package provides a convenient way to manage projects and environments in Julia. You can learn more about `DrWatson.jl` by reading the [documentation](https://juliadynamics.github.io/DrWatson.jl/stable/) or watching the following video:
+
+{{< video https://youtu.be/jKATlEAu8eE?si=DkjhGrGaeCUXOR2l width="800" height="500" >}}
+
+The following code uses `DrWatson.jl` to activate the environment for this project which is named `biomath_2024`:
 
 ```{julia}
 #| code-fold: true
@@ -60,16 +89,7 @@ using DrWatson
 ```
 
 
-*  Julia environments YouTube video, [watch video on YouTube](https://youtu.be/MC-wjQTXOOA?si=mdtPngyDg-m4I1Wa).
-  
-{{< video https://youtu.be/MC-wjQTXOOA?si=mdtPngyDg-m4I1Wa width="800" height="500" >}}
-
-
-
-*  Managing Packages in Julia YouTube video, [watch video on YouTube](https://youtu.be/KldNhe4kvuk?si=63h0lTFtiPkKQWjL).
-  
-{{< video https://youtu.be/KldNhe4kvuk?si=63h0lTFtiPkKQWjL width="800" height="500" >}}
-
+Now that we have activated our environment, we can use the package manager `Pkg.jl` see what packages are installed in the environment and their versions:
 
 ```{julia}
 # import Pkg.jl package
@@ -78,7 +98,21 @@ import Pkg
 Pkg.status()
 ```
 
+The nice thing about working with Julia environments is that we can easily share the environment with others. The `Project.toml` and `Manifest.toml` files contain all the information needed to recreate the environment. If you download the project folder for `biomath_2024` from the [GitHub repository](), then all you have to do is:
 
+1. Start Julia in the `biomath_2024` folder which contains the `Project.toml` and `Manifest.toml` files.
+
+2. Activate the environment using `DrWatson.jl` as shown above.
+
+3. Run the `instatiate` command in the package manager to install all the packages listed in the `Project.toml` file.
+
+Some of the packages most relevant for solving problems in biomathematics include:
+
+*  [Plots.jl](http://docs.juliaplots.org/latest/) for plotting.
+
+*  [DifferentialEquations.jl](https://diffeq.sciml.ai/stable/) for numerical computing with differential equations.
+
+* [MethodOfLines.jl](https://docs.sciml.ai/MethodOfLines/stable/) for numerical computing with partial differential equations.
 
 ## Plotting 
 
