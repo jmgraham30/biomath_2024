@@ -76,7 +76,15 @@ The most common tool in the scientific community for managing Python environment
 
 The nice thing about working with virtual environments is that we can easily share the environment with others. To do this, we can create a file called `environment.yml` that contains a list of all the packages we want to install in the environment. For example, the [`environment.yml`](https://github.com/jmgraham30/biomath_2024/blob/main/environment.yml) file from the [GitHub repository](https://github.com/jmgraham30/biomath_2024/tree/main)  will create an environment called `biomath_py` that contains Python 3.9 and the NumPy, SciPy, Matplotlib, and SymPy modules among others.
 
-  
+
+Once we have set up and activated the environment, we can import modules and use functions from them. For example, to import the NumPy module and compute $\sin\left(\frac{\pi}{4}\right)$, we can use the following code:
+
+```{python}
+from numpy import sin, pi
+
+sin(pi/4)
+```
+
 
 ## Plotting 
 
