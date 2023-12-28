@@ -64,7 +64,7 @@ However, most of the functions we will use are not in base Julia but rather are 
 
 ### Envinronment Setup
 
-One thing that is a little different working in Julia (as also Python) compared to R is that it's common practice to utilize a separate environment for each project. This is done to avoid conflicts between packages and package versions that might be used in different projects. Basically, a project consists of a folder that contains files named `Project.toml` and `Manifest.toml`. You can learn the details about Julia environments by reading the [environment documentation](https://docs.julialang.org/en/v1/manual/code-loading/#Environments-1) or get a short tutorial by watching the following video:
+One thing that is a little different working in Julia (and also Python) compared to R is that it's common practice to utilize a separate environment for each project. This is done to avoid conflicts between packages and package versions that might be used in different projects. Basically, a project consists of a folder that contains files named `Project.toml` and `Manifest.toml`. You can learn the details about Julia environments by reading the [environment documentation](https://docs.julialang.org/en/v1/manual/code-loading/#Environments-1) or get a short tutorial by watching the following video:
 
 
 *  Julia environments YouTube video, [watch video on YouTube](https://youtu.be/MC-wjQTXOOA?si=mdtPngyDg-m4I1Wa).
@@ -102,7 +102,7 @@ import Pkg
 Pkg.status()
 ```
 
-The nice thing about working with Julia environments is that we can easily share the environment with others. The `Project.toml` and `Manifest.toml` files contain all the information needed to recreate the environment. If you download the project folder for `biomath_2024` from the [GitHub repository](), then all you have to do is:
+The nice thing about working with Julia environments is that we can easily share the environment with others. The `Project.toml` and `Manifest.toml` files contain all the information needed to recreate the environment. If you download the project folder for `biomath_2024` from the [GitHub repository](https://github.com/jmgraham30/biomath_2024/tree/main), then all you have to do is:
 
 1. Start Julia in the `biomath_2024` folder which contains the `Project.toml` and `Manifest.toml` files.
 

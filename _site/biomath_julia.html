@@ -285,10 +285,13 @@ div.csl-indent {
 </div>
 <p>Now that we have activated our environment, we can use the package manager <code>Pkg.jl</code> see what packages are installed in the environment and their versions:</p>
 <div class="cell" data-execution_count="3">
+<details>
+<summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import Pkg.jl package</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="bu">Pkg</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># list packages installed in environment</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="bu">Pkg</span>.<span class="fu">status</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Status `~/Documents/GitHub/biomath_2024/Project.toml`
   [13f3f980] CairoMakie v0.11.4
@@ -314,8 +317,9 @@ Info Packages marked with ⌃ and ⌅ have new versions available. Those with �
 </ol>
 <p>Some of the packages most relevant for solving problems in biomathematics include:</p>
 <ul>
-<li><p><a href="https://diffeq.sciml.ai/stable/">DifferentialEquations.jl</a> for solving differential equations.</p></li>
 <li><p><a href="http://docs.juliaplots.org/latest/">Plots.jl</a> for plotting.</p></li>
+<li><p><a href="https://diffeq.sciml.ai/stable/">DifferentialEquations.jl</a> for numerical computing with differential equations.</p></li>
+<li><p><a href="https://docs.sciml.ai/MethodOfLines/stable/">MethodOfLines.jl</a> for numerical computing with partial differential equations.</p></li>
 </ul>
 </section>
 </section>

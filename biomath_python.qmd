@@ -50,12 +50,30 @@ The section titles listed in the table of contents for the page should indicate 
 
 [Python](https://www.python.org/) is an elegant an mature general-purpose programming language [@python3]. You can learn more about the history of Python [here](https://en.wikipedia.org/wiki/Python_(programming_language)).
 
+### Functions and Modules
+
+As in R, most of the algorithms and methods we will want to use in solving problems in biomathematics are implemented as functions in Python. However, base Python contains very few functions useful for mathematics or scientific computing. Most of the functions we will need are contained in modules. A module is a collection of functions and other objects that can be imported into Python. There are many modules available for scientific computing in Python. We will focus on a few of the most commonly used ones such as
+
+* [NumPy](https://numpy.org/): Numerical Python
+
+* [SciPy](https://www.scipy.org/): Scientific Python
+
+* [Matplotlib](https://matplotlib.org/): Plotting in Python
+
+* [SymPy](https://www.sympy.org/en/index.html): Symbolic Python
+
+One thing that is a little different working in Python (and also Julia) compared to R is that it's common practice to utilize virtual environments to avoid conflicts between functions and objects from different modules. Environments also help keep track of different versions of the Python interpreter. We will not go into details about how to use environments here, but we will provide some links to resources that explain how to use them.
+
 ### Envinronment Setup
 
+The most common tool in the scientific community for managing Python environments is [Conda](https://docs.conda.io/en/latest/). Conda is a package manager that can be used to install Python and other software packages. It can also be used to create and manage virtual environments. Conda is available for Windows, Mac, and Linux. You can download and install Conda from [here](https://docs.conda.io/en/latest/miniconda.html). To learn about using Conda, see the following video:
 
 *  Master the basics of Conda environments in Python YouTube video, [watch video on YouTube](https://youtu.be/1VVCd0eSkYc?si=KMrEskiA8SJoja_W).
 
 {{< video https://youtu.be/1VVCd0eSkYc?si=KMrEskiA8SJoja_W width="800" height="500" >}}
+
+The nice thing about working with virtual environments is that we can easily share the environment with others. To do this, we can create a file called `environment.yml` that contains a list of all the packages we want to install in the environment. For example, the [`environment.yml`](https://github.com/jmgraham30/biomath_2024/blob/main/environment.yml) file from the [GitHub repository](https://github.com/jmgraham30/biomath_2024/tree/main)  will create an environment called `biomath_py` that contains Python 3.9 and the NumPy, SciPy, Matplotlib, and SymPy modules among others.
+
   
 
 ## Plotting 

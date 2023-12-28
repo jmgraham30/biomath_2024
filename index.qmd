@@ -16,7 +16,7 @@ library(kableExtra)
 
 # Course Syllabus
 
-Welcome to MATH 463 *Topics in Biomathematics* for Spring 2024! This page contains the syllabus for the course. We begin with a brief description of biomathematics, followed by information about the instructor, course materials, and course policies.
+Welcome to MATH 463 *Topics in Biomathematics* for Spring 2024! This page contains the syllabus for the course. We begin with a brief description of Biomathematics, followed by information about the instructor, course materials, and course policies.
 
 ## What is Biomathematics? 
 
@@ -33,7 +33,7 @@ Welcome to MATH 463 *Topics in Biomathematics* for Spring 2024! This page contai
 
 * **Office Location:** LSC 319A 
     
-* **Office Hours for Students:**  Students are welcome and encouraged to visit my office Mondays 1:30 - 2:30; Wednesdays 10:30 - 11:30 and 1:30 - 2:30. You may also make an appointment via email to meet with me outside of these scheduled office hours, [view my general schedule](https://docs.google.com/spreadsheets/d/1TXacgUViXiMl8rC39qHEOTM71S7E357LDN9jbugmUC4/edit?usp=sharing). Appointments are not necessary for regularly scheduled office hours.
+* **Office Hours for Students:**  Students are welcome and encouraged to visit my office Mondays 1:30 - 2:30; Wednesdays 10:30 - 11:30 and 1:30 - 2:30. You may also make an appointment via email to meet with me outside of these scheduled office hours, [view my general schedule](https://docs.google.com/spreadsheets/d/1TXacgUViXiMl8rC39qHEOTM71S7E357LDN9jbugmUC4/edit?usp=sharing). Appointments are not necessary for regularly scheduled student office hours.
 
 :::
 
@@ -60,6 +60,8 @@ All students in MATH 463 from Spring, 2024 will be expected to have access to th
 ![](https://ebus.ams.org/ProductImages/amstext-59-e-cov-1.jpg){width=170}
 
 :::
+
+Additionally, we will often refer to the following journal articles:
 
 * [*Susceptible-Infected-Susceptible type COVID-19 spread with collective effects*](https://www.nature.com/articles/s41598-023-49949-7), Amanda Crocker and Daniel Strömbom, *Scientific Reports* **13**, Article number 22600 (2023).
 
@@ -150,9 +152,9 @@ From Birdsongs to Viscosities* contains chapters covering a variety of topics in
 
 ### Use of Digital Technology
 
-Work and research in Biomathematics requires students and professionals in the field to make use of computing and digital technology. The primary uses of digital technology in Biomathematics is for producing and importing data, scientific computing, visualization of data and model-based simulations, and preparing written documents to explain scientific results. Students in this course will be expected to make some use of computing and technical writing. Two commonly used technological tools are [R](https://www.r-project.org/) for scientific computing and [$\LaTeX$](https://www.latex-project.org/) for technical writing. This course will emphasize the use of R which can be installed to any platform via the downloads available [here](https://www.r-project.org/). R is best used with the integrative development environment [RStudio](https://posit.co/download/rstudio-desktop/) which can be installed from [here](https://posit.co/download/rstudio-desktop/). Further, RStudio facilitates the integration of code and technical writing in $\LaTeX$ via the [Quarto](https://quarto.org/) system.  The progamming languages [Julia](https://julialang.org/) and [Python](https://www.python.org/) are also commonly used in scientific computing and are also available for free.
+Work and research in Biomathematics requires students and professionals in the field to make use of computing and digital technology. The primary uses of digital technology in Biomathematics is for producing and importing data, scientific computing, visualization of data and model-based simulations, and preparing written documents to present scientific results. Students in this course will be expected to make some use of computing and technical writing. Two commonly used technological tools are [R](https://www.r-project.org/) for scientific computing and [$\LaTeX$](https://www.latex-project.org/) for technical writing. This course will emphasize the use of R which can be installed to any platform via the downloads available [here](https://www.r-project.org/). R is best used with the integrative development environment [RStudio](https://posit.co/download/rstudio-desktop/) which can be installed from [here](https://posit.co/download/rstudio-desktop/). Further, RStudio facilitates the integration of code and technical writing in $\LaTeX$ via the [Quarto](https://quarto.org/) system.  The progamming languages [Julia](https://julialang.org/) and [Python](https://www.python.org/) are also commonly used in scientific computing and are also available for free.
 
-The course website contains references pages for scientific computing for Biomathematics using [R](https://www.r-project.org/), [Julia](https://julialang.org/), and [Python](https://www.python.org/).
+The course website contains reference pages for scientific computing for Biomathematics using [R](https://www.r-project.org/), [Julia](https://julialang.org/), and [Python](https://www.python.org/).
 
 * [View the R reference](https://biomath2024.netlify.app/biomath_r)
 
@@ -170,7 +172,7 @@ A study of discrete and continuous mathematical models in biology.  Topics inclu
 
 ### Prerequisites
 
-The prerequisites for this course is MATH 341 *Differential Equations* and MATH 351 *Linear Algebra*. Specifically, the student is expected to have a solid foundation in calculus, elementary linear algebra, and basic ordinary differential equations (ODEs).
+The prerequisites for this course is MATH 341 *Differential Equations* and MATH 351 *Linear Algebra*. Specifically, the students are expected to have a solid foundation in calculus, and a working knowledge of elementary linear algebra and basic ordinary differential equations (ODEs). Some topics from probability and statistics will be used, but these will be reviewed as needed. Additionally, some topics from linear algebra and differential equations may be reviewed or presented from a different perspective than MATH 341 or MATH 351. No background in programming is assumed.
 
 
 ## Student Learning Objectives and Assessment
