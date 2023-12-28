@@ -41,7 +41,7 @@ The section titles listed in the table of contents for the page should indicate 
 ## R
 
 
-[R](https://www.r-project.org/) is a programming language developed for statistical computing [@baseR]. You can learn more about the history of R [here](https://en.wikipedia.org/wiki/R_(programming_language)). For programming in R, we highly recommend using the [RStudio Integrated Development Environment](https://posit.co/download/rstudio-desktop/) to interface with the language. 
+[R](https://www.r-project.org/) is a programming language developed for statistical computing [@baseR]. You can learn more about the history of R [here](https://en.wikipedia.org/wiki/R_(programming_language)). For programming in R, we highly recommend using the [RStudio Integrated Development Environment](https://posit.co/download/rstudio-desktop/) (IDE) to interface with the language. 
 
 ### Functions and Packages
 
@@ -53,7 +53,7 @@ sin(pi/4)
 
 However, most of the functions we will use are not in base R but rather are contained in packages. A package is a collection of functions and other objects that can be loaded into R and used. There are thousands of packages available for R. You can find a list of packages on the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/web/packages/available_packages_by_name.html) or on [Bioconductor](https://www.bioconductor.org/packages/release/BiocViews.html#___Software). Some packages that we will use a lot in the course include:
 
-* [`tidyverse`](https://www.tidyverse.org/) - a collection of packages for data science [@tidy]. The `tidyverse` package itself is a meta-package that loads a number of other packages including `ggplot2`, `dplyr`, `tidyr`, `readr`, `purrr`, `tibble`, `stringr`, and `forcats`. Of these, [`ggplot2`](https://ggplot2.tidyverse.org/) is the of great interest because it is used for creating high-quality plots and visualization [@ggplot2].
+* [`tidyverse`](https://www.tidyverse.org/) - a collection of packages for data science [@tidy]. The `tidyverse` package itself is a meta-package that loads a number of other packages including `ggplot2`, `dplyr`, `tidyr`, `readr`, `purrr`, `tibble`, `stringr`, and `forcats`. Of these, [`ggplot2`](https://ggplot2.tidyverse.org/) is of great interest because it is used for creating high-quality plots and visualization [@ggplot2].
 
 * [`deSolve`](https://cran.r-project.org/web/packages/deSolve/index.html) - a package for numerical computing with differential equations [@deSolve].
 
@@ -63,8 +63,9 @@ However, most of the functions we will use are not in base R but rather are cont
 
 * [`phaseR`](https://cran.r-project.org/web/packages/phaseR/index.html) - a package for phase plane analysis [@grayling2014].
 
-After you have installed these packages, you can load them into R using the `library` function. For example, to load the packages listed above, you would use the following code:
+After you have installed these packages, you can load them into R using the `library` function[^1]. For example, to load the packages listed above, you would use the following code:
 
+[^1]: Note that you must install a package before you can load it. You can install a package using the `install.packages` function or the Packages tab in the RStudio IDE. Packages only need to be installed once but must be loaded in each new R session. 
 
 ```{r}
 #| echo: true

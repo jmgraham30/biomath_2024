@@ -89,7 +89,7 @@ using DrWatson
 ```
 
 
-Now that we have activated our environment, we can use the package manager `Pkg.jl` see what packages are installed in the environment and their versions:
+Now that we have activated our environment, we can use the package manager `Pkg.jl` to see which packages are installed in the environment and their versions:
 
 ```{julia}
 #| code-fold: true
@@ -108,7 +108,9 @@ The nice thing about working with Julia environments is that we can easily share
 
 2. Activate the environment using `DrWatson.jl` as shown above.
 
-3. Run the `instatiate` command in the package manager to install all the packages listed in the `Project.toml` file.
+3. Run the `instatiate` command in the package manager to install all the packages listed in the `Project.toml` file[^1].
+
+[^1]: Note that you have to activate the environment any time you want to work in the project. However, you only need to instatiate the project the first time you use it in order to install all the packages. After that, you can just activate the environment and start working.
 
 Some of the packages most relevant for solving problems in biomathematics include:
 

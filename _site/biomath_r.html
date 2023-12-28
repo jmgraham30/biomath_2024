@@ -246,7 +246,7 @@ div.csl-indent {
 </section>
 <section id="r" class="level2">
 <h2 class="anchored" data-anchor-id="r">R</h2>
-<p><a href="https://www.r-project.org/">R</a> is a programming language developed for statistical computing <span class="citation" data-cites="baseR">(<a href="#ref-baseR" role="doc-biblioref">R Core Team 2023</a>)</span>. You can learn more about the history of R <a href="https://en.wikipedia.org/wiki/R_(programming_language)">here</a>. For programming in R, we highly recommend using the <a href="https://posit.co/download/rstudio-desktop/">RStudio Integrated Development Environment</a> to interface with the language.</p>
+<p><a href="https://www.r-project.org/">R</a> is a programming language developed for statistical computing <span class="citation" data-cites="baseR">(<a href="#ref-baseR" role="doc-biblioref">R Core Team 2023</a>)</span>. You can learn more about the history of R <a href="https://en.wikipedia.org/wiki/R_(programming_language)">here</a>. For programming in R, we highly recommend using the <a href="https://posit.co/download/rstudio-desktop/">RStudio Integrated Development Environment</a> (IDE) to interface with the language.</p>
 <section id="functions-and-packages" class="level3">
 <h3 class="anchored" data-anchor-id="functions-and-packages">Functions and Packages</h3>
 <p>Most of the algorithms and methods we will want to use in solving problems in biomathematics are implemented as functions in R. Base R contains a number of functions including many that are useful for scientific computing. For example, base R contains a function <code>sin</code> that implements the mathematical function <span class="math inline">\(\sin(x)\)</span>. It is called as follows:</p>
@@ -258,13 +258,13 @@ div.csl-indent {
 </div>
 <p>However, most of the functions we will use are not in base R but rather are contained in packages. A package is a collection of functions and other objects that can be loaded into R and used. There are thousands of packages available for R. You can find a list of packages on the <a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">Comprehensive R Archive Network (CRAN)</a> or on <a href="https://www.bioconductor.org/packages/release/BiocViews.html#___Software">Bioconductor</a>. Some packages that we will use a lot in the course include:</p>
 <ul>
-<li><p><a href="https://www.tidyverse.org/"><code>tidyverse</code></a> - a collection of packages for data science <span class="citation" data-cites="tidy">(<a href="#ref-tidy" role="doc-biblioref">Wickham et al. 2019</a>)</span>. The <code>tidyverse</code> package itself is a meta-package that loads a number of other packages including <code>ggplot2</code>, <code>dplyr</code>, <code>tidyr</code>, <code>readr</code>, <code>purrr</code>, <code>tibble</code>, <code>stringr</code>, and <code>forcats</code>. Of these, <a href="https://ggplot2.tidyverse.org/"><code>ggplot2</code></a> is the of great interest because it is used for creating high-quality plots and visualization <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span>.</p></li>
+<li><p><a href="https://www.tidyverse.org/"><code>tidyverse</code></a> - a collection of packages for data science <span class="citation" data-cites="tidy">(<a href="#ref-tidy" role="doc-biblioref">Wickham et al. 2019</a>)</span>. The <code>tidyverse</code> package itself is a meta-package that loads a number of other packages including <code>ggplot2</code>, <code>dplyr</code>, <code>tidyr</code>, <code>readr</code>, <code>purrr</code>, <code>tibble</code>, <code>stringr</code>, and <code>forcats</code>. Of these, <a href="https://ggplot2.tidyverse.org/"><code>ggplot2</code></a> is of great interest because it is used for creating high-quality plots and visualization <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span>.</p></li>
 <li><p><a href="https://cran.r-project.org/web/packages/deSolve/index.html"><code>deSolve</code></a> - a package for numerical computing with differential equations <span class="citation" data-cites="deSolve">(<a href="#ref-deSolve" role="doc-biblioref">Karline Soetaert, Thomas Petzoldt, and R. Woodrow Setzer 2010</a>)</span>.</p></li>
 <li><p><a href="https://cran.r-project.org/web/packages/rootSolve/index.html"><code>rootSolve</code></a> - a package for root finding <span class="citation" data-cites="rootSolve">(<a href="#ref-rootSolve" role="doc-biblioref">Karline Soetaert 2009</a>)</span>.</p></li>
 <li><p><a href="https://cran.r-project.org/web/packages/ReacTran/index.html"><code>ReacTran</code></a> - a package for numerical computing with partial differential equations equations <span class="citation" data-cites="ReacTran">(<a href="#ref-ReacTran" role="doc-biblioref">Soetaert and Meysman 2012</a>)</span>.</p></li>
 <li><p><a href="https://cran.r-project.org/web/packages/phaseR/index.html"><code>phaseR</code></a> - a package for phase plane analysis <span class="citation" data-cites="grayling2014">(<a href="#ref-grayling2014" role="doc-biblioref">Grayling 2014</a>)</span>.</p></li>
 </ul>
-<p>After you have installed these packages, you can load them into R using the <code>library</code> function. For example, to load the packages listed above, you would use the following code:</p>
+<p>After you have installed these packages, you can load them into R using the <code>library</code> function<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. For example, to load the packages listed above, you would use the following code:</p>
 <div class="cell">
 <details>
 <summary>Show the code</summary>
@@ -397,7 +397,13 @@ Expand for Session Info
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div>CC BY-NC-SA 4.0</div></div></section></div></main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Note that you must install a package before you can load it. You can install a package using the <code>install.packages</code> function or the Packages tab in the RStudio IDE. Packages only need to be installed once but must be loaded in each new R session.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div>CC BY-NC-SA 4.0</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

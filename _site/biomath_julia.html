@@ -283,7 +283,7 @@ div.csl-indent {
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="pp">@quickactivate</span> <span class="st">"biomath_2024"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>Now that we have activated our environment, we can use the package manager <code>Pkg.jl</code> see what packages are installed in the environment and their versions:</p>
+<p>Now that we have activated our environment, we can use the package manager <code>Pkg.jl</code> to see which packages are installed in the environment and their versions:</p>
 <div class="cell" data-execution_count="3">
 <details>
 <summary>Show the code</summary>
@@ -313,7 +313,7 @@ Info Packages marked with ⌃ and ⌅ have new versions available. Those with �
 <ol type="1">
 <li><p>Start Julia in the <code>biomath_2024</code> folder which contains the <code>Project.toml</code> and <code>Manifest.toml</code> files.</p></li>
 <li><p>Activate the environment using <code>DrWatson.jl</code> as shown above.</p></li>
-<li><p>Run the <code>instatiate</code> command in the package manager to install all the packages listed in the <code>Project.toml</code> file.</p></li>
+<li><p>Run the <code>instatiate</code> command in the package manager to install all the packages listed in the <code>Project.toml</code> file<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p></li>
 </ol>
 <p>Some of the packages most relevant for solving problems in biomathematics include:</p>
 <ul>
@@ -374,7 +374,13 @@ Bezanson, Jeff, Alan Edelman, Stefan Karpinski, and Viral B Shah. 2017. <span>�
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div>CC BY-NC-SA 4.0</div></div></section></div></main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Note that you have to activate the environment any time you want to work in the project. However, you only need to instatiate the project the first time you use it in order to install all the packages. After that, you can just activate the environment and start working.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div>CC BY-NC-SA 4.0</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
