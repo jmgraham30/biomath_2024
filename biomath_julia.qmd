@@ -92,6 +92,10 @@ using DrWatson
 Now that we have activated our environment, we can use the package manager `Pkg.jl` see what packages are installed in the environment and their versions:
 
 ```{julia}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+
 # import Pkg.jl package
 import Pkg
 # list packages installed in environment

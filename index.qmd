@@ -148,6 +148,18 @@ From Birdsongs to Viscosities* contains chapters covering a variety of topics in
 
 :::
 
+### Use of Digital Technology
+
+Work and research in Biomathematics requires students and professionals in the field to make use of computing and digital technology. The primary uses of digital technology in Biomathematics is for producing and importing data, scientific computing, visualization of data and model-based simulations, and preparing written documents to explain scientific results. Students in this course will be expected to make some use of computing and technical writing. Two commonly used technological tools are [R](https://www.r-project.org/) for scientific computing and [$\LaTeX$](https://www.latex-project.org/) for technical writing. This course will emphasize the use of R which can be installed to any platform via the downloads available [here](https://www.r-project.org/). R is best used with the integrative development environment [RStudio](https://posit.co/download/rstudio-desktop/) which can be installed from [here](https://posit.co/download/rstudio-desktop/). Further, RStudio facilitates the integration of code and technical writing in $\LaTeX$ via the [Quarto](https://quarto.org/) system.  The progamming languages [Julia](https://julialang.org/) and [Python](https://www.python.org/) are also commonly used in scientific computing and are also available for free.
+
+The course website contains references pages for scientific computing for Biomathematics using [R](https://www.r-project.org/), [Julia](https://julialang.org/), and [Python](https://www.python.org/).
+
+* [View the R reference](https://biomath2024.netlify.app/biomath_r)
+
+* [View the Julia reference](https://biomath2024.netlify.app/biomath_julia)
+
+* [View the Python reference](https://biomath2024.netlify.app/biomath_python)
+
 
 ## Course Information
 
@@ -242,9 +254,6 @@ kbl(grades_df) %>%
 ```
 
 
-### Use of Digital Technology
-
-Work and research in Biomathematics requires professionals in the field to make use of digital technology. The primary uses of digital technology in Biomathematics is for producing and importing data, scientific computing, visualization of data and model-based simulations, and preparing written documents to explain mathematical results. Two of the most commonly used technological tools are R for scientific computing and $\LaTeX$ for written document preparation. Students in this course will be expected to use R, and $\LaTeX$.  R can be installed to any platform via the downloads available [here](https://www.r-project.org/). R is best used with the integrative development environment RStudio which can be installed from [here](https://www.rstudio.com/). 
 
 ### Use of AI
 
