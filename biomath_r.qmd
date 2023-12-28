@@ -1,5 +1,13 @@
 ---
 title: "R for Biomathematics"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+execute:
+  echo: true
+  message: false
 bibliography: biomath_2024.bib
 license: "CC BY-NC-SA 4.0"
 ---
@@ -33,13 +41,14 @@ The section titles listed in the table of contents for the page should indicate 
 ### R
 
 
-[R](https://www.r-project.org/) is a progamming language developed for statistical computing [@baseR]. You can learn more about the history of R [here](https://en.wikipedia.org/wiki/R_(programming_language)). For programming in R, we highly recommend using the [RStudio Integrated Development Environment](https://posit.co/download/rstudio-desktop/) to interface with the language.  
+[R](https://www.r-project.org/) is a programming language developed for statistical computing [@baseR]. You can learn more about the history of R [here](https://en.wikipedia.org/wiki/R_(programming_language)). For programming in R, we highly recommend using the [RStudio Integrated Development Environment](https://posit.co/download/rstudio-desktop/) to interface with the language.  
 
 
 ```{r}
 #| echo: true
 #| message: false
 #| code-fold: true
+#| code-summary: "Show the code"
 
 
 library(tidyverse)

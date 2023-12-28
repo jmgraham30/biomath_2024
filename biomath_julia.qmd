@@ -1,20 +1,19 @@
 ---
 title: "Julia for Biomathematics"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+execute:
+  echo: true
+  message: false
 jupyter: julia-1.9
 bibliography: biomath_2024.bib
 license: "CC BY-NC-SA 4.0"
 ---
 
 [![Artwork by Luxor](https://docs.juliahub.com/Luxor/HA9ps/2.13.0/assets/figures/juliaspinner.gif){fig-alt="A gif showing the logo for the Julia progrmmin language." width=130 fig-align="left"}](https://docs.juliahub.com/Luxor/HA9ps/2.13.0/tutorial/simple-animation/)
-
-```{julia}
-#| include: false 
-
-using DrWatson
-
-@quickactivate "biomath_2024"
-```
-
 
 
 ## Overview
@@ -49,6 +48,17 @@ The [Julia language](https://julialang.org/) is at the forefront of high-perform
 
 ### Envinronment Setup
 
+```{julia}
+#| code-fold: true
+#| code-summary: "Show the code" 
+
+# import DrWatson.jl package
+using DrWatson
+
+# activate the biomath_2024 environment
+@quickactivate "biomath_2024"
+```
+
 
 *  Julia environments YouTube video, [watch video on YouTube](https://youtu.be/MC-wjQTXOOA?si=mdtPngyDg-m4I1Wa).
   
@@ -62,7 +72,9 @@ The [Julia language](https://julialang.org/) is at the forefront of high-perform
 
 
 ```{julia}
+# import Pkg.jl package
 import Pkg
+# list packages installed in environment
 Pkg.status()
 ```
 

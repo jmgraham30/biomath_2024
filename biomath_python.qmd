@@ -1,5 +1,13 @@
 ---
 title: "Python for Biomathematics"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: false
+execute:
+  echo: true
+  message: false
 jupyter: 
   kernelspec:
     language: "python"
