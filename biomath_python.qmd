@@ -95,7 +95,26 @@ print("Python version:", sys.version)
 
 ## Plotting 
 
+```{python}
+#| label: fig-plot_1
+#| fig-cap: "Plot of $f(x)=x^2$"
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+plt.rcParams['text.usetex'] = True
+
+
+x = np.linspace(-2.0, 2.0, 101)
+y2 = np.power(x,2)
+
+fig, ax = plt.subplots(figsize=(7, 5), tight_layout=True)
+
+ax.set_xlabel(r'\textit{$x$}',fontsize=13)
+ax.set_ylabel('\\textit{$y$}',fontsize=13)
+ax.set_title(r'$f(x) = x^2$',fontsize=15)
+ax.plot(x, y2)
+```
 
 ## Matrices and Solving Linear Systems
 

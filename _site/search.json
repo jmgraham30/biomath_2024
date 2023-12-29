@@ -354,7 +354,7 @@
     "href": "biomath_python.html#plotting",
     "title": "Python for Biomathematics",
     "section": "Plotting",
-    "text": "Plotting"
+    "text": "Plotting\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nplt.rcParams['text.usetex'] = True\n\n\nx = np.linspace(-2.0, 2.0, 101)\ny2 = np.power(x,2)\n\nfig, ax = plt.subplots(figsize=(7, 5), tight_layout=True)\n\nax.set_xlabel(r'\\textit{$x$}',fontsize=13)\nax.set_ylabel('\\\\textit{$y$}',fontsize=13)\nax.set_title(r'$f(x) = x^2$',fontsize=15)\nax.plot(x, y2)\n\n\n\n\nFigure 1: Plot of \\(f(x)=x^2\\)"
   },
   {
     "objectID": "biomath_python.html#matrices-and-solving-linear-systems",
