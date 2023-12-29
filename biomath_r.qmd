@@ -152,6 +152,11 @@ p_1 + p_2
 ```
 
 
+*  Intro to `ggplot2` YouTube video, [watch video on YouTube](https://youtu.be/iOosTTQwCW4?si=euVH0zb74dKlJLNE).
+  
+{{< video https://youtu.be/iOosTTQwCW4?si=euVH0zb74dKlJLNE width="800" height="500" >}}
+
+
 ## Matrices and Solving Linear Systems
 
 

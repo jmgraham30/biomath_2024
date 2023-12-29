@@ -178,6 +178,12 @@ plt.tight_layout()
 plt.show()
 ```
 
+
+*  Plotting in Python YouTube video, [watch video on YouTube](https://youtu.be/UO98lJQ3QGI?si=F_sNT94QGm9uNBOi).
+  
+{{< video https://youtu.be/UO98lJQ3QGI?si=F_sNT94QGm9uNBOi width="800" height="500" >}}
+
+
 ## Matrices and Solving Linear Systems
 
 
