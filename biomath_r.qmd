@@ -79,12 +79,56 @@ library(deSolve)
 library(rootSolve)
 library(ReacTran)
 library(phaseR)
+library(latex2exp)
 ```
 
 
 ## Plotting 
 
+```{r}
+#| label: fig-function_plot_1
+#| fig-cap: "Plot of the function $f(x) = x^2$."
 
+# plot the function f(x) = x^2
+x <- seq(-2, 2, length.out = 100)
+y <- x^2
+ggplot(data.frame(x = x, y = y), aes(x = x, y = y)) +
+  geom_line() +
+  labs(x = "x", y = "y", title = "Plot of the function f(x) = x^2")
+
+```
+
+
+
+```{r}
+#| label: fig-function_plot_2
+#| fig-cap: "Plot of the function $f(x) = x^2$ using `geom_function` and some customizations."
+
+# plot the function f(x) = x^2
+ggplot(data.frame(x = c(-2,2)), aes(x = x)) +
+  geom_function(fun = function(x){x^2},color="steelblue",linewidth=1) +
+  theme_bw(base_size=13) +
+  labs(x = "x", y = "y", title = TeX("Plot of the function $f(x) = x^2$"))
+
+```
+
+
+
+```{r}
+#| label: fig-function_plot_3
+#| fig-cap: "Plot of the functions $f(x) = x^2$ and $g(x) = x^3$ on same axes."
+
+# plot the functions f(x) = x^2 and g(x) = x^3
+ggplot(data.frame(x = c(-2,2)), aes(x = x)) +
+  geom_function(fun = function(x){x^2},aes(color="x^2"),linewidth=1) +
+  geom_function(fun = function(x){x^3},aes(color="x^3"),linewidth=1) +
+  theme_bw(base_size=13) +
+  labs(x = "x", y = "y", title = TeX("Plot of the functions $f(x) = x^2$ and $g(x) = x^3$")) + 
+  scale_color_manual(values = c("x^2" = "steelblue", "x^3" = "purple"),
+                     labels = c(TeX("$x^2$"), TeX("$x^3$")))
+
+
+```
 
 ## Matrices and Solving Linear Systems
 
