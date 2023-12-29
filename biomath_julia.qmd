@@ -161,6 +161,18 @@ plot!(g,-2.0,2.0, label=L"$g(x)=x^3$")
 plot([f, g],-2.0,2.0, lw=2, lc=["steelblue" "purple"],label=[L"$f(x)=x^2$" L"$g(x)=x^3$"])
 ```
 
+
+```{julia}
+#| label: fig-plot_4
+#| fig-cap: "Plots of $f(x) = x^2$ and $g(x)=x^3$."
+
+p_1 = plot(f,-2.0,2.0, lw=2, lc="steelblue", title=L"$f(x)=x^2$")
+p_2 = plot(g,-2.0,2.0, lw=2, lc="purple", title=L"$g(x)=x^3$")
+
+plot(p_1,p_2, layout=(1,2), legend=false)
+```
+
+
 ## Matrices and Solving Linear Systems
 
 

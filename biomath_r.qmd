@@ -80,6 +80,7 @@ library(rootSolve)
 library(ReacTran)
 library(phaseR)
 library(latex2exp)
+library(patchwork)
 ```
 
 
@@ -129,6 +130,27 @@ ggplot(data.frame(x = c(-2,2)), aes(x = x)) +
 
 
 ```
+
+
+
+```{r}
+#| label: fig-function_plot_4
+#| fig-cap: "Plots of the functions $f(x) = x^2$ and $g(x) = x^3$."
+
+# plot the functions f(x) = x^2 and g(x) = x^3
+p_1 <- ggplot(data.frame(x = c(-2,2)), aes(x = x)) +
+  geom_function(fun = function(x){x^2},color="steelblue",linewidth=1) +
+  theme_bw(base_size=13) +
+  labs(x = "x", y = "y", title = TeX("Plot of the function $f(x) = x^2$"))
+
+p_2 <- ggplot(data.frame(x = c(-2,2)), aes(x = x)) +
+  geom_function(fun = function(x){x^3},color="purple",linewidth=1) +
+  theme_bw(base_size=13) +
+  labs(x = "x", y = "y", title = TeX("Plot of the function $g(x) = x^3$"))
+
+p_1 + p_2
+```
+
 
 ## Matrices and Solving Linear Systems
 
