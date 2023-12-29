@@ -148,6 +148,36 @@ plt.grid(True)
 plt.show()
 ```
 
+
+```{python}
+#| label: fig-plot_3
+#| fig-cap: "Plot of $f(x)=x^2$ and $g(x)=x^3$."
+
+
+# Create subplots
+fig, (ax1, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(8, 5))
+
+# Plot y = x^2
+ax1.plot(x, f(x), color='steelblue', linewidth=2)
+ax1.set_title(r'$f(x) = x^2$')
+ax1.set_xlabel(r'$x$')
+ax1.set_ylabel(r'$y$')
+ax1.grid(True)
+
+# Plot y = x^3
+ax2.plot(x, g(x), color='purple', linewidth=2)
+ax2.set_title(r'$f(x) = x^3$')
+ax2.set_xlabel(r'$x$')
+ax2.set_ylabel(r'$y$')
+ax2.grid(True)
+
+# Adjust layout to prevent overlap
+plt.tight_layout()
+
+# Show the subplots
+plt.show()
+```
+
 ## Matrices and Solving Linear Systems
 
 
