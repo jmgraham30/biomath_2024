@@ -129,7 +129,37 @@ Some of the packages most relevant for solving problems in biomathematics includ
 
 ## Plotting 
 
+```{julia}
+using Plots, LaTeXStrings
+```
 
+
+```{julia}
+#| label: fig-plot_1
+#| fig-cap: "Plot of $f(x)=x^2$"
+
+
+f(x) = x^2
+plot(f,-2.0,2.0, label=L"$f(x)=x^2$")
+```
+
+
+```{julia}
+#| label: fig-plot_2
+#| fig-cap: "Add plot of $g(x) = x^3$ to plot of $f(x)=x^2$"
+
+
+g(x) = x^3
+plot!(g,-2.0,2.0, label=L"$g(x)=x^3$")
+```
+
+
+```{julia}
+#| label: fig-plot_3
+#| fig-cap: "Plots of $f(x) = x^2$ and $g(x)=x^3$ on same axes with some customizations."
+
+plot([f, g],-2.0,2.0, lw=2, lc=["steelblue" "purple"],label=[L"$f(x)=x^2$" L"$g(x)=x^3$"])
+```
 
 ## Matrices and Solving Linear Systems
 

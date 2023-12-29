@@ -305,7 +305,7 @@
     "href": "biomath_julia.html#plotting",
     "title": "Julia for Biomathematics",
     "section": "Plotting",
-    "text": "Plotting"
+    "text": "Plotting\n\nusing Plots, LaTeXStrings\n\n\nf(x) = x^2\nplot(f,-2.0,2.0, label=L\"$f(x)=x^2$\")\n\n\n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 1: Plot of \\(f(x)=x^2\\)\n\n\n\n\ng(x) = x^3\nplot!(g,-2.0,2.0, label=L\"$g(x)=x^3$\")\n\n\n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: Add plot of \\(g(x) = x^3\\) to plot of \\(f(x)=x^2\\)\n\n\n\n\nplot([f, g],-2.0,2.0, lw=2, lc=[\"steelblue\" \"purple\"],label=[L\"$f(x)=x^2$\" L\"$g(x)=x^3$\"])\n\n\n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n  \n    \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 3: Plots of \\(f(x) = x^2\\) and \\(g(x)=x^3\\) on same axes with some customizations."
   },
   {
     "objectID": "biomath_julia.html#matrices-and-solving-linear-systems",
