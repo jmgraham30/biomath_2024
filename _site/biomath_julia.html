@@ -253,7 +253,7 @@ div.csl-indent {
 <p>As in R, most of the algorithms and methods we will want to use in solving problems in biomathematics are implemented as functions in Julia. Base Julia contains a number of functions including many that are useful for scientific computing. For example, base Julia contains a function <code>sin</code> that implements the mathematical function <span class="math inline">\(\sin(x)\)</span>. It is called as follows:</p>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sin</span>(<span class="cn">pi</span><span class="op">/</span><span class="fl">4.0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>0.7071067811865475</code></pre>
 </div>
 </div>
@@ -308,6 +308,13 @@ div.csl-indent {
   [91a5bcdd] Plots v1.39.0
   [0c5d862f] Symbolics v5.13.0
 Info Packages marked with ⌅ have new versions available but compatibility constraints restrict them from upgrading. To see why use `status --outdated`</code></pre>
+</div>
+</div>
+<p>Note that the Julia version we are using here is</p>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cn">VERSION</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>v"1.9.4"</code></pre>
 </div>
 </div>
 <p>The nice thing about working with Julia environments is that we can easily share the environment with others. The <code>Project.toml</code> and <code>Manifest.toml</code> files contain all the information needed to recreate the environment. If you download the project folder for <code>biomath_2024</code> from the <a href="https://github.com/jmgraham30/biomath_2024/tree/main">GitHub repository</a>, then all you have to do is:</p>
