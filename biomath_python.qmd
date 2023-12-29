@@ -86,6 +86,13 @@ sin(pi/4)
 ```
 
 
+Note that the Python version we are using here is
+
+```{python}
+import sys
+print("Python version:", sys.version)
+```
+
 ## Plotting 
 
 
