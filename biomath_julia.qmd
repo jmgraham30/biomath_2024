@@ -223,6 +223,11 @@ Here's the solution to the linear system:
 my_matrix \ b_vect
 ```
 
+To learn more, check out
+
+*  Basic Linear Algebra in Julia YouTube video, [watch video on YouTube](https://youtu.be/IFkQ0aB6eHs?si=0Ct_A75LuQzl892o).
+
+{{< video https://youtu.be/IFkQ0aB6eHs?si=0Ct_A75LuQzl892o width="800" height="500" >}}
 
 ## Root Finding
 

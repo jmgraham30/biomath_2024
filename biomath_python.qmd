@@ -235,6 +235,13 @@ x_vect = linalg.solve(my_matrix, b_vect)
 print(x_vect)
 ```
 
+To learn more, check out
+
+*  Linear Algebra in Python with SciPy and NumPy YouTube video, [watch video on YouTube](https://youtu.be/BNa2s6OtWls?si=GCv9TlvuX2-FbeUu).
+
+{{< video https://youtu.be/BNa2s6OtWls?si=GCv9TlvuX2-FbeUu width="800" height="500" >}}
+
+
 ## Root Finding
 
 
