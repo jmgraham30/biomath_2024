@@ -86,13 +86,6 @@ sin(pi/4)
 ```
 
 
-Note that the Python version we are using here is
-
-```{python}
-import sys
-print("Python version:", sys.version)
-```
-
 ## Plotting 
 
 ```{python}
@@ -276,5 +269,16 @@ To learn more, check out
 ::: {#refs}
 :::
 
+:::{.callout-tip collapse="true"}
+## Expand for Session Info
+```{python}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+import sys
+print("Python version:", sys.version)
+print('\n'.join(f'{m.__name__}=={m.__version__}' for m in globals().values() if getattr(m, '__version__', None)))
+```
+:::
 
 [![](http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png?raw=1){fig-align="left" width=15%}](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)

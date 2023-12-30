@@ -102,12 +102,6 @@ import Pkg
 Pkg.status()
 ```
 
-Note that the Julia version we are using here is
-
-```{julia}
-VERSION
-```
-
 
 The nice thing about working with Julia environments is that we can easily share the environment with others. The `Project.toml` and `Manifest.toml` files contain all the information needed to recreate the environment. If you download the project folder for `biomath_2024` from the [GitHub repository](https://github.com/jmgraham30/biomath_2024/tree/main), then all you have to do is:
 
@@ -273,6 +267,26 @@ To learn more, check out
 ## References
 
 ::: {#refs}
+:::
+
+:::{.callout-tip collapse="true"}
+## Expand for Session Info
+```{julia}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+VERSION
+```
+
+```{julia}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+# import Pkg.jl package
+import Pkg
+# list packages installed in environment
+Pkg.status()
+```
 :::
 
 
