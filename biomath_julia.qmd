@@ -180,6 +180,48 @@ plot(p_1,p_2, layout=(1,2), legend=false)
 ## Matrices and Linear Systems
 
 
+```{julia}
+using LinearAlgebra
+```
+
+Here's a vector:
+
+```{julia}
+my_vect = [1.0,-1.0,1.0]
+```
+
+Here's a matrix:
+
+```{julia}
+my_matrix = [1.0 0.0 -1.0;
+             3.0 1.0 2.0; 
+             -1.0 1.0 2.0]
+```
+
+Here's the matrix-vector product:
+
+```{julia}
+b_vect = my_matrix * my_vect
+b_vect
+```
+
+Here's the determinant of the matrix:
+
+```{julia}
+det(my_matrix)
+```
+
+Here are the eigenvalues and eigenvectors of the matrix:
+
+```{julia}
+eigen(my_matrix)
+```
+
+Here's the solution to the linear system:
+
+```{julia}
+my_matrix \ b_vect
+```
 
 
 ## Root Finding

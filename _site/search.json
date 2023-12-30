@@ -529,7 +529,7 @@
     "href": "biomath_julia.html#matrices-and-linear-systems",
     "title": "Julia for Biomathematics",
     "section": "Matrices and Linear Systems",
-    "text": "Matrices and Linear Systems"
+    "text": "Matrices and Linear Systems\n\nusing LinearAlgebra\n\nHere’s a vector:\n\nmy_vect = [1.0,-1.0,1.0]\n\n3-element Vector{Float64}:\n  1.0\n -1.0\n  1.0\n\n\nHere’s a matrix:\n\nmy_matrix = [1.0 0.0 -1.0;\n             3.0 1.0 2.0; \n             -1.0 1.0 2.0]\n\n3×3 Matrix{Float64}:\n  1.0  0.0  -1.0\n  3.0  1.0   2.0\n -1.0  1.0   2.0\n\n\nHere’s the matrix-vector product:\n\nb_vect = my_matrix * my_vect\nb_vect\n\n3-element Vector{Float64}:\n 0.0\n 4.0\n 0.0\n\n\nHere’s the determinant of the matrix:\n\ndet(my_matrix)\n\n-3.9999999999999996\n\n\nHere are the eigenvalues and eigenvectors of the matrix:\n\neigen(my_matrix)\n\nEigen{Float64, Float64, Matrix{Float64}, Vector{Float64}}\nvalues:\n3-element Vector{Float64}:\n -0.7320508075688776\n  2.0\n  2.732050807568877\nvectors:\n3×3 Matrix{Float64}:\n  0.236174  -0.57735  -0.495572\n -0.881412  -0.57735   0.132788\n  0.409065   0.57735   0.858356\n\n\nHere’s the solution to the linear system:\n\nmy_matrix \\ b_vect\n\n3-element Vector{Float64}:\n  1.0\n -1.0000000000000004\n  1.0000000000000002"
   },
   {
     "objectID": "biomath_python.html#matrices-and-linear-systems",
