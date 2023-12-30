@@ -184,7 +184,7 @@ plt.show()
 {{< video https://youtu.be/UO98lJQ3QGI?si=F_sNT94QGm9uNBOi width="800" height="500" >}}
 
 
-## Matrices and Solving Linear Systems
+## Matrices and Linear Systems
 
 
 

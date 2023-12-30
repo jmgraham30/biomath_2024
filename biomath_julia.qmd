@@ -177,7 +177,7 @@ plot(p_1,p_2, layout=(1,2), legend=false)
   
 {{< video https://youtu.be/yZRw1uP41zI?si=7uwR65DS1_5zaPkM width="800" height="500" >}}
 
-## Matrices and Solving Linear Systems
+## Matrices and Linear Systems
 
 
 
