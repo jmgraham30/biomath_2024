@@ -179,6 +179,9 @@ plot(p_1,p_2, layout=(1,2), legend=false)
 
 ## Matrices and Linear Systems
 
+Some methods for linear algebra in Julia are provided by the [`LinearAlgebra.jl`](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/) package[^2]. The `LinearAlgebra.jl` package is part of the Julia [standard library](https://github.com/JuliaLang/julia/tree/master/stdlib) so it doesn't need to be installed but must be imported. We can import the package as follows:
+
+[^2]: Another package that provides an interesting approach to solving linear systems in Julia is [`LinearSolve.jl`](https://docs.sciml.ai/LinearSolve/stable/).
 
 ```{julia}
 using LinearAlgebra
