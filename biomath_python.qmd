@@ -237,9 +237,9 @@ To learn more, check out
 
 ## Root Finding
 
-Root finding is the process of finding one or more values $x$ such that $f(x) = 0$[^3]. A common application of root finding in biomathematics is to find the steady states of a dynamical system. 
+Root finding is the process of finding one or more values $x$ such that $f(x) = 0$[^1]. A common application of root finding in biomathematics is to find the steady states of a dynamical system. 
 
-[^3]: Note that we allow for the function $f$ to be vector-valued, in which case we are looking for solutions to a system of nonlinear equations.
+[^1]: Note that we allow for the function $f$ to be vector-valued, in which case we are looking for solutions to a system of nonlinear equations.
 
 The `scipy.optimize` module contains functions for root finding in Python. For example, following code uses the `scipy.optimize.root_scalar` function to find the roots of the function $f(x) = x^2 - 1$ on $[-2,2]$.
 
@@ -345,6 +345,9 @@ plt.show()
 #| code-summary: "Show the code"
 
 import sys
+import numpy as np
+import scipy as sp
+import matplotlib as mpl
 print("Python version:", sys.version)
 print('\n'.join(f'{m.__name__}=={m.__version__}' for m in globals().values() if getattr(m, '__version__', None)))
 ```

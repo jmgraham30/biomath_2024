@@ -424,7 +424,7 @@
     "href": "biomath_python.html#references",
     "title": "Python for Biomathematics",
     "section": "References",
-    "text": "References\n\n\nVan Rossum, Guido, and Fred L. Drake. 2009. Python 3 Reference Manual. Scotts Valley, CA: CreateSpace.\n\n\n\n\n\n\n\n\nExpand for Session Info\n\n\n\n\n\n\n\nShow the code\nimport sys\nprint(\"Python version:\", sys.version)\nprint('\\n'.join(f'{m.__name__}=={m.__version__}' for m in globals().values() if getattr(m, '__version__', None)))\n\n\nPython version: 3.8.18 | packaged by conda-forge | (default, Oct 10 2023, 15:46:56) \n[Clang 16.0.6 ]\nnumpy==1.24.4"
+    "text": "References\n\n\nVan Rossum, Guido, and Fred L. Drake. 2009. Python 3 Reference Manual. Scotts Valley, CA: CreateSpace.\n\n\n\n\n\n\n\n\nExpand for Session Info\n\n\n\n\n\n\n\nShow the code\nimport sys\nimport numpy as np\nimport scipy as sp\nimport matplotlib as mpl\nprint(\"Python version:\", sys.version)\nprint('\\n'.join(f'{m.__name__}=={m.__version__}' for m in globals().values() if getattr(m, '__version__', None)))\n\n\nPython version: 3.8.18 | packaged by conda-forge | (default, Oct 10 2023, 15:46:56) \n[Clang 16.0.6 ]\nnumpy==1.24.4\nscipy==1.10.1\nmatplotlib==3.7.2"
   },
   {
     "objectID": "biomath_julia.html#references",
