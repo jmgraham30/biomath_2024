@@ -241,6 +241,73 @@ Root finding is the process of finding one or more values $x$ such that $f(x) = 
 
 [^3]: Note that we allow for the function $f$ to be vector-valued, in which case we are looking for solutions to a system of nonlinear equations.
 
+The `scipy.optimize` module contains functions for root finding in Python. For example, following code uses the `scipy.optimize.root_scalar` function to find the roots of the function $f(x) = x^2 - 1$ on $[-2,2]$.
+
+We start by plotting the function to get an idea of where the roots are located.
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+def f(x):
+    return x**2 - 1
+  
+x = np.linspace(-2, 2, 101)
+
+plt.figure(figsize=(8, 6))
+
+plt.plot(x, f(x), color='steelblue', linewidth=2)
+
+plt.xlabel(r'$x$',fontsize=13)
+
+plt.ylabel(r'$y$',fontsize=13)
+
+plt.title(r'$f(x) = x^2 - 1$',fontsize=13)
+
+plt.grid(True)
+
+plt.show()
+```
+
+Now, let's compute the roots:
+
+```{python}
+from scipy import optimize
+
+def f(x):
+    return x**2 - 1
+  
+root_1 = optimize.root_scalar(f, bracket=[-2, 0])
+root_2 = optimize.root_scalar(f, bracket=[0, 2])
+
+print(root_1.root)
+print(root_2.root)
+
+
+```
+
+Finally, let's add the roots to the plot:
+
+```{python}
+plt.figure(figsize=(8, 6))
+
+plt.plot(x, f(x), color='steelblue', linewidth=2)
+
+plt.plot([root_1.root, root_2.root], [0, 0], 'o', color='purple', markersize=10)
+
+plt.xlabel(r'$x$',fontsize=13)
+
+plt.ylabel(r'$y$',fontsize=13)
+
+plt.title(r'$f(x) = x^2 - 1$',fontsize=13)
+
+plt.grid(True)
+
+plt.show()
+```
+
+
+
 ## Optimization
 
 
