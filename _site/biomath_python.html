@@ -273,7 +273,7 @@ div.csl-indent {
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> sin, pi</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>sin(pi<span class="op">/</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="217">
+<div class="cell-output cell-output-display" data-execution_count="233">
 <pre><code>0.7071067811865475</code></pre>
 </div>
 </div>
@@ -446,7 +446,7 @@ div.csl-indent {
 <section id="root-finding" class="level2">
 <h2 class="anchored" data-anchor-id="root-finding">Root Finding</h2>
 <p>Root finding is the process of finding one or more values <span class="math inline">\(x\)</span> such that <span class="math inline">\(f(x) = 0\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. A common application of root finding in biomathematics is to find the steady states of a dynamical system.</p>
-<p>The <code>scipy.optimize</code> module contains functions for root finding in Python. For example, following code uses the <code>scipy.optimize.root_scalar</code> function to find the roots of the function <span class="math inline">\(f(x) = x^2 - 1\)</span> on <span class="math inline">\([-2,2]\)</span>.</p>
+<p>The <a href="https://docs.scipy.org/doc/scipy/reference/optimize.html"><code>scipy.optimize</code></a> module contains functions for root finding in Python. For example, following code uses the <code>scipy.optimize.root_scalar</code> function to find the roots of the function <span class="math inline">\(f(x) = x^2 - 1\)</span> on <span class="math inline">\([-2,2]\)</span>.</p>
 <p>We start by plotting the function to get an idea of where the roots are located.</p>
 <div class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>

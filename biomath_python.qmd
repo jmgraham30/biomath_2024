@@ -241,7 +241,7 @@ Root finding is the process of finding one or more values $x$ such that $f(x) = 
 
 [^1]: Note that we allow for the function $f$ to be vector-valued, in which case we are looking for solutions to a system of nonlinear equations.
 
-The `scipy.optimize` module contains functions for root finding in Python. For example, following code uses the `scipy.optimize.root_scalar` function to find the roots of the function $f(x) = x^2 - 1$ on $[-2,2]$.
+The [`scipy.optimize`](https://docs.scipy.org/doc/scipy/reference/optimize.html) module contains functions for root finding in Python. For example, following code uses the `scipy.optimize.root_scalar` function to find the roots of the function $f(x) = x^2 - 1$ on $[-2,2]$.
 
 We start by plotting the function to get an idea of where the roots are located.
 
