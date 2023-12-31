@@ -306,6 +306,17 @@ plt.grid(True)
 plt.show()
 ```
 
+Here's an example of using the `scipy.optimize.root` function to find a of root of the system of equations $f(x,y) = (x^2 + y^2 - 1, x^2 - y^2 + 0.5)$:
+
+```{python}
+
+def f(x):
+    return [x[0]**2 + x[1]**2 - 1, x[0]**2 - x[1]**2 + 0.5]
+  
+f_roots = optimize.root(f, [1.0, 1.0])
+
+print(f_roots.x)
+```
 
 
 ## Optimization
