@@ -300,35 +300,39 @@ A set of guidelines for the final project is posted on the course learning manag
 ### Weekly Schedule
 
 
-- Week 1:  
+- Week 1 (01/22-01/26):  Introduction to Biomathematics
  
- - Week 2: 
+ - Week 2 (01/22-02/02): Dimensional Analysis and Scaling
  
- - Week 3:  
+ - Week 3 (02/05-02/09):  One-Dimensional Dynamics and Introduction to Population Dynamics
  
- - Week 4: 
+ - Week 4 (02/12-02/16): Bifurcation Theory and Compartment Models
  
- - Week 5: 
+ - Week 5 (02/19-02/23): SIR Type Models and The Chemostat Bio-reactor
  
- - Week 6: 
+ - Week 6 (02/26-03/01): Functional Forms
  
- - Week 7: 
+ - Week 7 (03/04-03/08): Exam 1
  
- - Week 8: 
+ - Week 8 (03/11-03/15): Spring Break
  
- - Week 9: 
+ - Week 9 (03/18-03/22): Two-Dimensional Dynamics and Phase Plane Analysis
  
- - Week 10: 
+ - Week 10 (03/25-03/29): Mass Action and Reaction Kinetics/ Easter Break; Model Report Draft 1 Due
  
- - Week 11: 
+ - Week 11 (04/01-04/05): Easter Break/ Mass Action and Reaction Kinetics
  
- - Week 12: 
+ - Week 12 (04/08-04/12): Mathematical Physiology
  
- - Week 13: 
+ - Week 13 (04/15-04/19): Perturbation Methods
  
- - Week 14: 
+ - Week 14 (04/22-04/26): Additional Topics
  
- - Week 15: 
+ - Week 15 (04/29-05/03): Exam 2; Model Report Final Draft Due
+ 
+ - Week 16 (05/06-05/10): Dead Week
+ 
+ - Week 17 (05/13-05/17): Final Exams; Final Project Due
 
 ### Important Dates
 
@@ -341,32 +345,32 @@ events <- c("Classes begin",
             "Last day for 100% tution refund",
             "Last day to drop with no grade",
             "Exam 1",
-            "Semester Midpoint",
             "Last day of class before spring break",
             "Classes resume after spring break",
-            "Last day to withdraw with W grade",
+            "Semester Midpoint",
             "Last day of class before Easter break",
             "Classes resume after Easter",
+            "Last day to withdraw with W grade",
             "Exam 2", 
             "Last day of class",
             "Final exams begin",
             "Final exams end")
 
 event_date <- c("Wednesday, January 24",
-                " , February ",
-                " , February ",
-                " , February ",
-                " , March ",
-                " , March ",
-                " , March ",
-                " , March ",
-                " , April ",
-                " , April ",
-                " , April ",
-                " , May ",
-                " , May ",
-                " , May ",
-                " , May ")
+                "Tuesday, January 30",
+                "Friday, February 2",
+                "Friday, February 23",
+                "Wednesday, March 6",
+                "Friday, March 8",
+                "Monday, March 18",
+                "Wednesday, March 20",
+                "Wednesday, March 27",
+                "Tuesday, April 2",
+                "Friday, April 12",
+                "Wednesday, May 1",
+                "Friday, May 10",
+                "Monday, May 13",
+                "Friday, May 17")
 
 important_dates_df <- tibble::tibble("Event"=events,"Date"=event_date)
 ```
