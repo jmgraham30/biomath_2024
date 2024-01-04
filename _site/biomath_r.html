@@ -480,6 +480,54 @@ $vectors
 </section>
 <section id="optimization" class="level2">
 <h2 class="anchored" data-anchor-id="optimization">Optimization</h2>
+<p>Optimization is the process of finding the extrema, that is, maximum or minimum value of a function. A common application of optimization in biomathematics is to estimate parameters for a mathematical model to fit data. One of the major challenges in such optimization problems is the potential for multiple local extrema. Here, introduce the use of basic optimization methods implemented in R. Additional details, examples, and applications will be covered in course lectures.</p>
+<p>Base R contains the <code>optim</code> function for optimization, specifically minimation. However, we will utilize the extension package <a href="https://cran.r-project.org/web/packages/optimx/optimx.pdf"><code>optimx</code></a> because it unifies or streamlines the use of several optimization methods. Here’s an example of using the <code>optimr</code> function to find the minimum of the function <span class="math inline">\(f(x) = x^2 - 1\)</span> on the interval <span class="math inline">\([-2,2]\)</span>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load the optimx package</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(optimx)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="co"># define the function</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x){x<span class="sc">^</span><span class="dv">2</span> <span class="sc">-</span> <span class="dv">1</span>}</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="co"># find the minimum</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>f_min <span class="ot">&lt;-</span> <span class="fu">optimr</span>(<span class="sc">-</span><span class="dv">1</span>, f, <span class="at">method=</span><span class="st">"L-BFGS-B"</span>,<span class="at">lower =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">upper =</span> <span class="dv">2</span>)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the function</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="dv">2</span>)), <span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun =</span> <span class="cf">function</span>(x){x<span class="sc">^</span><span class="dv">2</span> <span class="sc">-</span> <span class="dv">1</span>},<span class="at">color=</span><span class="st">"steelblue"</span>,<span class="at">linewidth=</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span><span class="cn">NULL</span>,<span class="fu">aes</span>(<span class="at">x =</span> f_min<span class="sc">$</span>par, <span class="at">y =</span> f_min<span class="sc">$</span>value), <span class="at">color =</span> <span class="st">"purple"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size=</span><span class="dv">13</span>) <span class="sc">+</span></span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"x"</span>, <span class="at">y =</span> <span class="st">"y"</span>, </span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="fu">TeX</span>(<span class="st">"Minimum of the function $f(x) = x^2 - 1$ on the interval $[-2,2]$."</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-optimization_1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="biomath_r_files/figure-html/fig-optimization_1-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;6: Minimum of the function <span class="math inline">\(f(x) = x^2 - 1\)</span> on the interval <span class="math inline">\([-2,2]\)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Here’s an example of using the <code>optimr</code> function to find the minimum of the function <span class="math inline">\(f(x,y) = x^2 + y^2 - 1\)</span>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># define the function</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(x[<span class="dv">1</span>]<span class="sc">^</span><span class="dv">2</span><span class="sc">+</span> x[<span class="dv">2</span>]<span class="sc">^</span><span class="dv">2</span> <span class="sc">-</span><span class="dv">1</span>)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># find the minimum</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>f_min <span class="ot">&lt;-</span> <span class="fu">optimr</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>), f, <span class="at">method=</span><span class="st">"L-BFGS-B"</span>)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="co"># return minimum</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>f_min<span class="sc">$</span>par</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7.049916e-15 7.049916e-15
+attr(,"status")
+[1] " " " "</code></pre>
+</div>
+</div>
 </section>
 <section id="differential-equations" class="level2">
 <h2 class="anchored" data-anchor-id="differential-equations">Differential Equations</h2>
@@ -548,30 +596,31 @@ Expand for Session Info
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       America/New_York
- date     2023-12-31
+ date     2024-01-04
  pandoc   3.1.11 @ /opt/homebrew/bin/ (via rmarkdown)
  quarto   1.3.450 @ /usr/local/bin/quarto
 
 ─ Packages ───────────────────────────────────────────────────────────────────
- package     * version date (UTC) lib source
- deSolve     * 1.40    2023-11-27 [1] CRAN (R 4.3.1)
- dplyr       * 1.1.4   2023-11-17 [1] CRAN (R 4.3.1)
- forcats     * 1.0.0   2023-01-29 [1] CRAN (R 4.3.0)
- ggplot2     * 3.4.4   2023-10-12 [1] CRAN (R 4.3.1)
- latex2exp   * 0.9.6   2022-11-28 [1] CRAN (R 4.3.0)
- lubridate   * 1.9.3   2023-09-27 [1] CRAN (R 4.3.1)
- patchwork   * 1.1.3   2023-08-14 [1] CRAN (R 4.3.0)
- phaseR      * 2.2.1   2022-09-02 [1] CRAN (R 4.3.0)
- purrr       * 1.0.2   2023-08-10 [1] CRAN (R 4.3.0)
- ReacTran    * 1.4.3.1 2017-08-15 [1] CRAN (R 4.3.0)
- readr       * 2.1.4   2023-02-10 [1] CRAN (R 4.3.0)
- rootSolve   * 1.8.2.4 2023-09-21 [1] CRAN (R 4.3.1)
- sessioninfo * 1.2.2   2021-12-06 [1] CRAN (R 4.3.0)
- shape       * 1.4.6   2021-05-19 [1] CRAN (R 4.3.0)
- stringr     * 1.5.1   2023-11-14 [1] CRAN (R 4.3.1)
- tibble      * 3.2.1   2023-03-20 [1] CRAN (R 4.3.0)
- tidyr       * 1.3.0   2023-01-24 [1] CRAN (R 4.3.0)
- tidyverse   * 2.0.0   2023-02-22 [1] CRAN (R 4.3.0)
+ package     * version    date (UTC) lib source
+ deSolve     * 1.40       2023-11-27 [1] CRAN (R 4.3.1)
+ dplyr       * 1.1.4      2023-11-17 [1] CRAN (R 4.3.1)
+ forcats     * 1.0.0      2023-01-29 [1] CRAN (R 4.3.0)
+ ggplot2     * 3.4.4      2023-10-12 [1] CRAN (R 4.3.1)
+ latex2exp   * 0.9.6      2022-11-28 [1] CRAN (R 4.3.0)
+ lubridate   * 1.9.3      2023-09-27 [1] CRAN (R 4.3.1)
+ optimx      * 2023-10.21 2023-10-24 [1] CRAN (R 4.3.1)
+ patchwork   * 1.1.3      2023-08-14 [1] CRAN (R 4.3.0)
+ phaseR      * 2.2.1      2022-09-02 [1] CRAN (R 4.3.0)
+ purrr       * 1.0.2      2023-08-10 [1] CRAN (R 4.3.0)
+ ReacTran    * 1.4.3.1    2017-08-15 [1] CRAN (R 4.3.0)
+ readr       * 2.1.4      2023-02-10 [1] CRAN (R 4.3.0)
+ rootSolve   * 1.8.2.4    2023-09-21 [1] CRAN (R 4.3.1)
+ sessioninfo * 1.2.2      2021-12-06 [1] CRAN (R 4.3.0)
+ shape       * 1.4.6      2021-05-19 [1] CRAN (R 4.3.0)
+ stringr     * 1.5.1      2023-11-14 [1] CRAN (R 4.3.1)
+ tibble      * 3.2.1      2023-03-20 [1] CRAN (R 4.3.0)
+ tidyr       * 1.3.0      2023-01-24 [1] CRAN (R 4.3.0)
+ tidyverse   * 2.0.0      2023-02-22 [1] CRAN (R 4.3.0)
 
  [1] /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library
 

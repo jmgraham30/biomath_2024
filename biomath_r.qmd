@@ -258,7 +258,51 @@ The result is not exactly zero, but it's close enough to zero that we can consid
 
 ## Optimization
 
+Optimization is the process of finding the extrema, that is, maximum or minimum value of a function. A common application of optimization in biomathematics is to estimate parameters for a mathematical model to fit data. One of the major challenges in such optimization problems is the potential for multiple local extrema. Here, introduce the use of basic optimization methods implemented in R. Additional details, examples, and applications will be covered in course lectures. 
 
+Base R contains the `optim` function for optimization, specifically minimation. However, we will utilize the extension package [`optimx`](https://cran.r-project.org/web/packages/optimx/optimx.pdf) because it unifies or streamlines the use of several optimization methods. Here's an example of using the `optimr` function to find the minimum of the function $f(x) = x^2 - 1$ on the interval $[-2,2]$:
+
+```{r}
+#| label: fig-optimization_1
+#| fig-cap: "Minimum of the function $f(x) = x^2 - 1$ on the interval $[-2,2]$."
+
+# load the optimx package
+library(optimx)
+
+# define the function
+f <- function(x){x^2 - 1}
+
+# find the minimum
+f_min <- optimr(-1, f, method="L-BFGS-B",lower = -2, upper = 2)
+
+# plot the function
+
+ggplot(data.frame(x = c(-2,2)), aes(x = x)) +
+  geom_function(fun = function(x){x^2 - 1},color="steelblue",linewidth=1) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +
+  geom_point(data=NULL,aes(x = f_min$par, y = f_min$value), color = "purple", size = 3) +
+  theme_bw(base_size=13) +
+  labs(x = "x", y = "y", 
+       title = TeX("Minimum of the function $f(x) = x^2 - 1$ on the interval $[-2,2]$."))
+```
+
+
+Here's an example of using the `optimr` function to find the minimum of the function $f(x,y) = x^2 + y^2 - 1$:
+
+```{r}
+
+# define the function
+f <- function(x) {
+  return(x[1]^2+ x[2]^2 -1)
+}
+
+# find the minimum
+f_min <- optimr(c(1,1), f, method="L-BFGS-B")
+
+# return minimum
+f_min$par
+
+```
 
 ## Differential Equations
 

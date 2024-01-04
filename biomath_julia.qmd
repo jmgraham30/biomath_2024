@@ -300,6 +300,39 @@ calculate_jacobian(ns)
 
 ## Optimization
 
+Optimization is the process of finding the extrema, that is, maximum or minimum value of a function. A common application of optimization in biomathematics is to estimate parameters for a mathematical model to fit data. One of the major challenges in such optimization problems is the potential for multiple local extrema. Here, introduce the use of basic optimization methods implemented in Julia. Additional details, examples, and applications will be covered in course lectures.
+
+There are a number of Julia packages for optimization. Here, we focus on the use of the [`Optim.jl`](https://julianlsolvers.github.io/Optim.jl/stable/#) package.Here's an example of using the `Optim.jl` package to find the minimum of the function $f(x) = x^2 - 1$ on the interval $[-2,2]$:
+
+```{julia}
+#| label: fig-optimization_1
+#| fig-cap: "Minimum of the function $f(x) = x^2 - 1$ on the interval $[-2,2]$."
+
+using Optim
+
+f(x) = x^2 - 1
+
+result = optimize(f,-2.0,2.0)
+
+x_m = Optim.minimizer(result)
+
+y_m = Optim.minimum(result)
+
+plot(f,-2.0,2.0, lc="steelblue",lw=2, label=L"$f(x)=x^2-1$")
+
+scatter!([x_m],[y_m], color="purple",label="minimum")
+
+```
+
+Here's an example of using the `Optim.jl` to find the minimum of the function $f(x,y) = x^2 + y^2 - 1$:
+
+```{julia}
+f(x) = x[1]^2 + x[2]^2 - 1
+
+result = optimize(f,[-1.0,1.0], LBFGS(); autodiff = :forward)
+
+Optim.minimizer(result)
+```
 
 
 ## Differential Equations
