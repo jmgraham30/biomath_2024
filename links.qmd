@@ -80,6 +80,26 @@ vembedr::embed_youtube(id="Lp3T4DtAyOo?si=BMXNovnJXUZRFn5L",height=450) %>%
   vembedr::use_align("center")
 ```
 
+
+* Introduction to the Binomial Distribution YouTube video, [watch video on YouTube](https://youtu.be/qIzC1-9PwQo?si=T2PrW5JzdtzM_emM).
+
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="qIzC1-9PwQo?si=T2PrW5JzdtzM_emM",height=450) %>%
+  vembedr::use_align("center")
+```
+
+
+* Derivation of the Diffusion Equation YouTube video, [watch video on YouTube](https://youtu.be/a3V0BJLIo_c?si=kEP2nwxyzKTZraDN).
+
+```{r}
+#| echo: false
+
+vembedr::embed_youtube(id="a3V0BJLIo_c?si=kEP2nwxyzKTZraDN",height=450) %>%
+  vembedr::use_align("center")
+```
+
 ## R Resources
 
 ### Websites
