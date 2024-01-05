@@ -355,6 +355,13 @@ Optim.minimizer(result)
 ## Random Variables
 
 
+While MATH 463 primarily focuses on deterministic models, stochastic models are also important in biomathematics, see for example [@allenIntroductionStochasticProcesses2011]. We won't cover stochastic models in the course but will have a few occasions where it will be useful to add some stochasticity to a deterministic model. Many different probability distributions are available in Julia through the [`Distributions.jl`](https://juliastats.org/Distributions.jl/stable/) package.  In this section, we introduce some functions associated with distributions and random sampling. Additional details, examples, and applications will be covered in course lectures.
+
+
+
+
+
+For more on probability and statistics using Julia, we recommend [Statistics with Julia](https://statisticswithjulia.org/) and [Introduction to Probability for Data Science](https://probability4datascience.com/).
 
 ## Symbolic Math
 
