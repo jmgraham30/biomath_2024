@@ -98,3 +98,4 @@ generate thoughts that might not otherwise have occurred.** - Oster and Wilson (
 <iframe width="1500" height="600" src="https://www.math.uh.edu/~canic/stent_files/movie_gallery_bending.html" title="Quarto Documentation"></iframe>
 ```
 
+[Source: https://www.math.uh.edu/~canic/](https://www.math.uh.edu/~canic/)
