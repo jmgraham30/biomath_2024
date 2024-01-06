@@ -231,6 +231,25 @@ $$
 
 
 
+## Course Themes
+
+- General principles of mathematical modeling
+
+    - Dimensional analysis and scaling
+    
+    - Compartment models
+
+- Getting information from models
+
+    - Equilibrium solutions, steady states and stability, and bifurcations 
+    
+    - Simulation
+
+- Derivation of basic models
+
+
+- Presentation of results
+
 
 ## Getting Started with R
 
