@@ -302,7 +302,7 @@ A set of guidelines for the final project is posted on the course learning manag
 
 - Week 1 (01/22-01/26):  Introduction to Biomathematics
  
- - Week 2 (01/22-02/02): Dimensional Analysis and Scaling
+ - Week 2 (01/29-02/02): Dimensional Analysis and Scaling
  
  - Week 3 (02/05-02/09):  One-Dimensional Dynamics and Introduction to Population Dynamics
  
