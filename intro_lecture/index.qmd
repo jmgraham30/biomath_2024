@@ -43,9 +43,38 @@ Slides at: [https://biomath2024.netlify.app/intro_lecture](https://biomath2024.n
 Course syllabus at: [https://biomath2024.netlify.app/](https://biomath2024.netlify.app/)
 
 
-## Overview
+## Goals
+
+- Introduce the field of biomathematics
+
+- Provide context for the course content
+
+- Gain overview of the course
+
+## Darwin's Quote
+
+> Every new body of discovery is mathematical in form, because there is no other guidance we can have. Mathematics seems to endow one with something like a new sense. - Charles Darwin
+
+## Oster and Wilson
+
+> Like most biologists concerned with theory, we appreciate
+that models do not themselves provide definitive answers to
+biological questions. Mathematics is, after all, little more than
+scaffolding upon which all manner of facts about the real
+world can be arranged, hopefully into a more esthetic and
+useful structure. Mathematical theory is the science of all
+conceivable worlds. **The most important role models play in science is to help us to perceive a problem more clearly and to
+generate thoughts that might not otherwise have occurred.** - Oster and Wilson (1978)
 
 
+## Population Dynamics
+
+[![ ](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61X3MxoGMyL._SY522_.jpg)](https://link-springer-com.ezp.scranton.edu/book/10.1007/978-0-85729-115-8)
 
 
+## Fibonacci's Rabbits
 
+
+## Spread of Disease
+
+[![](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41Ipv1aPMEL._SY445_SX342_.jpg)](https://link-springer-com.ezp.scranton.edu/book/10.1007/978-1-4614-1686-9)

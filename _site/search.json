@@ -551,5 +551,47 @@
     "title": "MATH 463 Topics in Biomathematics",
     "section": "",
     "text": "Week 1 (01/22-01/26): Introduction to Biomathematics\nWeek 2 (01/22-02/02): Dimensional Analysis and Scaling\nWeek 3 (02/05-02/09): One-Dimensional Dynamics and Introduction to Population Dynamics\nWeek 4 (02/12-02/16): Bifurcation Theory and Compartment Models\nWeek 5 (02/19-02/23): SIR Type Models and The Chemostat Bio-reactor\nWeek 6 (02/26-03/01): Functional Forms\nWeek 7 (03/04-03/08): Exam 1\nWeek 8 (03/11-03/15): Spring Break\nWeek 9 (03/18-03/22): Two-Dimensional Dynamics and Phase Plane Analysis\nWeek 10 (03/25-03/29): Mass Action and Reaction Kinetics/ Easter Break; Model Report Draft 1 Due\nWeek 11 (04/01-04/05): Easter Break/ Mass Action and Reaction Kinetics\nWeek 12 (04/08-04/12): Mathematical Physiology\nWeek 13 (04/15-04/19): Perturbation Methods\nWeek 14 (04/22-04/26): Additional Topics\nWeek 15 (04/29-05/03): Exam 2; Model Report Final Draft Due\nWeek 16 (05/06-05/10): Dead Week\nWeek 17 (05/13-05/17): Final Exams; Final Project Due\n\n\n\n\n\n\n\n\nTable 3: Important Dates\n\n\nEvent\nDate\n\n\n\n\nClasses begin\nWednesday, January 24\n\n\nLast day to add classes\nTuesday, January 30\n\n\nLast day for 100% tution refund\nFriday, February 2\n\n\nLast day to drop with no grade\nFriday, February 23\n\n\nExam 1\nWednesday, March 6\n\n\nLast day of class before spring break\nFriday, March 8\n\n\nClasses resume after spring break\nMonday, March 18\n\n\nSemester Midpoint\nWednesday, March 20\n\n\nLast day of class before Easter break\nWednesday, March 27\n\n\nClasses resume after Easter\nTuesday, April 2\n\n\nLast day to withdraw with W grade\nFriday, April 12\n\n\nExam 2\nWednesday, May 1\n\n\nLast day of class\nFriday, May 10\n\n\nFinal exams begin\nMonday, May 13\n\n\nFinal exams end\nFriday, May 17"
+  },
+  {
+    "objectID": "intro_lecture/index.html#goals",
+    "href": "intro_lecture/index.html#goals",
+    "title": "MATH 463 Topics in Biomathematics",
+    "section": "Goals",
+    "text": "Goals\n\nIntroduce the field of biomathematics\nProvide context for the course content\nGain overview of the course"
+  },
+  {
+    "objectID": "intro_lecture/index.html#darwins-quote",
+    "href": "intro_lecture/index.html#darwins-quote",
+    "title": "MATH 463 Topics in Biomathematics",
+    "section": "Darwin’s Quote",
+    "text": "Darwin’s Quote\n\nEvery new body of discovery is mathematical in form, because there is no other guidance we can have. Mathematics seems to endow one with something like a new sense. - Charles Darwin"
+  },
+  {
+    "objectID": "intro_lecture/index.html#oster-and-wilson",
+    "href": "intro_lecture/index.html#oster-and-wilson",
+    "title": "MATH 463 Topics in Biomathematics",
+    "section": "Oster and Wilson",
+    "text": "Oster and Wilson\n\nLike most biologists concerned with theory, we appreciate that models do not themselves provide definitive answers to biological questions. Mathematics is, after all, little more than scaffolding upon which all manner of facts about the real world can be arranged, hopefully into a more esthetic and useful structure. Mathematical theory is the science of all conceivable worlds. The most important role models play in science is to help us to perceive a problem more clearly and to generate thoughts that might not otherwise have occurred. - Oster and Wilson (1978)"
+  },
+  {
+    "objectID": "intro_lecture/index.html#population-dynamics",
+    "href": "intro_lecture/index.html#population-dynamics",
+    "title": "MATH 463 Topics in Biomathematics",
+    "section": "Population Dynamics",
+    "text": "Population Dynamics"
+  },
+  {
+    "objectID": "intro_lecture/index.html#fibonaccis-rabbits",
+    "href": "intro_lecture/index.html#fibonaccis-rabbits",
+    "title": "MATH 463 Topics in Biomathematics",
+    "section": "Fibonacci’s Rabbits",
+    "text": "Fibonacci’s Rabbits"
+  },
+  {
+    "objectID": "intro_lecture/index.html#spread-of-disease",
+    "href": "intro_lecture/index.html#spread-of-disease",
+    "title": "MATH 463 Topics in Biomathematics",
+    "section": "Spread of Disease",
+    "text": "Spread of Disease"
   }
 ]
