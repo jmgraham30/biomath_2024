@@ -89,10 +89,10 @@ logistic_growth <- function(x) {
 x_values <- seq(-0.25, 1.5, by = 0.01)
 growth_values <- logistic_growth(x_values)
 
-phase_line_data <- data.frame(x = x_values, f_x = growth_values)
+phase_line_data <- data.frame(x = c(-0.25,1.5))
 
-ggplot(phase_line_data, aes(x = x, y = f_x)) +
-  geom_line(color = "steelblue", size = 1) +
+ggplot(phase_line_data, aes(x = x)) +
+  geom_function(fun=logistic_growth,color = "steelblue", size = 1) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "black") +
   geom_vline(xintercept = 0, linetype = "dashed", color = "black") +
   geom_vline(xintercept = 1, linetype = "dashed", color = "black") +
