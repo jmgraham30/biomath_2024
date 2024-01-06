@@ -78,3 +78,23 @@ generate thoughts that might not otherwise have occurred.** - Oster and Wilson (
 ## Spread of Disease
 
 [![](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41Ipv1aPMEL._SY445_SX342_.jpg)](https://link-springer-com.ezp.scranton.edu/book/10.1007/978-1-4614-1686-9)
+
+
+## Cancer Modeling
+
+
+## Physiology
+
+
+## Neuroscience
+
+
+## Cardiology
+
+
+## Arterial Stent Design
+
+```{=html}
+<iframe width="1500" height="600" src="https://www.math.uh.edu/~canic/stent_files/movie_gallery_bending.html" title="Quarto Documentation"></iframe>
+```
+
