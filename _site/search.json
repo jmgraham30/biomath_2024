@@ -592,7 +592,7 @@
     "href": "intro_lecture/index.html#spread-of-disease",
     "title": "MATH 463 Topics in Biomathematics",
     "section": "Spread of Disease",
-    "text": "Spread of Disease"
+    "text": "Spread of Disease\n\n\n\n\\[\n\\begin{align}\n\\frac{dS}{dt} &= -\\beta SI, \\\\\n\\frac{dI}{dt} &= \\beta SI - \\gamma I, \\\\\n\\frac{dR}{dt} &= \\gamma I.\n\\end{align}\n\\]\n\n\\[\nR_{0} = \\frac{\\beta}{\\gamma}\n\\]"
   },
   {
     "objectID": "intro_lecture/index.html#cancer-modeling",
@@ -649,5 +649,19 @@
     "title": "MATH 463 Topics in Biomathematics",
     "section": "Example in Population Dynamics",
     "text": "Example in Population Dynamics"
+  },
+  {
+    "objectID": "intro_lecture/index.html#epidemiology",
+    "href": "intro_lecture/index.html#epidemiology",
+    "title": "MATH 463 Topics in Biomathematics",
+    "section": "Epidemiology",
+    "text": "Epidemiology"
+  },
+  {
+    "objectID": "intro_lecture/index.html#populations-and-epidemiology",
+    "href": "intro_lecture/index.html#populations-and-epidemiology",
+    "title": "MATH 463 Topics in Biomathematics",
+    "section": "Populations and Epidemiology",
+    "text": "Populations and Epidemiology"
   }
 ]

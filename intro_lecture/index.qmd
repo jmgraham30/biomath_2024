@@ -122,9 +122,36 @@ ggplot(phase_line_data, aes(x = x)) +
 ```
 
 
-## Spread of Disease
+## Populations and Epidemiology
 
 [![](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41Ipv1aPMEL._SY445_SX342_.jpg)](https://link-springer-com.ezp.scranton.edu/book/10.1007/978-1-4614-1686-9)
+
+
+## Spread of Disease
+
+![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/sir.png?raw=true)
+
+:::: {.columns}
+
+::: {.column width="40%"}
+$$
+\begin{align}
+\frac{dS}{dt} &= -\beta SI, \\
+\frac{dI}{dt} &= \beta SI - \gamma I, \\
+\frac{dR}{dt} &= \gamma I. 
+\end{align}
+$$
+:::
+
+::: {.column width="60%"}
+$$
+R_{0} = \frac{\beta}{\gamma}
+$$
+:::
+
+::::
+
+
 
 
 ## Cancer Modeling
