@@ -130,13 +130,21 @@ ggplot(phase_line_data, aes(x = x)) +
 ## Cancer Modeling
 
 
+
+
 ## Physiology
+
+
 
 
 ## Neuroscience
 
 
+
+
 ## Cardiology
+
+
 
 
 ## Arterial Stent Design
