@@ -648,7 +648,7 @@
     "href": "intro_lecture/index.html#example-in-population-dynamics",
     "title": "MATH 463 Topics in Biomathematics",
     "section": "Example in Population Dynamics",
-    "text": "Example in Population Dynamics"
+    "text": "Example in Population Dynamics\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\nlogistic_growth &lt;- function(x) {\n  return(x * (1 - x))\n}\n\nphase_line_data &lt;- data.frame(x = c(-0.25,1.5))\n\nggplot(phase_line_data, aes(x = x)) +\n  geom_function(fun=logistic_growth,color = \"steelblue\", size = 1) +\n  geom_hline(yintercept = 0, linetype = \"dashed\", color = \"black\") +\n  geom_vline(xintercept = 0, linetype = \"dashed\", color = \"black\") +\n  geom_vline(xintercept = 1, linetype = \"dashed\", color = \"black\") +\n  geom_segment(aes(x = 0.9, y = 0, xend = 1, yend = 0), \n               arrow = arrow(length = unit(0.3, \"cm\")), color = \"purple\") +\n  geom_segment(aes(x = 0.7, y = 0, xend = 0.8, yend = 0), \n               arrow = arrow(length = unit(0.3, \"cm\")), color = \"purple\") +\n  geom_segment(aes(x = 0.5, y = 0, xend = 0.6, yend = 0), \n               arrow = arrow(length = unit(0.3, \"cm\")), color = \"purple\") +\n  geom_segment(aes(x = 0.3, y = 0, xend = 0.4, yend = 0), \n               arrow = arrow(length = unit(0.3, \"cm\")), color = \"purple\") +\n  geom_segment(aes(x = 0.1, y = 0, xend = 0.2, yend = 0), \n               arrow = arrow(length = unit(0.3, \"cm\")), color = \"purple\") +\n  geom_segment(aes(x = 1.2, y = 0, xend = 1.1, yend = 0), \n               arrow = arrow(length = unit(0.3, \"cm\")), color = \"orange\") +\n  geom_segment(aes(x = 1.4, y = 0, xend = 1.3, yend = 0), \n               arrow = arrow(length = unit(0.3, \"cm\")), color = \"orange\") +\n  geom_segment(aes(x = -0.1, y = 0, xend = -0.2, yend = 0), \n               arrow = arrow(length = unit(0.3, \"cm\")), color = \"orange\") +\n  geom_point(aes(x = 0, y = 0), color = \"darkred\", size = 4, shape = 1) +\n  geom_point(aes(x = 1, y = 0), color = \"darkred\", size = 4) +\n  labs(title = \"Logistic Growth Phase Line\",\n       x = \"Population\",\n       y = \"Population Rate of Change\",\n       caption = \"Phase line for logistic growth\")"
   },
   {
     "objectID": "intro_lecture/index.html#epidemiology",
@@ -663,5 +663,12 @@
     "title": "MATH 463 Topics in Biomathematics",
     "section": "Populations and Epidemiology",
     "text": "Populations and Epidemiology"
+  },
+  {
+    "objectID": "intro_lecture/index.html#getting-started-with-r",
+    "href": "intro_lecture/index.html#getting-started-with-r",
+    "title": "MATH 463 Topics in Biomathematics",
+    "section": "Getting Started with R",
+    "text": "Getting Started with R"
   }
 ]
