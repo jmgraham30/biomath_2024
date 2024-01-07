@@ -48,6 +48,8 @@ Course syllabus at: [https://biomath2024.netlify.app/](https://biomath2024.netli
 
 - Gain overview of the course
 
+Many of the ideas discussed in this lecture will be covered in much greater detail as the course proceeds. 
+
 ## Darwin's Quote
 
 > Every new body of discovery is mathematical in form, because there is no other guidance we can have. Mathematics seems to endow one with something like a new sense. - Charles Darwin
