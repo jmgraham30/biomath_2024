@@ -71,7 +71,23 @@ generate thoughts that might not otherwise have occurred.** - Oster and Wilson (
 
 ## Fibonacci's Rabbits
 
+> Someone had one pair of rabbits together in a certain enclosed place. One wishes to know how many are created from the pair in one year when it is the nature of them in a single month to bear another pair and in the second month those born to bear also. - Fibonacci *Liber abaci* (1202)
 
+Note that if there is a pair of newborn rabbits at the beginning of the first month, this pair will not yet be fertile after one month and there will still be just one pair of rabbits at the beginning of the second month.
+
+## Fibonacci Sequence
+
+After some thought, one can see that the number of pairs of rabbits at the beginning of each month is given by the Fibonacci recurrence equation:
+
+$$
+x_{n+2} = x_{n+1} + x_n
+$$
+
+Starting with $x_0 = 1$ and $x_1 = 1$. You will show in the first homework that a solution to this recurrence is given by
+
+$$
+x_n = \frac{1}{\sqrt{5}} \left( \frac{1 + \sqrt{5}}{2} \right)^{n+1} - \frac{1}{\sqrt{5}}\left( \frac{1 - \sqrt{5}}{2} \right)^{n+1} 
+$$
 
 ## Dynamical Systems
 

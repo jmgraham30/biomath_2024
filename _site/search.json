@@ -585,7 +585,7 @@
     "href": "intro_lecture/index.html#fibonaccis-rabbits",
     "title": "MATH 463 Topics in Biomathematics",
     "section": "Fibonacci’s Rabbits",
-    "text": "Fibonacci’s Rabbits"
+    "text": "Fibonacci’s Rabbits\n\nSomeone had one pair of rabbits together in a certain enclosed place. One wishes to know how many are created from the pair in one year when it is the nature of them in a single month to bear another pair and in the second month those born to bear also. - Fibonacci Liber abaci (1202)\n\nNote that if there is a pair of newborn rabbits at the beginning of the first month, this pair will not yet be fertile after one month and there will still be just one pair of rabbits at the beginning of the second month."
   },
   {
     "objectID": "intro_lecture/index.html#spread-of-disease",
@@ -677,5 +677,12 @@
     "title": "MATH 463 Topics in Biomathematics",
     "section": "Course Themes",
     "text": "Course Themes\n\nGeneral principles of mathematical modeling\n\nDimensional analysis and scaling\nCompartment models\n\nGetting information from models\n\nEquilibrium solutions, steady states and stability, and bifurcations\nSimulation\n\nDerivation of basic models\nPresentation of results"
+  },
+  {
+    "objectID": "intro_lecture/index.html#fibonacci-sequence",
+    "href": "intro_lecture/index.html#fibonacci-sequence",
+    "title": "MATH 463 Topics in Biomathematics",
+    "section": "Fibonacci Sequence",
+    "text": "Fibonacci Sequence\nAfter some thought, one can see that the number of pairs of rabbits at the beginning of each month is given by the Fibonacci recurrence equation:\n\\[\nx_{n+2} = x_{n+1} + x_n\n\\]\nStarting with \\(x_0 = 1\\) and \\(x_1 = 1\\). You will show in the first homework that a solution to this recurrence is given by\n\\[\nx_n = \\frac{1}{\\sqrt{5}} \\left( \\frac{1 + \\sqrt{5}}{2} \\right)^{n+1} - \\frac{1}{\\sqrt{5}}\\left( \\frac{1 - \\sqrt{5}}{2} \\right)^{n+1}\n\\]"
   }
 ]

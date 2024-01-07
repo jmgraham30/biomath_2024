@@ -449,6 +449,21 @@ Jason M. Graham
 <img data-src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61X3MxoGMyL._SY522_.jpg" class="r-stretch quarto-figure-center"></section>
 <section id="fibonaccis-rabbits" class="slide level2">
 <h2>Fibonacci’s Rabbits</h2>
+<blockquote>
+<p>Someone had one pair of rabbits together in a certain enclosed place. One wishes to know how many are created from the pair in one year when it is the nature of them in a single month to bear another pair and in the second month those born to bear also. - Fibonacci <em>Liber abaci</em> (1202)</p>
+</blockquote>
+<p>Note that if there is a pair of newborn rabbits at the beginning of the first month, this pair will not yet be fertile after one month and there will still be just one pair of rabbits at the beginning of the second month.</p>
+</section>
+<section id="fibonacci-sequence" class="slide level2">
+<h2>Fibonacci Sequence</h2>
+<p>After some thought, one can see that the number of pairs of rabbits at the beginning of each month is given by the Fibonacci recurrence equation:</p>
+<p><span class="math display">\[
+x_{n+2} = x_{n+1} + x_n
+\]</span></p>
+<p>Starting with <span class="math inline">\(x_0 = 1\)</span> and <span class="math inline">\(x_1 = 1\)</span>. You will show in the first homework that a solution to this recurrence is given by</p>
+<p><span class="math display">\[
+x_n = \frac{1}{\sqrt{5}} \left( \frac{1 + \sqrt{5}}{2} \right)^{n+1} - \frac{1}{\sqrt{5}}\left( \frac{1 - \sqrt{5}}{2} \right)^{n+1}
+\]</span></p>
 </section>
 <section id="dynamical-systems" class="slide level2">
 <h2>Dynamical Systems</h2>
