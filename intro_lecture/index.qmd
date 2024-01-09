@@ -93,7 +93,15 @@ $$
 
 ## Dynamical Systems
 
+- A [dynamical system](https://en.wikipedia.org/wiki/Dynamical_system) is a system that evolves over time. Mathematically, dynamical systems are described by functions of time.
 
+- Note that time can be discrete or continuous.
+
+- Many biological processes are dynamical systems, or at least can be modeled as dynamical systems.
+
+- The model for the reproduction of Fibonacci's rabbits is a dynamical system.
+
+- Often, the evolution of a population can be modeled by relating the rate of change of the population to the current population size.
 
 ## Example in Population Dynamics
 
