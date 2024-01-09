@@ -519,14 +519,14 @@ plt.figure(figsize=(8, 6))
 samples = binom_rv.rvs(size=1000)
 
 # Plot the histogram
-plt.hist(samples, bins=10, color='steelblue', align='left', rwidth=1)
+plt.hist(samples, bins=10, histtype='bar', ec="black", color='steelblue', align='left', rwidth=1)
 
 # Customize the plot
 plt.title('Binomial Distribution Samples')
 plt.xlabel('Number of Successes')
 plt.ylabel('Count')
 plt.xticks(x)
-plt.text(8,200,r'$n=10, p =0.5$', fontsize=12)
+plt.text(7.5,200,r'$n=10, p =0.5$', fontsize=12)
 # Display the plot
 plt.show()
 
