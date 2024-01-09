@@ -369,6 +369,96 @@ $$
 
 where $k$ is the number of successes, $n$ is the number of trials, and $p$ is the probability of success in each trial. 
 
+Let's work with a binomial distribution in Julia. First, we import the `Random.jl`, `Statistics.jl`, and `Distributions.jl` packages in order to access relevant functions:
+
+```{julia}
+using Random, Statistics, Distributions
+```
+
+Next, we create a binomial random variable with $n = 10$ and $p = 0.5$:
+
+```{julia}
+n = 10
+p = 0.5
+binom_rv = Binomial(n,p)
+```
+
+We can now access the mean, variance, and standard deviation of the random variable:
+
+```{julia}
+mean(binom_rv)
+```
+
+
+
+```{julia}
+var(binom_rv)
+```
+
+
+
+```{julia}
+std(binom_rv)
+```
+
+Notice that the mean is $np$ and the variance is $np(1-p)$, as expected. Further, the standard deviation is the square root of the variance:
+
+```{julia}
+sqrt(2.5)
+```
+
+We can work with the probability mass function as follows:
+
+```{julia}
+pdf(binom_rv,4)
+```
+
+
+@fig-binom-pmf displays the probability mass function for a binomial random variable with $n=10$ and $p=0.5$.
+
+```{julia}
+#| label: fig-binom-pmf
+#| fig-cap: "Probability mass function for a binomial random variable with n=10 and p=0.5."
+
+# Generate x values (possible number of successes)
+x_values = 0:n
+
+# Calculate the corresponding PDF values
+pmf_values = pdf(binom_rv, x_values)
+
+# Plot the probability mass function
+bar(x_values, pmf_values, color="steelblue", xlabel="Number of Successes", ylabel="Probability", label="Binomial(n=10, p=0.5)", legend=:topleft)
+
+# Customize the plot
+title!("Binomial Distribution PDF")
+```
+
+We can also sample from the binomial distribution:
+
+```{julia}
+rand(binom_rv,10)
+```
+
+
+Let's generate a large number of samples and plot a histogram of the results, see @fig-binom-samples. 
+
+```{julia}
+#| label: fig-binom-samples
+#| fig-cap: "Histogram of 1000 samples from a binomial random variable with n=10 and p=0.5."
+
+# Generate 1000 samples
+samples = rand(binom_rv,1000)
+
+# Plot a histogram of the samples
+histogram(samples, bins = -0.5:1:10.5, color="steelblue", xlabel="Number of Successes", ylabel="Count", label="Binomial(n=10, p=0.5)", legend=:topleft)
+
+# Customize the plot
+title!("Binomial Distribution Samples")
+
+```
+
+
+
 ### Normal Distributions
 
 Recall that a [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution) is a continuous probability distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence than data far from the mean. In graph form, normal distribution will appear as a bell curve. Normal distributions are extremely important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. A random variable with a Gaussian distribution is said to be normally distributed and is called a normal deviate. The probability that a normal random variable with mean $\mu$ and variance $\sigma^{2}$ has a value between $a$ and $b$ is given by the definite integral of a normal density function defined by:

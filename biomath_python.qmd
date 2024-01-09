@@ -430,6 +430,107 @@ $$
 
 where $k$ is the number of successes, $n$ is the number of trials, and $p$ is the probability of success in each trial. 
 
+Let's work with a binomial distribution in Python. First, we import the `binom` function from the `scipy.stats` module:
+
+```{python}
+from scipy.stats import binom
+```
+
+Now, let's define a binomial random variable with $n=10$ and $p=0.5$:
+
+```{python}
+n = 10
+p = 0.5
+binom_rv = binom(n,p)
+```
+
+We can now access the mean, variance, and standard deviation of the random variable:
+
+```{python}
+binom_rv.mean()
+```
+
+
+
+```{python}
+binom_rv.var()
+```
+
+
+```{python}
+binom_rv.std()
+```
+
+Notice that the mean is $np$ and the variance is $np(1-p)$, as expected. Further, the standard deviation is the square root of the variance:
+
+```{python}
+np.sqrt(2.5)
+```
+
+We can work with the probability mass function as follows:
+
+```{python}
+binom_rv.pmf(4)
+```
+
+@fig-binom-pmf displays the probability mass function for a binomial random variable with $n=10$ and $p=0.5$.
+
+```{python}
+#| label: fig-binom-pmf
+#| fig-cap: "Probability mass function for a binomial random variable with n=10 and p=0.5."
+
+# Figure size
+plt.figure(figsize=(8, 6))
+
+# Outcome values
+x = np.arange(0,11)
+# Plot the bar plot
+plt.bar(x, binom_rv.pmf(x), color='steelblue', align='center')
+
+# Customize the plot
+plt.title('Binomial Distribution PMF')
+plt.xlabel('Number of Successes')
+plt.ylabel('Probability')
+plt.xticks(x)
+plt.text(8,0.21,r'$n=10, p =0.5$', fontsize=12)
+
+# Display the plot
+plt.show()
+```
+
+
+We can also sample from the binomial distribution:
+
+```{python}
+binom_rv.rvs(size=10)
+```
+
+
+Let's generate a large number of samples and plot a histogram of the results, see @fig-binom-samples. 
+
+```{python}
+#| label: fig-binom-samples
+#| fig-cap: "Histogram of 1000 samples from a binomial random variable with n=10 and p=0.5."
+
+# Figure size
+plt.figure(figsize=(8, 6))
+
+# Generate 1000 samples
+samples = binom_rv.rvs(size=1000)
+
+# Plot the histogram
+plt.hist(samples, bins=10, color='steelblue', align='left', rwidth=1)
+
+# Customize the plot
+plt.title('Binomial Distribution Samples')
+plt.xlabel('Number of Successes')
+plt.ylabel('Count')
+plt.xticks(x)
+plt.text(8,200,r'$n=10, p =0.5$', fontsize=12)
+# Display the plot
+plt.show()
+
+```
 
 ### Normal Distributions
 
