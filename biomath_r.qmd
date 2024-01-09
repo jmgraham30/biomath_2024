@@ -320,6 +320,18 @@ f_min$par
 
 While MATH 463 primarily focuses on deterministic models, stochastic models are also important in biomathematics, see for example [@allenIntroductionStochasticProcesses2011]. We won't cover stochastic models in the course but will have a few occasions where it will be useful to add some stochasticity to a deterministic model. Many different probability distributions are available in R.  Primarily, we focus on sampling from a distribution and accessing the probability density or probability mass function for a distribution. Further, we will demonstrate the main functions for the normal distribution and the binomial distribution. Working with other distributions is handled similarly. Additional details, examples, and applications will be covered in course lectures.
 
+For every distribution that is implemented in R, there are four functions that can be used to access the distribution:
+
+* `d<dist>`: the probability density function (PDF) for continuous distributions or the probability mass function (PMF) for discrete distributions
+
+* `p<dist>`: the cumulative distribution function (CDF), which is the integral of the PDF or PMF
+
+* `q<dist>`: the quantile function, which is the inverse of the CDF
+
+* `r<dist>`: a random number generator (RNG) that samples from the distribution
+
+
+
 ### Binomial Distributions
 
 Recall that a [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution) is a discrete probability distribution that models the number of successes in a sequence of $n$ independent experiments, each asking a yes–no question, and each with its own Boolean-valued outcome: success/yes/true/one (with probability $p$) or failure/no/false/zero (with probability $q = 1 - p$). A single success/failure experiment is also called a Bernoulli trial or Bernoulli experiment and a sequence of outcomes is called a Bernoulli process; for a single trial, i.e., $n = 1$, the binomial distribution is a Bernoulli distribution. The probability of outcomes for a binomial random variable are given by the binomial probability mass function for:
@@ -330,6 +342,52 @@ $$
 
 where $k$ is the number of successes, $n$ is the number of trials, and $p$ is the probability of success in each trial. 
 
+Let's generate a random sample from a binomial distribution with $n = 10$ and $p = 0.5$:
+
+```{r}
+rbinom(5,10,0.5)
+```
+
+
+Let's generate a large number of samples and plot a histogram of the results, see @fig-binom-samples.
+
+```{r}
+#| warning: false
+#| label: fig-binom-samples
+#| fig-cap: "Histogram of 1000 samples from a binomial distribution with $n = 10$ and $p = 0.5$."
+
+# plot histogram
+tibble(x=rbinom(1000,10,0.5)) |>
+ggplot(aes(x = x)) +
+  geom_histogram(binwidth = 1, color = "black", fill = "steelblue") +
+  annotate("text", x = 8, y = 200, label = TeX("$n=10, p=0.5$"), size = 5) +
+  theme_bw(base_size=13) +
+  labs(x = "x", y = "Count", 
+       title = "Binomial Distribution Samples")
+```
+
+We can work with the probability mass function as follows:
+
+```{r}
+dbinom(4,10,0.5)
+```
+
+@fig-binom-pmf displays the probability mass function for a binomial random variable with $n=10$ and $p=0.5$.
+
+```{r}
+#| warning: false
+#| label: fig-binom-pmf
+#| fig-cap: "Probability mass function for a binomial random variable with $n=10$ and $p=0.5$."
+
+# plot pmf
+tibble(x=0:10) |>
+ggplot(aes(x = x, y = dbinom(x,10,0.5))) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  annotate("text", x = 9, y = 0.2, label = TeX("$n=10, p=0.5$"), size = 5) +
+  theme_bw(base_size=13) +
+  labs(x = "Number of Successes", y = "Probability", 
+       title = "Binomial Distribution PMF")
+```
 
 ### Normal Distributions
 

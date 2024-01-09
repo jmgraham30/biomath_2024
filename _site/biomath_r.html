@@ -545,6 +545,13 @@ attr(,"status")
 <section id="random-variables" class="level2">
 <h2 class="anchored" data-anchor-id="random-variables">Random Variables</h2>
 <p>While MATH 463 primarily focuses on deterministic models, stochastic models are also important in biomathematics, see for example <span class="citation" data-cites="allenIntroductionStochasticProcesses2011">(<a href="#ref-allenIntroductionStochasticProcesses2011" role="doc-biblioref">Allen 2011</a>)</span>. We won’t cover stochastic models in the course but will have a few occasions where it will be useful to add some stochasticity to a deterministic model. Many different probability distributions are available in R. Primarily, we focus on sampling from a distribution and accessing the probability density or probability mass function for a distribution. Further, we will demonstrate the main functions for the normal distribution and the binomial distribution. Working with other distributions is handled similarly. Additional details, examples, and applications will be covered in course lectures.</p>
+<p>For every distribution that is implemented in R, there are four functions that can be used to access the distribution:</p>
+<ul>
+<li><p><code>d&lt;dist&gt;</code>: the probability density function (PDF) for continuous distributions or the probability mass function (PMF) for discrete distributions</p></li>
+<li><p><code>p&lt;dist&gt;</code>: the cumulative distribution function (CDF), which is the integral of the PDF or PMF</p></li>
+<li><p><code>q&lt;dist&gt;</code>: the quantile function, which is the inverse of the CDF</p></li>
+<li><p><code>r&lt;dist&gt;</code>: a random number generator (RNG) that samples from the distribution</p></li>
+</ul>
 <section id="binomial-distributions" class="level3">
 <h3 class="anchored" data-anchor-id="binomial-distributions">Binomial Distributions</h3>
 <p>Recall that a <a href="https://en.wikipedia.org/wiki/Binomial_distribution">binomial distribution</a> is a discrete probability distribution that models the number of successes in a sequence of <span class="math inline">\(n\)</span> independent experiments, each asking a yes–no question, and each with its own Boolean-valued outcome: success/yes/true/one (with probability <span class="math inline">\(p\)</span>) or failure/no/false/zero (with probability <span class="math inline">\(q = 1 - p\)</span>). A single success/failure experiment is also called a Bernoulli trial or Bernoulli experiment and a sequence of outcomes is called a Bernoulli process; for a single trial, i.e., <span class="math inline">\(n = 1\)</span>, the binomial distribution is a Bernoulli distribution. The probability of outcomes for a binomial random variable are given by the binomial probability mass function for:</p>
@@ -552,6 +559,58 @@ attr(,"status")
 f(k,n,p) = \Pr(k;n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}
 \]</span></p>
 <p>where <span class="math inline">\(k\)</span> is the number of successes, <span class="math inline">\(n\)</span> is the number of trials, and <span class="math inline">\(p\)</span> is the probability of success in each trial.</p>
+<p>Let’s generate a random sample from a binomial distribution with <span class="math inline">\(n = 10\)</span> and <span class="math inline">\(p = 0.5\)</span>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rbinom</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5 6 8 4 7</code></pre>
+</div>
+</div>
+<p>Let’s generate a large number of samples and plot a histogram of the results, see <a href="#fig-binom-samples">Figure&nbsp;7</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot histogram</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x=</span><span class="fu">rbinom</span>(<span class="dv">1000</span>,<span class="dv">10</span>,<span class="fl">0.5</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">8</span>, <span class="at">y =</span> <span class="dv">200</span>, <span class="at">label =</span> <span class="fu">TeX</span>(<span class="st">"$n=10, p=0.5$"</span>), <span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size=</span><span class="dv">13</span>) <span class="sc">+</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"x"</span>, <span class="at">y =</span> <span class="st">"Count"</span>, </span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Binomial Distribution Samples"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-binom-samples" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="biomath_r_files/figure-html/fig-binom-samples-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;7: Histogram of 1000 samples from a binomial distribution with <span class="math inline">\(n = 10\)</span> and <span class="math inline">\(p = 0.5\)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>We can work with the probability mass function as follows:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dbinom</span>(<span class="dv">4</span>,<span class="dv">10</span>,<span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.2050781</code></pre>
+</div>
+</div>
+<p><a href="#fig-binom-pmf">Figure&nbsp;8</a> displays the probability mass function for a binomial random variable with <span class="math inline">\(n=10\)</span> and <span class="math inline">\(p=0.5\)</span>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot pmf</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x=</span><span class="dv">0</span><span class="sc">:</span><span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> <span class="fu">dbinom</span>(x,<span class="dv">10</span>,<span class="fl">0.5</span>))) <span class="sc">+</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">9</span>, <span class="at">y =</span> <span class="fl">0.2</span>, <span class="at">label =</span> <span class="fu">TeX</span>(<span class="st">"$n=10, p=0.5$"</span>), <span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size=</span><span class="dv">13</span>) <span class="sc">+</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Number of Successes"</span>, <span class="at">y =</span> <span class="st">"Probability"</span>, </span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Binomial Distribution PMF"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-binom-pmf" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="biomath_r_files/figure-html/fig-binom-pmf-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;8: Probability mass function for a binomial random variable with <span class="math inline">\(n=10\)</span> and <span class="math inline">\(p=0.5\)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
 <section id="normal-distributions" class="level3">
 <h3 class="anchored" data-anchor-id="normal-distributions">Normal Distributions</h3>

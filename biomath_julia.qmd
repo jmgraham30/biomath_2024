@@ -430,7 +430,7 @@ pmf_values = pdf(binom_rv, x_values)
 bar(x_values, pmf_values, color="steelblue", xlabel="Number of Successes", ylabel="Probability", label="Binomial(n=10, p=0.5)", legend=:topleft)
 
 # Customize the plot
-title!("Binomial Distribution PDF")
+title!("Binomial Distribution PMF")
 ```
 
 We can also sample from the binomial distribution:
