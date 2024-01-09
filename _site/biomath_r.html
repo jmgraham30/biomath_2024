@@ -194,7 +194,11 @@ div.csl-indent {
   <li><a href="#differential-equations" id="toc-differential-equations" class="nav-link" data-scroll-target="#differential-equations">Differential Equations</a></li>
   <li><a href="#dynamical-systems" id="toc-dynamical-systems" class="nav-link" data-scroll-target="#dynamical-systems">Dynamical Systems</a></li>
   <li><a href="#partial-differential-equations" id="toc-partial-differential-equations" class="nav-link" data-scroll-target="#partial-differential-equations">Partial Differential Equations</a></li>
-  <li><a href="#random-variables" id="toc-random-variables" class="nav-link" data-scroll-target="#random-variables">Random Variables</a></li>
+  <li><a href="#random-variables" id="toc-random-variables" class="nav-link" data-scroll-target="#random-variables">Random Variables</a>
+  <ul class="collapse">
+  <li><a href="#binomial-distributions" id="toc-binomial-distributions" class="nav-link" data-scroll-target="#binomial-distributions">Binomial Distributions</a></li>
+  <li><a href="#normal-distributions" id="toc-normal-distributions" class="nav-link" data-scroll-target="#normal-distributions">Normal Distributions</a></li>
+  </ul></li>
   <li><a href="#symbolic-math" id="toc-symbolic-math" class="nav-link" data-scroll-target="#symbolic-math">Symbolic Math</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
@@ -540,7 +544,23 @@ attr(,"status")
 </section>
 <section id="random-variables" class="level2">
 <h2 class="anchored" data-anchor-id="random-variables">Random Variables</h2>
-<p>While MATH 463 primarily focuses on deterministic models, stochastic models are also important in biomathematics, see for example <span class="citation" data-cites="allenIntroductionStochasticProcesses2011">(<a href="#ref-allenIntroductionStochasticProcesses2011" role="doc-biblioref">Allen 2011</a>)</span>. We won’t cover stochastic models in the course but will have a few occasions where it will be useful to add some stochasticity to a deterministic model. Many different probability distributions are available in R. In this section, we introduce some functions associated with distributions and random sampling. Additional details, examples, and applications will be covered in course lectures.</p>
+<p>While MATH 463 primarily focuses on deterministic models, stochastic models are also important in biomathematics, see for example <span class="citation" data-cites="allenIntroductionStochasticProcesses2011">(<a href="#ref-allenIntroductionStochasticProcesses2011" role="doc-biblioref">Allen 2011</a>)</span>. We won’t cover stochastic models in the course but will have a few occasions where it will be useful to add some stochasticity to a deterministic model. Many different probability distributions are available in R. Primarily, we focus on sampling from a distribution and accessing the probability density or probability mass function for a distribution. Further, we will demonstrate the main functions for the normal distribution and the binomial distribution. Working with other distributions is handled similarly. Additional details, examples, and applications will be covered in course lectures.</p>
+<section id="binomial-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="binomial-distributions">Binomial Distributions</h3>
+<p>Recall that a <a href="https://en.wikipedia.org/wiki/Binomial_distribution">binomial distribution</a> is a discrete probability distribution that models the number of successes in a sequence of <span class="math inline">\(n\)</span> independent experiments, each asking a yes–no question, and each with its own Boolean-valued outcome: success/yes/true/one (with probability <span class="math inline">\(p\)</span>) or failure/no/false/zero (with probability <span class="math inline">\(q = 1 - p\)</span>). A single success/failure experiment is also called a Bernoulli trial or Bernoulli experiment and a sequence of outcomes is called a Bernoulli process; for a single trial, i.e., <span class="math inline">\(n = 1\)</span>, the binomial distribution is a Bernoulli distribution. The probability of outcomes for a binomial random variable are given by the binomial probability mass function for:</p>
+<p><span class="math display">\[
+f(k,n,p) = \Pr(k;n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}
+\]</span></p>
+<p>where <span class="math inline">\(k\)</span> is the number of successes, <span class="math inline">\(n\)</span> is the number of trials, and <span class="math inline">\(p\)</span> is the probability of success in each trial.</p>
+</section>
+<section id="normal-distributions" class="level3">
+<h3 class="anchored" data-anchor-id="normal-distributions">Normal Distributions</h3>
+<p>Recall that a <a href="https://en.wikipedia.org/wiki/Normal_distribution">normal distribution</a> is a continuous probability distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence than data far from the mean. In graph form, normal distribution will appear as a bell curve. Normal distributions are extremely important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. A random variable with a Gaussian distribution is said to be normally distributed and is called a normal deviate. The probability that a normal random variable with mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma^{2}\)</span> has a value between <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> is given by the definite integral of a normal density function defined by:</p>
+<p><span class="math display">\[
+f(x \mid \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
+\]</span></p>
+<p>The parameter <span class="math inline">\(\sigma\)</span> is called the standard deviation.</p>
+</section>
 </section>
 <section id="symbolic-math" class="level2">
 <h2 class="anchored" data-anchor-id="symbolic-math">Symbolic Math</h2>
@@ -602,8 +622,8 @@ Expand for Session Info
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       America/New_York
- date     2024-01-05
- pandoc   3.1.11 @ /opt/homebrew/bin/ (via rmarkdown)
+ date     2024-01-09
+ pandoc   3.1.11.1 @ /opt/homebrew/bin/ (via rmarkdown)
  quarto   1.3.450 @ /usr/local/bin/quarto
 
 ─ Packages ───────────────────────────────────────────────────────────────────

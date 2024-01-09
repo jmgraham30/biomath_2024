@@ -355,7 +355,29 @@ Optim.minimizer(result)
 ## Random Variables
 
 
-While MATH 463 primarily focuses on deterministic models, stochastic models are also important in biomathematics, see for example [@allenIntroductionStochasticProcesses2011]. We won't cover stochastic models in the course but will have a few occasions where it will be useful to add some stochasticity to a deterministic model. Many different probability distributions are available in Julia through the [`Distributions.jl`](https://juliastats.org/Distributions.jl/stable/) package.  In this section, we introduce some functions associated with distributions and random sampling. Additional details, examples, and applications will be covered in course lectures.
+While MATH 463 primarily focuses on deterministic models, stochastic models are also important in biomathematics, see for example [@allenIntroductionStochasticProcesses2011]. We won't cover stochastic models in the course but will have a few occasions where it will be useful to add some stochasticity to a deterministic model. Many different probability distributions are available in Julia through the [`Distributions.jl`](https://juliastats.org/Distributions.jl/stable/) package.  In this section, we introduce some functions associated with distributions and random sampling. Primarily, we focus on sampling from a distribution and accessing the probability density or probability mass function for a distribution. Further, we will demonstrate the main functions for the normal distribution and the binomial distribution. Working with other distributions is handled similarly. Additional details, examples, and applications will be covered in course lectures.
+
+
+### Binomial Distributions
+
+
+Recall that a [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution) is a discrete probability distribution that models the number of successes in a sequence of $n$ independent experiments, each asking a yes–no question, and each with its own Boolean-valued outcome: success/yes/true/one (with probability $p$) or failure/no/false/zero (with probability $q = 1 - p$). A single success/failure experiment is also called a Bernoulli trial or Bernoulli experiment and a sequence of outcomes is called a Bernoulli process; for a single trial, i.e., $n = 1$, the binomial distribution is a Bernoulli distribution. The probability of outcomes for a binomial random variable are given by the binomial probability mass function for:
+
+$$
+f(k,n,p) = \Pr(k;n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}
+$$
+
+where $k$ is the number of successes, $n$ is the number of trials, and $p$ is the probability of success in each trial. 
+
+### Normal Distributions
+
+Recall that a [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution) is a continuous probability distribution that is symmetric about the mean, showing that data near the mean are more frequent in occurrence than data far from the mean. In graph form, normal distribution will appear as a bell curve. Normal distributions are extremely important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. A random variable with a Gaussian distribution is said to be normally distributed and is called a normal deviate. The probability that a normal random variable with mean $\mu$ and variance $\sigma^{2}$ has a value between $a$ and $b$ is given by the definite integral of a normal density function defined by:
+
+$$
+f(x \mid \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
+$$
+
+The parameter $\sigma$ is called the standard deviation. 
 
 
 
