@@ -104,6 +104,8 @@ vembedr::embed_youtube(id="a3V0BJLIo_c?si=kEP2nwxyzKTZraDN",height=450) %>%
 
 ### Websites
 
+* [Fast Lane to Learning R](https://github.com/matloff/fasteR) - This site is for those who know nothing of R, and maybe even nothing of programming, and seek QUICK, PAINLESS! entree to the world of R.
+
 * [swirl](https://swirlstats.com/) - Learn R, in R.
 
 ### Readings

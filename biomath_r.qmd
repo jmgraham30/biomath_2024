@@ -43,6 +43,12 @@ The section titles listed in the table of contents for the page should indicate 
 
 [R](https://www.r-project.org/) is a programming language developed for statistical computing [@baseR]. You can learn more about the history of R [here](https://en.wikipedia.org/wiki/R_(programming_language)). For programming in R, we highly recommend using the [RStudio Integrated Development Environment](https://posit.co/download/rstudio-desktop/) (IDE) to interface with the language. 
 
+Some very useful resources for getting started in R include:
+
+* [Fast Lane to Learning R](https://github.com/matloff/fasteR) - This site is for those who know nothing of R, and maybe even nothing of programming, and seek QUICK, PAINLESS! entree to the world of R.
+
+* [swirl](https://swirlstats.com/) - Learn R, in R.
+
 ### Functions and Packages
 
 Most of the algorithms and methods we will want to use in solving problems in biomathematics are implemented as functions in R. Base R contains a number of functions including many that are useful for scientific computing. For example, base R contains a function `sin` that implements the mathematical function $\sin(x)$. It is called as follows:
