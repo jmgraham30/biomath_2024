@@ -631,7 +631,7 @@ div.csl-indent {
 \]</span></p>
 <p>Often, in order to have a complete model, we need to specify both initial conditions and boundary conditions for the PDE problem. For example in the case of the one-dimensional heat equation, we might specify the initial temperature distribution <span class="math inline">\(c(x,0)\)</span> and the values of the flux at the boundaries, that is <span class="math inline">\(\frac{\partial c}{\partial x}(0,t)\)</span> and <span class="math inline">\(\frac{\partial c}{\partial x}(L,t)\)</span> for <span class="math inline">\(t&gt;0\)</span>.</p>
 <p>There are many approaches to the numerical solution of PDEs. We will focus on the <a href="http://www.scholarpedia.org/article/Method_of_lines">method of lines</a> which discretizes the spatial domain and then uses ODE solvers such as those we previously described to solve the resulting system of ODEs.</p>
-<p>For Julia, the <a href="https://py-pde.readthedocs.io/en/latest/getting_started.html"><code>py-pde</code></a> module is available to facilitate the implementation of the method of lines for PDEs. The following links illustrate the use of this package:</p>
+<p>For Python, the <a href="https://py-pde.readthedocs.io/en/latest/getting_started.html"><code>py-pde</code></a> module is available to facilitate the implementation of the method of lines for PDEs. The following links illustrate the use of this package:</p>
 <ul>
 <li><a href="https://biomath-computing.netlify.app/notebooks/diffusion_models_py/">Numerical solution of the heat equation in Python</a> - this page demonstrates using the <code>py-pde</code> module to obtain and visualize numerical solutions for the heat equation in one dimension.</li>
 </ul>
@@ -721,7 +721,7 @@ f(k,n,p) = \Pr(k;n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}
 <div class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>binom_rv.rvs(size<span class="op">=</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
-<pre><code>array([5, 3, 8, 5, 4, 5, 3, 5, 2, 4])</code></pre>
+<pre><code>array([4, 6, 5, 6, 7, 5, 3, 8, 3, 6])</code></pre>
 </div>
 </div>
 <p>Let’s generate a large number of samples and plot a histogram of the results, see <a href="#fig-binom-samples">Figure&nbsp;5</a>.</p>

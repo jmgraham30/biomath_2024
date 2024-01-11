@@ -586,7 +586,7 @@ f(k,n,p) = \Pr(k;n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rbinom</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 4 4 8 3 4</code></pre>
+<pre><code>[1] 4 7 5 3 9</code></pre>
 </div>
 </div>
 <p>Let’s generate a large number of samples and plot a histogram of the results, see <a href="#fig-binom-samples">Figure&nbsp;7</a>.</p>
@@ -642,6 +642,64 @@ f(k,n,p) = \Pr(k;n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}
 f(x \mid \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)
 \]</span></p>
 <p>The parameter <span class="math inline">\(\sigma\)</span> is called the standard deviation.</p>
+<p>Let’s generate a random sample from a normal distribution with <span class="math inline">\(\mu = 5\)</span> and <span class="math inline">\(\sigma = 1.5\)</span>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="dv">10</span>,<span class="dv">5</span>,<span class="fl">1.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 5.240797 4.755374 7.770057 4.822947 1.989782 7.800462 5.456481 3.690488
+ [9] 6.886131 4.290293</code></pre>
+</div>
+</div>
+<p>Let’s generate a large number of samples and plot a histogram of the results, see <a href="#fig-norm-samples">Figure&nbsp;9</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot histogram</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x=</span><span class="fu">rnorm</span>(<span class="dv">1000</span>,<span class="dv">5</span>,<span class="fl">1.5</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"steelblue"</span>) <span class="sc">+</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">9</span>, <span class="at">y =</span> <span class="dv">200</span>, <span class="at">label =</span> <span class="fu">TeX</span>(<span class="st">"$</span><span class="sc">\\</span><span class="st">mu=5, </span><span class="sc">\\</span><span class="st">sigma=1.5$"</span>), <span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size=</span><span class="dv">13</span>) <span class="sc">+</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"x"</span>, <span class="at">y =</span> <span class="st">"Count"</span>, </span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Normal Distribution Samples"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-norm-samples" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="biomath_r_files/figure-html/fig-norm-samples-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;9: Histogram of 1000 samples from a normal distribution with <span class="math inline">\(\mu = 5\)</span> and <span class="math inline">\(\sigma = 1.5\)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Next, let’s plot the probability density function for a normal distribution with <span class="math inline">\(\mu = 5\)</span> and <span class="math inline">\(\sigma = 1.5\)</span>, see <a href="#fig-norm-pdf">Figure&nbsp;10</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot pdf</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(<span class="at">x=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">10</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_function</span>(<span class="at">fun=</span><span class="cf">function</span>(x){<span class="fu">dnorm</span>(x,<span class="dv">5</span>,<span class="fl">1.5</span>)},<span class="at">color =</span> <span class="st">"steelblue"</span>,<span class="at">linewidth=</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">9</span>, <span class="at">y =</span> <span class="fl">0.2</span>, <span class="at">label =</span> <span class="fu">TeX</span>(<span class="st">"$</span><span class="sc">\\</span><span class="st">mu=5, </span><span class="sc">\\</span><span class="st">sigma=1.5$"</span>), <span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>(<span class="at">base_size=</span><span class="dv">13</span>) <span class="sc">+</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"x"</span>, <span class="at">y =</span> <span class="st">"Probability"</span>, </span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Normal Distribution PDF"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-norm-pdf" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="biomath_r_files/figure-html/fig-norm-pdf-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;10: Probability density function for a normal distribution with <span class="math inline">\(\mu = 5\)</span> and <span class="math inline">\(\sigma = 1.5\)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>For a random variable <span class="math inline">\(X \sim \text{Norm}(\mu=5,\sigma=1.5)\)</span>, the probability that <span class="math inline">\(X\)</span> is between <span class="math inline">\(3\)</span> and <span class="math inline">\(7\)</span> is given by:</p>
+<p><span class="math display">\[
+P(3 \leq X \leq 7) = \int_{3}^{7} \frac{1}{\sqrt{2\pi \cdot 1.5^2}} \exp\left(-\frac{(x-5)^2}{2 \cdot 1.5^2}\right) dx
+\]</span></p>
+<p>which we can compute in R using:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pnorm</span>(<span class="dv">7</span>,<span class="dv">5</span>,<span class="fl">1.5</span>) <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="dv">3</span>,<span class="dv">5</span>,<span class="fl">1.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.8175776</code></pre>
+</div>
+</div>
+<p>Thus, the area under the normal density curve with <span class="math inline">\(\mu=5\)</span> and <span class="math inline">\(\sigma=1.5\)</span> between <span class="math inline">\(3\)</span> and <span class="math inline">\(7\)</span> is about 0.82.</p>
 </section>
 </section>
 <section id="symbolic-math" class="level2">

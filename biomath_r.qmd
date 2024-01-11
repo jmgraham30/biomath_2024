@@ -429,6 +429,63 @@ $$
 
 The parameter $\sigma$ is called the standard deviation. 
 
+
+Let's generate a random sample from a normal distribution with $\mu = 5$ and $\sigma = 1.5$:
+
+```{r}
+rnorm(10,5,1.5)
+```
+
+
+Let's generate a large number of samples and plot a histogram of the results, see @fig-norm-samples.
+
+```{r}
+#| warning: false
+#| label: fig-norm-samples
+#| fig-cap: Histogram of 1000 samples from a normal distribution with $\mu = 5$ and $\sigma = 1.5$.
+
+# plot histogram
+tibble(x=rnorm(1000,5,1.5)) |>
+ggplot(aes(x = x)) +
+  geom_histogram(binwidth = 1, color = "black", fill = "steelblue") +
+  annotate("text", x = 9, y = 200, label = TeX("$\\mu=5, \\sigma=1.5$"), size = 5) +
+  theme_bw(base_size=13) +
+  labs(x = "x", y = "Count", 
+       title = "Normal Distribution Samples")
+```
+
+
+Next, let's plot the probability density function for a normal distribution with $\mu = 5$ and $\sigma = 1.5$, see @fig-norm-pdf.
+
+```{r}
+#| warning: false
+#| label: fig-norm-pdf
+#| fig-cap: Probability density function for a normal distribution with $\mu = 5$ and $\sigma = 1.5$.
+
+# plot pdf
+tibble(x=c(0,10)) |>
+ggplot(aes(x = x)) +
+  geom_function(fun=function(x){dnorm(x,5,1.5)},color = "steelblue",linewidth=1) +
+  annotate("text", x = 9, y = 0.2, label = TeX("$\\mu=5, \\sigma=1.5$"), size = 5) +
+  theme_bw(base_size=13) +
+  labs(x = "x", y = "Probability", 
+       title = "Normal Distribution PDF")
+```
+
+For a random variable $X \sim \text{Norm}(\mu=5,\sigma=1.5)$, the probability that $X$ is between $3$ and $7$ is given by:
+
+$$
+P(3 \leq X \leq 7) = \int_{3}^{7} \frac{1}{\sqrt{2\pi \cdot 1.5^2}} \exp\left(-\frac{(x-5)^2}{2 \cdot 1.5^2}\right) dx
+$$
+
+which we can compute in R using:
+
+```{r}
+pnorm(7,5,1.5) - pnorm(3,5,1.5)
+```
+
+Thus, the area under the normal density curve with $\mu=5$ and $\sigma=1.5$ between $3$ and $7$ is about `r round(pnorm(7,5,1.5) - pnorm(3,5,1.5),2)`.
+
 ## Symbolic Math
 
 Compared with other programming languages, R is not particularly well-suited for symbolic math. However, there are packages that can be used to perform symbolic math in R , for example:
