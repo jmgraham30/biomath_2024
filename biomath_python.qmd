@@ -412,7 +412,31 @@ print(min_result.x)
 
 ## Partial Differential Equations
 
+[Partial differential equations](https://en.wikipedia.org/wiki/Partial_differential_equation) (PDEs) generalize ordinary differential equations (ODEs) to allow for solutions that are functions of two or more variables. Typically, in the context of biomathematics, the variables represent time and spatial coordinates. Thus, PDEs allow us to model how a biological systems change in both time and space. The examples we will see in this course will mostly be  [convection-diffusion](https://en.wikipedia.org/wiki/Convection%E2%80%93diffusion_equation) type equations or systems of such equations. These PDEs have the form
 
+$$
+\frac{\partial c}{\partial t} = \nabla \cdot \left( D \nabla c - {\bf v} c \right) + R
+$$
+
+Special cases include [diffusion equations](https://en.wikipedia.org/wiki/Diffusion_equation) of which the [heat equation](https://en.wikipedia.org/wiki/Heat_equation) 
+
+$$
+\frac{\partial c}{\partial t} = D \nabla^2 c
+$$
+
+is a special case. In one dimension, the heat equation is
+
+$$
+\frac{\partial c}{\partial t} = D \frac{\partial^2 c}{\partial x^2}
+$$
+
+Often, in order to have a complete model, we need to specify both initial conditions and boundary conditions for the PDE problem. For example in the case of the one-dimensional heat equation, we might specify the initial temperature distribution $c(x,0)$ and the values of the flux at the boundaries, that is $\frac{\partial c}{\partial x}(0,t)$ and $\frac{\partial c}{\partial x}(L,t)$ for $t>0$. 
+
+There are many approaches to the numerical solution of PDEs. We will focus on the [method of lines](http://www.scholarpedia.org/article/Method_of_lines) which discretizes the spatial domain and then uses ODE solvers such as those we previously described to solve the resulting system of ODEs.
+
+For Python, the [`py-pde`](https://py-pde.readthedocs.io/en/latest/getting_started.html) module is available to facilitate the implementation of the method of lines for PDEs. The following links illustrate the use of this package:
+
+* [Numerical solution of the heat equation in Python](https://biomath-computing.netlify.app/notebooks/diffusion_models_py/) - this page demonstrates using the `py-pde` module to obtain and visualize numerical solutions for the heat equation in one dimension.
 
 ## Random Variables
 
