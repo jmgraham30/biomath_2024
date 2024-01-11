@@ -261,42 +261,9 @@ plot(f,-2.0,2.0, lc="steelblue",lw=2, label=L"$f(x)=x^2-1$")
 scatter!(f_roots,zeros(length(f_roots)), color="purple",label="roots")
 ```
 
-The `Roots.jl` package focuses on scalar functions. Let's use the `NonlinearSolve.jl` package to find the roots of the system of equations $f(x,y) = (x^2 + y^2 - 1, x^2 - y^2 + 0.5)$:
+The `Roots.jl` package focuses on scalar functions. The following link illustrates the use of `NonlinearSolve.jl` package to find the roots of the system of equations $f(x,y) = (x^2 + y^2 - 1, x^2 - y^2 + 0.5)$:
 
-```{julia}
-using ModelingToolkit, NonlinearSolve
-
-@variables x y
-@parameters σ ρ
-
-eqs = [0 ~ x^2 + y^2 - σ,
-       0 ~ x^2 - y^2 + ρ]
-@named ns = NonlinearSystem(eqs, [x, y], [σ , ρ])
-
-u0 = [x => 1.0,
-    y => 1.0]
-
-ps = [σ => 1.0
-    ρ => 0.5]
-
-prob = NonlinearProblem(ns, u0, ps)
-sol = solve(prob, NewtonRaphson())
-
-```
-
-The last example shows off some of the features of the [`ModelingToolkit.jl`](https://docs.sciml.ai/ModelingToolkit/stable/) package. We'll learn more about this package in later sections but the point is that `ModelingToolkit.jl` allows us to combine numerical and symbolic mathematics. For example, we can print out the equations in the system in usual mathematical notation:
-
-```{julia}
-equations(ns)
-```
-
-We can also ask for symbolic expressions for the Jacobian matrix of the system:
-
-```{julia}
-calculate_jacobian(ns)
-```
-
-
+* [Solving a nonlinear system](https://biomath-computing.netlify.app/notebooks/julia_nonlinear_solve/) - this page shows an example of solving a nonlinear system in Julia using the `NonlinearSolve.jl` package.  The example also shows off some of the features of the [`ModelingToolkit.jl`](https://docs.sciml.ai/ModelingToolkit/stable/) package functionality.
 
 ## Optimization
 
