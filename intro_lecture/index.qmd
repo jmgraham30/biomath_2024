@@ -230,7 +230,14 @@ $$
 
 ## Cancer Modeling
 
+* Jackson, Trachette L.; Byrne, Helen M. *A mathematical model to study the effects of drug resistance and vasculature on the response of solid tumors to chemotherapy.* Math. Biosci.164(2000), no.1, 17–38.
 
+* Sherratt, Jonathan A.; Chaplain, Mark A. J. *A new mathematical model for avascular tumour growth.* J. Math. Biol.43(2001), no.4, 291–312.
+
+* Ayati, Bruce P.; Webb, Glenn F.; Anderson, Alexander R. A. *Computational methods and results for structured multiscale models of tumor invasion.* Multiscale Model. Simul.5(2006), no.1, 1–20.
+
+* Rockne, R.; Alvord, E. C., Jr.; Rockhill, J. K.; Swanson, K. R.
+*A mathematical model for brain tumor response to radiation therapy.* J. Math. Biol.58(2009), no.4-5, 561–578.
 
 
 ## Physiology
