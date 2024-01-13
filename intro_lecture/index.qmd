@@ -297,4 +297,10 @@ $$
 
 ## Getting Started with R
 
+* [Install R and RStudio](https://rstudio-education.github.io/hopr/starting.html)
 
+* [Fast Lane to Learning R](https://github.com/matloff/fasteR) - This site is for those who know nothing of R, and maybe even nothing of programming, and seek QUICK, PAINLESS! entree to the world of R.
+
+* [swirl](https://swirlstats.com/) - Learn R, in R.
+
+* [R for Biomath](https://biomath2024.netlify.app/biomath_r)
