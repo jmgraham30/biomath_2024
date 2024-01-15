@@ -260,6 +260,8 @@ $$
 
 ![](https://ptrrupprecht.files.wordpress.com/2020/12/hh_examples.png)
 
+[Hodgkin–Huxley model](https://en.wikipedia.org/wiki/Hodgkin%E2%80%93Huxley_model)
+
 ## Cardiology
 
 ![](https://www.science.org/cms/10.1126/sciadv.aav6019/asset/2ac1d89b-3614-4dcd-aff9-ae0006c19d59/assets/graphic/aav6019-f1.jpeg)
