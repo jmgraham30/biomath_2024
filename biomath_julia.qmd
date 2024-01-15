@@ -410,7 +410,7 @@ pdf(binom_rv,4)
 
 ```{julia}
 #| label: fig-binom-pmf
-#| fig-cap: "Probability mass function for a binomial random variable with n=10 and p=0.5."
+#| fig-cap: "Probability mass function for a binomial random variable with $n=10$ and $p=0.5$."
 
 # Generate x values (possible number of successes)
 x_values = 0:n
@@ -436,7 +436,7 @@ Let's generate a large number of samples and plot a histogram of the results, se
 
 ```{julia}
 #| label: fig-binom-samples
-#| fig-cap: "Histogram of 1000 samples from a binomial random variable with n=10 and p=0.5."
+#| fig-cap: "Histogram of 1000 samples from a binomial random variable with $n=10$ and $p=0.5$."
 
 # Generate 1000 samples
 samples = rand(binom_rv,1000)
@@ -462,7 +462,48 @@ $$
 The parameter $\sigma$ is called the standard deviation. 
 
 
+Let's work with a normal distribution in Julia. First, we create a normal random variable with $\mu = 5$ and $\sigma = 1.5$:
 
+```{julia}
+mu = 5.0
+sigma = 1.5
+norm_rv = Normal(mu,sigma)
+```
+
+@fig-norm-pdf displays the probability density function for a normal random variable with $\mu=5$ and $\sigma=1.5$. 
+
+```{julia}
+#| label: fig-norm-pdf
+#| fig-cap: Probability density function for a normal random variable with $\mu=5$ and $\sigma=1.5$.
+
+f(x) = pdf(norm_rv,x);
+
+plot(f,0.0,10.0, label=L"\mu=5, \sigma=1.5",lw=2, color="steelblue", xlabel="x", ylabel="Density", legend=:topleft)
+```
+
+We can sample from a normal distribution with $\mu=5$ and $\sigma=1.5$ as follows:
+
+```{julia}
+rand(norm_rv,10)
+```
+
+
+Let's generate a large number of samples and plot a histogram of the results, see @fig-norm-samples. 
+
+```{julia}
+#| label: fig-norm-samples
+#| fig-cap: Histogram of 1000 samples from a normal random variable with $\mu=5$ and $\sigma=1.5$.
+
+# Generate 1000 samples
+samples = rand(norm_rv,1000)
+
+# Plot a histogram of the samples
+histogram(samples, bins = 0.0:0.25:10.0,normalize=:pdf, xlabel="x", ylabel="Density", label="", legend=:topleft, color="lightblue")
+
+# Overlay the PDF
+plot!(f,0.0,10.0, label=L"\mu=5, \sigma=1.5",lw=2, color="steelblue")
+
+```
 
 
 For more on probability and statistics using Julia, we recommend [Statistics with Julia](https://statisticswithjulia.org/) and [Introduction to Probability for Data Science](https://probability4datascience.com/).

@@ -516,7 +516,7 @@ plt.title('Binomial Distribution PMF')
 plt.xlabel('Number of Successes')
 plt.ylabel('Probability')
 plt.xticks(x)
-plt.text(8,0.21,r'$n=10, p =0.5$', fontsize=12)
+plt.text(8,0.21,r'$n=10, p =0.5$', fontsize=13)
 
 # Display the plot
 plt.show()
@@ -550,7 +550,7 @@ plt.title('Binomial Distribution Samples')
 plt.xlabel('Number of Successes')
 plt.ylabel('Count')
 plt.xticks(x)
-plt.text(7.5,200,r'$n=10, p =0.5$', fontsize=12)
+plt.text(7.5,200,r'$n=10, p =0.5$',fontsize=13)
 # Display the plot
 plt.show()
 
@@ -566,6 +566,79 @@ $$
 
 The parameter $\sigma$ is called the standard deviation. 
 
+Let's work with a normal distribution in Python. First, we import the `norm` function from the `scipy.stats` module:
+
+```{python}
+from scipy.stats import norm
+```
+
+Now, let's define a normal random variable with $\mu=5$ and $\sigma=1.5$:
+
+```{python}
+mu = 5
+sigma = 1.5
+norm_rv = norm(mu,sigma)
+```
+
+@fig-norm-pdf displays the probability density function for a normal random variable with $\mu=5$ and $\sigma=1.5$.
+
+```{python}
+#| label: fig-norm-pdf
+#| fig-cap: Probability density function for a normal random variable with $\mu=5$ and $\sigma=1.5$.
+
+# Figure size
+plt.figure(figsize=(8, 6))
+
+# Outcome values
+x = np.linspace(0,10,100)
+# Plot the pdf
+plt.plot(x, norm_rv.pdf(x), color='steelblue', lw=2)
+
+# Customize the plot
+plt.title('Normal Distribution PDF')
+plt.xlabel(r'$x$',fontsize=13)
+plt.ylabel(' ')
+plt.text(1,0.25,r'$\mu=5, \sigma =1.5$', fontsize=13)
+
+# Display the plot
+plt.show()
+
+```
+
+We can sample from a normal distribution with $\mu=5$ and $\sigma=1.5$ as follows:
+
+```{python}
+norm_rv.rvs(size=10)
+
+```
+
+Let's generate a large number of samples and plot a histogram of the results, see @fig-norm-samples. 
+
+```{python}
+#| label: fig-norm-samples
+#| fig-cap: Histogram of 1000 samples from a normal random variable with $\mu=5$ and $\sigma=1.5$. Here, we've also plotted the corresponding probability density function.
+
+# Generate samples
+r = norm_rv.rvs(size=1000)
+
+# Create figure
+fig, ax = plt.subplots(1, 1)
+
+# Outcome values
+x = np.linspace(0,10,100)
+# Plot the pdf
+ax.plot(x, norm_rv.pdf(x), color='steelblue', lw=2)
+# Plot the histogram
+ax.hist(r, density=True, bins='auto', histtype='stepfilled', alpha=0.2)
+# Customize the plot
+plt.title('Normal Distribution PDF')
+plt.xlabel(r'$x$',fontsize=13)
+plt.ylabel(' ')
+plt.text(1,0.25,r'$\mu=5, \sigma =1.5$', fontsize=13)
+
+# Display the plot
+plt.show()
+```
 
 ## Symbolic Math
 
