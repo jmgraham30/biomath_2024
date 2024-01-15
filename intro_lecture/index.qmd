@@ -41,7 +41,7 @@ Course syllabus at: [https://biomath2024.netlify.app/](https://biomath2024.netli
 
 You may also find the 2022 MATH 463 course website at [https://topicsinbiomath.netlify.app/](https://topicsinbiomath.netlify.app/) useful.
 
-## Goals
+## Goals for Lesson 1
 
 - Introduce the field of biomathematics
 
