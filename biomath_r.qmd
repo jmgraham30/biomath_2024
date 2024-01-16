@@ -310,11 +310,7 @@ f_min$par
 
 ```
 
-## Differential Equations
-
-
-
-## Dynamical Systems
+## Differential Equations and Dynamical Systems
 
 
 

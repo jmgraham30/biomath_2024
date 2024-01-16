@@ -303,7 +303,7 @@ Optim.minimizer(result)
 
 
 
-## Differential Equations
+## Differential Equations and Dynamical Systems
 
 
 *  Intro to Differential Equations in Julia YouTube video, [watch video on YouTube](https://youtu.be/lWmKCa6ih9Y?si=HU-JBSqsP-v1lX4q).
@@ -311,8 +311,6 @@ Optim.minimizer(result)
 {{< video https://youtu.be/lWmKCa6ih9Y?si=HU-JBSqsP-v1lX4q width="800" height="500" >}}
 
 
-
-## Dynamical Systems
 
 
 

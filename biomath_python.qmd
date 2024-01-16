@@ -402,11 +402,7 @@ print(min_result.x)
 ```
 
 
-## Differential Equations
-
-
-
-## Dynamical Systems
+## Differential Equations and Dynamical Systems
 
 
 
