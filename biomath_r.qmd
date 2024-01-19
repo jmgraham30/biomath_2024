@@ -312,7 +312,7 @@ f_min$par
 
 ## Differential Equations and Dynamical Systems
 
-
+* [Webpage with basic examples](https://biomath-computing.netlify.app/notebooks/ode_ds_r/)
 
 ## Partial Differential Equations
 

@@ -404,7 +404,7 @@ print(min_result.x)
 
 ## Differential Equations and Dynamical Systems
 
-
+* [Webpage with basic examples](https://biomath-computing.netlify.app/notebooks/ode_ds_py/)
 
 ## Partial Differential Equations
 

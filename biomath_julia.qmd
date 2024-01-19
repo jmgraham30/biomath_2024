@@ -306,6 +306,8 @@ Optim.minimizer(result)
 ## Differential Equations and Dynamical Systems
 
 
+* [Webpage with basic examples](https://biomath-computing.netlify.app/notebooks/ode_ds_julia/)
+
 *  Intro to Differential Equations in Julia YouTube video, [watch video on YouTube](https://youtu.be/lWmKCa6ih9Y?si=HU-JBSqsP-v1lX4q).
   
 {{< video https://youtu.be/lWmKCa6ih9Y?si=HU-JBSqsP-v1lX4q width="800" height="500" >}}
