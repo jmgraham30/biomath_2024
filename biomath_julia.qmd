@@ -305,8 +305,12 @@ Optim.minimizer(result)
 
 ## Differential Equations and Dynamical Systems
 
+In this section, we provide an overview and links to detailed examples of the numerical solution of initial value problems (IVPs) for ordinary differential equations (ODEs). Additionally, the linked examples illustrate computations and visualizations of the phase plane and phase portraits for systems of ODEs. For the numerical solution of ODEs, we will use the [`DifferentialEquations.jl`](https://docs.sciml.ai/DiffEqDocs/stable/) package. We will also illustrate the use of the [`ModelingToolkit.jl`](https://docs.sciml.ai/ModelingToolkit/stable/) package to facilitate the specification of ODEs.
 
-* [Webpage with basic examples](https://biomath-computing.netlify.app/notebooks/ode_ds_julia/)
+Briefly, most implementations of numerical methods for IVPs for ODEs require the user to define a function that returns the value of the derivative of the solution at a given time, that is, the right hand side of the ODEs. Further, the user must specify an initial condition, a time interval over which to solve the ODEs, and the values of any parameters.
+
+
+* [View webpage with basic examples](https://biomath-computing.netlify.app/notebooks/ode_ds_julia/)
 
 *  Intro to Differential Equations in Julia YouTube video, [watch video on YouTube](https://youtu.be/lWmKCa6ih9Y?si=HU-JBSqsP-v1lX4q).
   

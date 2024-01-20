@@ -312,7 +312,11 @@ f_min$par
 
 ## Differential Equations and Dynamical Systems
 
-* [Webpage with basic examples](https://biomath-computing.netlify.app/notebooks/ode_ds_r/)
+In this section, we provide an overview and links to detailed examples of the numerical solution of initial value problems (IVPs) for ordinary differential equations (ODEs). Additionally, the linked examples illustrate computations and visualizations of the phase plane and phase portraits for systems of ODEs. For the numerical solution of ODEs, we will use the [`deSolve`](https://cran.r-project.org/web/packages/deSolve/deSolve.pdf) package. For the phase plane and phase portrait computations and visualizations, we will use the [`phaseR`](https://cran.r-project.org/web/packages/phaseR/phaseR.pdf) package. 
+
+Briefly, most implementations of numerical methods for IVPs for ODEs require the user to define a function that returns the value of the derivative of the solution at a given time, that is, the right hand side of the ODEs. Further, the user must specify an initial condition, a time interval over which to solve the ODEs, and the values of any parameters. 
+
+* [View webpage with basic examples](https://biomath-computing.netlify.app/notebooks/ode_ds_r/)
 
 ## Partial Differential Equations
 

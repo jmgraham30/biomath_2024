@@ -539,6 +539,8 @@ attr(,"status")
 </section>
 <section id="differential-equations-and-dynamical-systems" class="level2">
 <h2 class="anchored" data-anchor-id="differential-equations-and-dynamical-systems">Differential Equations and Dynamical Systems</h2>
+<p>In this section, we provide an overview and links to detailed examples of the numerical solution of initial value problems (IVPs) for ordinary differential equations (ODEs). Additionally, the linked examples illustrate computations and visualizations of the phase plane and phase portraits for systems of ODEs. For the numerical solution of ODEs, we will use the <a href="https://cran.r-project.org/web/packages/deSolve/deSolve.pdf"><code>deSolve</code></a> package. For the phase plane and phase portrait computations and visualizations, we will use the <a href="https://cran.r-project.org/web/packages/phaseR/phaseR.pdf"><code>phaseR</code></a> package.</p>
+<p>Briefly, most implementations of numerical methods for IVPs for ODEs require the user to define a function that returns the value of the derivative of the solution at a given time, that is, the right hand side of the ODEs. Further, the user must specify an initial condition, a time interval over which to solve the ODEs, and the values of any parameters.</p>
 <ul>
 <li><a href="https://biomath-computing.netlify.app/notebooks/ode_ds_r/">Webpage with basic examples</a></li>
 </ul>
@@ -585,7 +587,7 @@ f(k,n,p) = \Pr(k;n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rbinom</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2 5 7 4 8</code></pre>
+<pre><code>[1] 4 7 4 4 8</code></pre>
 </div>
 </div>
 <p>Let’s generate a large number of samples and plot a histogram of the results, see <a href="#fig-binom-samples">Figure&nbsp;7</a>.</p>
@@ -645,8 +647,8 @@ f(x \mid \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(x-\mu)
 <div class="cell">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rnorm</span>(<span class="dv">10</span>,<span class="dv">5</span>,<span class="fl">1.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 6.176458 5.422227 4.740679 7.333862 2.644168 5.733697 3.532040 5.023095
- [9] 6.223094 5.407840</code></pre>
+<pre><code> [1] 7.290305 5.128250 5.689482 4.881827 3.809894 1.722323 5.089193 2.896228
+ [9] 3.974441 6.385445</code></pre>
 </div>
 </div>
 <p>Let’s generate a large number of samples and plot a histogram of the results, see <a href="#fig-norm-samples">Figure&nbsp;9</a>.</p>
@@ -761,7 +763,7 @@ Expand for Session Info
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       America/New_York
- date     2024-01-19
+ date     2024-01-20
  pandoc   3.1.11.1 @ /opt/homebrew/bin/ (via rmarkdown)
  quarto   1.3.450 @ /usr/local/bin/quarto
 

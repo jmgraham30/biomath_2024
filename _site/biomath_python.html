@@ -610,6 +610,8 @@ div.csl-indent {
 </section>
 <section id="differential-equations-and-dynamical-systems" class="level2">
 <h2 class="anchored" data-anchor-id="differential-equations-and-dynamical-systems">Differential Equations and Dynamical Systems</h2>
+<p>In this section, we provide an overview and links to detailed examples of the numerical solution of initial value problems (IVPs) for ordinary differential equations (ODEs). Additionally, the linked examples illustrate computations and visualizations of the phase plane and phase portraits for systems of ODEs. For the numerical solution of ODEs, we will use the <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html#scipy.integrate.solve_ivp"><code>solve_ivp</code></a> from the <code>scipy.integrate</code> module.</p>
+<p>Briefly, most implementations of numerical methods for IVPs for ODEs require the user to define a function that returns the value of the derivative of the solution at a given time, that is, the right hand side of the ODEs. Further, the user must specify an initial condition, a time interval over which to solve the ODEs, and the values of any parameters.</p>
 <ul>
 <li><a href="https://biomath-computing.netlify.app/notebooks/ode_ds_py/">Webpage with basic examples</a></li>
 </ul>
@@ -720,7 +722,7 @@ f(k,n,p) = \Pr(k;n,p) = \Pr(X = k) = \binom{n}{k}p^k(1-p)^{n-k}
 <div class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>binom_rv.rvs(size<span class="op">=</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
-<pre><code>array([3, 5, 5, 4, 5, 7, 5, 3, 7, 8])</code></pre>
+<pre><code>array([5, 6, 4, 5, 6, 6, 4, 3, 5, 3])</code></pre>
 </div>
 </div>
 <p>Let’s generate a large number of samples and plot a histogram of the results, see <a href="#fig-binom-samples">Figure&nbsp;5</a>.</p>
@@ -800,8 +802,8 @@ f(x \mid \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(x-\mu)
 <div class="cell" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>norm_rv.rvs(size<span class="op">=</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="33">
-<pre><code>array([4.34375382, 5.87965607, 2.24630904, 4.96892629, 5.70008978,
-       5.41042547, 5.88096212, 3.2612935 , 4.19512026, 6.21330703])</code></pre>
+<pre><code>array([5.25188632, 8.00180684, 5.42355014, 8.47504667, 7.2030184 ,
+       2.24245193, 4.90576055, 3.70413658, 7.61154972, 6.20228632])</code></pre>
 </div>
 </div>
 <p>Let’s generate a large number of samples and plot a histogram of the results, see <a href="#fig-norm-samples">Figure&nbsp;7</a>.</p>
