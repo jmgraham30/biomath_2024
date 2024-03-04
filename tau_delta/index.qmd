@@ -1,0 +1,8 @@
+---
+format: revealjs
+---
+
+
+## 
+
+![](https://www.dropbox.com/scl/fi/w3aikhumok523a9gd0kj7/MATH-463-Trace-Determinant-Plane.jpg?rlkey=ntondqlxeyjzyfg44r3dhkqa7&raw=1)
