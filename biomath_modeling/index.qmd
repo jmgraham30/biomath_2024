@@ -93,7 +93,9 @@ It is important to realize two facts about mathematical modeling, especially in 
 1) Mathematical modeling is as much art as it is science. The point is that mathematical modeling is not routine or algorithmic. Successful modeling requires creativity and intuition developed through experience. 
 
 2) Mathematical modeling will almost certainly involve repeated refinements. Unless there is a very strong reason to do otherwise, it's best to start with the simplest possible reasonable model, even at the risk of oversimplification. If the model produces incorrect or inaccurate results relative to the problem of interest, then the model can be revised in order to fix what is glaringly wrong. 
+
 ### Modeling Process
+
 
 Here is a conceptual outline of the modeling process in the form of a series of steps that one typically carries out during the course of the modeling process.
 
