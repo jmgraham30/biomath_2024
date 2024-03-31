@@ -17,6 +17,8 @@ bibliography: "bibliography.bib"
 
 ## An Example
 
+### General Model of Inflammation 
+
 [Inflammation](https://en.wikipedia.org/wiki/Inflammation#:~:text=Inflammation%20(from%20Latin%3A%20inflammatio),blood%20vessels%2C%20and%20molecular%20mediators.) is a normal part of the [immune response](https://en.wikipedia.org/wiki/Immune_response) for defense against invasion by foreign cells or molecules. However, inflammation may become chronic and lead to disease, [sepsis](https://en.wikipedia.org/wiki/Sepsis), and even death. For the purposes of both treatment and prevention of disease, it is important to understand the conditions that lead to chronic inflammation. 
 
 Without going into the biological and chemical details, we know that inflammation is controlled and mediated by immune cells ([the macrophage](https://en.wikipedia.org/wiki/Macrophage)) whose behavior is regulated by signaling molecules known as [cytokines](https://en.wikipedia.org/wiki/Cytokine). Thus, it is reasonable for the purposes of abstraction to encapsulate the immune response by the activities of macrophage cells, cytokines, and an invading body such as a bacteria cell. This is exactly what is done in the paper [@heraldGeneralModelInflammation2010]. 

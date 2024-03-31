@@ -184,7 +184,10 @@ window.Quarto = {
    
   <ul>
   <li><a href="#basic-biomathematical-work-flow" id="toc-basic-biomathematical-work-flow" class="nav-link active" data-scroll-target="#basic-biomathematical-work-flow">Basic Biomathematical Work Flow</a></li>
-  <li><a href="#an-example" id="toc-an-example" class="nav-link" data-scroll-target="#an-example">An Example</a></li>
+  <li><a href="#an-example" id="toc-an-example" class="nav-link" data-scroll-target="#an-example">An Example</a>
+  <ul class="collapse">
+  <li><a href="#general-model-of-inflammation" id="toc-general-model-of-inflammation" class="nav-link" data-scroll-target="#general-model-of-inflammation">General Model of Inflammation</a></li>
+  </ul></li>
   <li><a href="#modeling" id="toc-modeling" class="nav-link" data-scroll-target="#modeling">Modeling</a>
   <ul class="collapse">
   <li><a href="#what-is-a-mathematical-model" id="toc-what-is-a-mathematical-model" class="nav-link" data-scroll-target="#what-is-a-mathematical-model">What is a Mathematical Model?</a></li>
@@ -227,6 +230,8 @@ window.Quarto = {
 </section>
 <section id="an-example" class="level2">
 <h2 class="anchored" data-anchor-id="an-example">An Example</h2>
+<section id="general-model-of-inflammation" class="level3">
+<h3 class="anchored" data-anchor-id="general-model-of-inflammation">General Model of Inflammation</h3>
 <p><a href="https://en.wikipedia.org/wiki/Inflammation#:~:text=Inflammation%20(from%20Latin%3A%20inflammatio),blood%20vessels%2C%20and%20molecular%20mediators.">Inflammation</a> is a normal part of the <a href="https://en.wikipedia.org/wiki/Immune_response">immune response</a> for defense against invasion by foreign cells or molecules. However, inflammation may become chronic and lead to disease, <a href="https://en.wikipedia.org/wiki/Sepsis">sepsis</a>, and even death. For the purposes of both treatment and prevention of disease, it is important to understand the conditions that lead to chronic inflammation.</p>
 <p>Without going into the biological and chemical details, we know that inflammation is controlled and mediated by immune cells (<a href="https://en.wikipedia.org/wiki/Macrophage">the macrophage</a>) whose behavior is regulated by signaling molecules known as <a href="https://en.wikipedia.org/wiki/Cytokine">cytokines</a>. Thus, it is reasonable for the purposes of abstraction to encapsulate the immune response by the activities of macrophage cells, cytokines, and an invading body such as a bacteria cell. This is exactly what is done in the paper <span class="citation" data-cites="heraldGeneralModelInflammation2010">(<a href="#ref-heraldGeneralModelInflammation2010" role="doc-biblioref">Herald 2010</a>)</span>.</p>
 <p>Figure 2 shows a schematic corresponding to our abstraction of the immune response. The macrophage cell population responds to bacterial invasion and produces cytokines that mediate the immune response. The exact details of the interactions are governed by model parameters and mathematical relationships between the interacting cell populations and cytokines.</p>
@@ -263,6 +268,7 @@ Figure&nbsp;1: Schematic of inflammation model. This corresponds roughly to Figu
 <li>The author’s analysis of the model system explains some aspects of inflammation and pinpoints conditions that lead to chronic inflammation. The authors work also explains why certain therapies for chronic inflammation are not successful.</li>
 </ol>
 <p>There are still many questions about inflammation to be addressed beyond what is done in <span class="citation" data-cites="heraldGeneralModelInflammation2010">(<a href="#ref-heraldGeneralModelInflammation2010" role="doc-biblioref">Herald 2010</a>)</span>. However, in order to make progress more details of the immune response may need to be included. This will involve either modifying the system of equations displayed in this section, or using a different mathematical model altogether. For now, the point to take away is that, often times, this is how work in biomathematics proceeds. In the next lecture, we will start to learn some essential principles of mathematical modeling that will help us to see where equations such as the ones presented in this section come from.</p>
+</section>
 </section>
 <section id="modeling" class="level2">
 <h2 class="anchored" data-anchor-id="modeling">Modeling</h2>
