@@ -23,7 +23,7 @@ bibliography: "bibliography.bib"
 
 Without going into the biological and chemical details, we know that inflammation is controlled and mediated by immune cells ([the macrophage](https://en.wikipedia.org/wiki/Macrophage)) whose behavior is regulated by signaling molecules known as [cytokines](https://en.wikipedia.org/wiki/Cytokine). Thus, it is reasonable for the purposes of abstraction to encapsulate the immune response by the activities of macrophage cells, cytokines, and an invading body such as a bacteria cell. This is exactly what is done in the paper [@heraldGeneralModelInflammation2010]. 
 
-Figure 2 shows a schematic corresponding to our abstraction of the immune response. The macrophage cell population responds to bacterial invasion and produces cytokines that mediate the immune response. The exact details of the interactions are governed by model parameters and mathematical relationships between the interacting cell populations and cytokines. 
+@fig-fig2 shows a schematic corresponding to our abstraction of the immune response. The macrophage cell population responds to bacterial invasion and produces cytokines that mediate the immune response. The exact details of the interactions are governed by model parameters and mathematical relationships between the interacting cell populations and cytokines. 
 
 ![Schematic of inflammation model. This corresponds roughly to Figure 1 in [@heraldGeneralModelInflammation2010].](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/inflammationDiagram.png?raw=true){#fig-fig2}
 
@@ -37,7 +37,7 @@ In [@heraldGeneralModelInflammation2010], the author converts the model diagram 
 \frac{dB}{dt} &= g B - b_{d} M B.
 \end{align}
 
-Later on in the course we will study this model in more detail. For now, note that
+Note that
 
 * $M$ - macrophage cell population
 * $C$ - inflammatory cytokine concentration 
@@ -45,29 +45,33 @@ Later on in the course we will study this model in more detail. For now, note th
 * $B$ - bacteria cell population 
 
 
-In the paper, the author uses the model equations to show that under a certain set of circumstances a bacterial pathogen will not provide a sufficient trigger to cause chronic inflammation. On the other hand, if conditions are right, even a minor bacterial infection can lead to chronic inflammation. We leave the details of the analysis for later in the course. Notice that this example contains all of the components of the basic biomathematics work flow. 
+In the paper, the author uses the model equations to show that under a certain set of circumstances a bacterial pathogen will not provide a sufficient trigger to cause chronic inflammation. On the other hand, if conditions are right, even a minor bacterial infection can lead to chronic inflammation. Notice that this example contains all of the components of the basic biomathematical work flow: 
 
 1) The real world phenomenon of interest from the life sciences is inflammation.
-2) Figure 2 corresponds to an abstraction of the biochemical details of the immune system highlighting what is thought to be the essential features of the inflammatory response. 
-3) Clearly there is a mathematical model. A major portion of this course is devoted to understanding how one might come up with such a system of equations. These were not simply pulled out of thin air. 
+
+2) @fig-fig2 corresponds to an abstraction of the biochemical details of the immune system highlighting what is thought to be the essential features of the inflammatory response. 
+
+3) Clearly there is a mathematical model. Soon we will discuss further how one might come up with such a system of equations. These were not simply pulled out of thin air. 
+
 4) In [@heraldGeneralModelInflammation2010], the author uses techniques from [dynamical systems](https://en.wikipedia.org/wiki/Dynamical_systems_theory) and [bifurcation theory](https://en.wikipedia.org/wiki/Bifurcation_theory) in order to derive useful information from the model equations. 
-5) The author's analysis of the model system explains some aspects of inflammation and pinpoints conditions that lead to chronic inflammation. The authors work also explains why certain therapies for chronic inflammation are not successful. 
 
-There are still many questions about inflammation to be addressed beyond what is done in [@heraldGeneralModelInflammation2010]. However, in order to make progress more details of the immune response may need to be included. This will involve either modifying the system of equations displayed in this section, or using a different mathematical model altogether. For now, the point to take away is that, often times, this is how work in biomathematics proceeds. In the next lecture, we will start to learn some essential principles of mathematical modeling that will help us to see where equations such as the ones presented in this section come from. 
+5) The author's analysis of the model system explains some aspects of inflammation and pinpoints conditions that lead to chronic inflammation. The author's work also explains why certain therapies for chronic inflammation are not successful. 
 
+There are still many questions about inflammation to be addressed beyond what is done in [@heraldGeneralModelInflammation2010]. However, in order to make progress more details of the immune response may need to be included. This will involve either modifying the system of equations displayed in this section, or using a different mathematical model altogether. For now, the point to take away is that, often times, this is how work in biomathematics proceeds. 
 
+Let's spend some time discussing the process of modeling in more detail.
 
 ## Modeling
 
 ### What is a Mathematical Model? 
 
-Before we begin to address the question of what is a mathematical model, let's spend some time focusing just on not-necessarily-mathematical models. Work in science and engineering often proceeds by employing models. What is a model? Consider the following quotation:
+Before we begin to address the question of what is a mathematical model, let's spend some time on not-necessarily-mathematical models. Work in science and engineering often proceeds by employing models. What is a model? Consider the following quotation:
 
 > A model is a rendition of a reality which is often too difficult or impossible to handle directly. A model is always a simplification, and a good model is one that captures the essential features of reality, leaving the unessential out [@calvettiComputationalMathematicalModeling2013]. 
 
 A great example of a scientific model is the [Bohr model](https://en.wikipedia.org/wiki/Bohr_model) for the atom. This model posits that an atom is made up of a small dense nucleus surrounded by orbiting electrons. This is a model because it does not include many atomic and nuclear details. It is a useful model because it leads to an explanation of certain chemical properties of atoms that could not be derived prior to the use of the Bohr model. Many biologists use [model organisms](https://en.wikipedia.org/wiki/Model_organism) to investigate the biological world. For example, people interested in understanding the evolution of social behavior study specific species of ants or bees. These insects are used because they are relatively easy to keep in a lab or to observe in nature and are also easy to manipulate experimentally. The use of [animal models](https://en.wikipedia.org/wiki/Animal_disease_model) is also widespread in the study of disease and drug therapies.  
 
-A mathematical model plays a similar role to models in the more general sense that we just described, but as you might imagine mathematical models are formulated and implemented mathematically. In the last lecture, we very briefly indicated two mathematical models. One for the growth of a population and another for certain cellular and molecular interactions that occur during inflammation. Let's look at another example of a mathematical model, this time one coming from physics that is likely familiar to you from a course in ordinary differential equations. 
+A mathematical model plays a similar role to models in the more general sense that we just described, but as you might imagine mathematical models are formulated and implemented mathematically. We've already seen many examples of mathematical models. Let's look at another example of a mathematical model, this time one coming from physics that is likely familiar to you from a course in ordinary differential equations. 
 
 Physics and mechanics in particular is often interested in the motion of a point particle. (Notice that point particles are an abstraction from reality.) Newton's laws tell us, among other things, that the sum of all forces acting on a mass is proportional to the acceleration of the object. Furthermore, the constant of proportionality is the mass. In notation, we have that $F=ma$. Now, while $F=ma$ is an equation and you could reasonably argue that it is a "mathematical model" for how the physical world works, $F=ma$ is not really representative of what we mean by a mathematical model in most instances. The reason is that it is a general statement, a theory and not a reference to something specific. However, we can use $F=ma$ to construct mathematical models in more specific situations.      
 
@@ -75,11 +79,9 @@ Suppose for example that we are concerned with the motion of a particle of mass 
 
 $\frac{d^2 x}{dt^2} = -\frac{k}{m}x.$
 
-This is a model because it is based on several abstractions from reality and ignores some details such as more fine-grained details about the material properties of real world springs. It also assumes an ideal situation where there is no friction. 
+This is a model because it is based on several abstractions from reality and ignores some details such as more fine-grained details about the material properties of real-world springs. It also assumes an ideal situation where there is no friction. 
 
-As you have seen in a differential equations course, or by using methods we will discuss later, it can be deduced based on the form of the equation $\frac{d^2 x}{dt^2} = -\frac{k}{m}x$ that such a mass will oscillate with a fixed period and frequency determined by the values for $k$ and $m$. This leads us to another important point. There are several levels of "variable" involved in the model $\frac{d^2 x}{dt^2} = -\frac{k}{m}x$. There is the independent variable $t$ for time, the dependent variable for the unknown displacement $x$ (the quantity we are ultimately most interested in), and there are the **parameters** $k$ and $m$. 
-
-We will see that most mathematical models involve parameters and it will become very important to understand how the values of parameters influence the results obtained from the model. Also very important is to note that variables and parameters correspond to quantities and thus have some set of units associated with them. We will spend a lot of time talking about why units of measurement are important but take note now that a mathematical model can not make sense if there is an inconsistency between units for parameters or variables. 
+As you have seen in a differential equations course by using standard methods it can be deduced based on the form of the equation $\frac{d^2 x}{dt^2} = -\frac{k}{m}x$ that such a mass will oscillate with a fixed period and frequency determined by the values for $k$ and $m$. This leads us to another important point. There are several levels of "variable" involved in the model $\frac{d^2 x}{dt^2} = -\frac{k}{m}x$. There is the independent variable $t$ for time, the dependent variable for the unknown displacement $x$ (the quantity we are ultimately most interested in), and there are the **parameters** $k$ and $m$. 
 
 The last example provides some insight into mathematical modeling, that is, the process of constructing or deriving a model. We begin with an abstraction from reality that represents those parts of the world in which we are most interested in, then we specify quantities that we want to relate, establish mathematical notation, and finally write down an equation that becomes our mathematical model. While our last example was very simple (too simple), it still serves to highlight the modeling process. The next section elaborates on this.
 
@@ -91,8 +93,9 @@ It is important to realize two facts about mathematical modeling, especially in 
 1) Mathematical modeling is as much art as it is science. The point is that mathematical modeling is not routine or algorithmic. Successful modeling requires creativity and intuition developed through experience. 
 
 2) Mathematical modeling will almost certainly involve repeated refinements. Unless there is a very strong reason to do otherwise, it's best to start with the simplest possible reasonable model, even at the risk of oversimplification. If the model produces incorrect or inaccurate results relative to the problem of interest, then the model can be revised in order to fix what is glaringly wrong. 
+### Modeling Process
 
-In the next lecture, we will begin to address specific techniques that can help one to get started with mathematical modeling. Here we will provide a conceptual outline of the modeling process in the form of a series of steps that one typically carries out during the course of the modeling process.
+Here is a conceptual outline of the modeling process in the form of a series of steps that one typically carries out during the course of the modeling process.
 
 1) Formulate the question or state your problem. Explicitly write down assumptions and what is known about the system that you want to develop a model for. 
 
