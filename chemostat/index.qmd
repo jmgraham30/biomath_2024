@@ -1,0 +1,23 @@
+---
+author: "Jason M. Graham"
+title: "Chemostat Bioreactor"
+format: 
+  revealjs:
+    footer: Jason M. Graham
+    theme: [default, custom.scss]
+    preview-links: true
+    scrollable: true
+    chalkboard: false
+---
+
+
+
+## 
+
+::: {layout-ncol=2}
+
+![](https://www.dropbox.com/scl/fi/b1v8agequuasbcm07k8ja/chemostat_cartoon.jpeg?rlkey=nfh01hcvba2u8ayplen344jkj&raw=1){fig-align="left" width=5.5in height=6in}
+
+[![](https://www.dropbox.com/scl/fi/rncv952or6koqoufqg7bp/chemostat_photo.jpeg?rlkey=gj1jyfhd37auresqz2rr6zb54&raw=1){fig-align="right" width=6in height=6in}](https://www.wired.com/2014/09/why-chemostats-may-be-one-of-microbiologys-greatest-tools/)
+
+:::
