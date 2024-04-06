@@ -45,13 +45,13 @@ format:
 
 ##
 
-![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/basic_reactions.png?raw=true)
+![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/basic_reactions.png?raw=true){fig-align="center"}
 
 ##
 
-![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/substrateProtein.png?raw=true)
+![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/substrateProtein.png?raw=true){fig-align="center"}
 
 ##
 
-![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/cellTransport.png?raw=true)
+![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/cellTransport.png?raw=true){fig-align="center"}
 
