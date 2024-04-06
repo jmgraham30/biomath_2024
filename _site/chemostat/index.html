@@ -358,8 +358,40 @@ Jason M. Graham
 </div>
 </div>
 </div>
+</section>
+<section id="modeling-assumptions" class="slide level2 scrollable">
+<h2>Modeling Assumptions</h2>
+<ol type="1">
+<li><p>There is a regular supply of nutrient of constant concentration <span class="math inline">\(C_{0}\)</span> that is pumped into the growth chamber at a volumetric flow rate <span class="math inline">\(F\)</span>.</p></li>
+<li><p>The growth chamber is kept at constant volume <span class="math inline">\(V\)</span>.</p></li>
+<li><p>After being well-mixed with nutrient in the growth chamber, any excess nutrient and biomass <span class="math inline">\(N(t)\)</span> are removed at a volumetric flow rate <span class="math inline">\(F\)</span>.</p></li>
+<li><p>The growth rate of the microorganism is a function of the concentration of nutrient <span class="math inline">\(C(t)\)</span> within the growth chamber.</p></li>
+</ol>
+</section>
+<section id="compartment-diagram" class="slide level2">
+<h2>Compartment Diagram</h2>
 
-<div class="quarto-auto-generated-content">
+<img data-src="https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/chemostatCompartments.png?raw=true" class="r-stretch"></section>
+<section id="model-equations" class="slide level2">
+<h2>Model Equations</h2>
+<p><span class="math display">\[\begin{align}
+\frac{dVN}{dt} &amp;= G(C)VN - FN,  \\
+\frac{dVC}{dt} &amp;= FC_{0} - \alpha G(C)VN - FC,
+\end{align}\]</span></p>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+
+<img data-src="https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/basic_reactions.png?raw=true" class="r-stretch"></section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+
+<img data-src="https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/substrateProtein.png?raw=true" class="r-stretch"></section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+
+
+<img data-src="https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/cellTransport.png?raw=true" class="r-stretch"><div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Jason M. Graham</p>
 </div>

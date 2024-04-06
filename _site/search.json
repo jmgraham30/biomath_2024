@@ -761,5 +761,47 @@
     "title": "Chemostat Bioreactor",
     "section": "",
     "text": "Jason M. Graham"
+  },
+  {
+    "objectID": "chemostat/index.html#modeling-assumptions",
+    "href": "chemostat/index.html#modeling-assumptions",
+    "title": "Chemostat Bioreactor",
+    "section": "Modeling Assumptions",
+    "text": "Modeling Assumptions\n\nThere is a regular supply of nutrient of constant concentration \\(C_{0}\\) that is pumped into the growth chamber at a volumetric flow rate \\(F\\).\nThe growth chamber is kept at constant volume \\(V\\).\nAfter being well-mixed with nutrient in the growth chamber, any excess nutrient and biomass \\(N(t)\\) are removed at a volumetric flow rate \\(F\\).\nThe growth rate of the microorganism is a function of the concentration of nutrient \\(C(t)\\) within the growth chamber."
+  },
+  {
+    "objectID": "chemostat/index.html#compartment-diagram",
+    "href": "chemostat/index.html#compartment-diagram",
+    "title": "Chemostat Bioreactor",
+    "section": "Compartment Diagram",
+    "text": "Compartment Diagram"
+  },
+  {
+    "objectID": "chemostat/index.html#model-equations",
+    "href": "chemostat/index.html#model-equations",
+    "title": "Chemostat Bioreactor",
+    "section": "Model Equations",
+    "text": "Model Equations\n\\[\\begin{align}\n\\frac{dVN}{dt} &= G(C)VN - FN,  \\\\\n\\frac{dVC}{dt} &= FC_{0} - \\alpha G(C)VN - FC,\n\\end{align}\\]"
+  },
+  {
+    "objectID": "chemostat/index.html#rate-equations",
+    "href": "chemostat/index.html#rate-equations",
+    "title": "Chemostat Bioreactor",
+    "section": "Rate Equations",
+    "text": "Rate Equations\n\n\n\n\nJason M. Graham"
+  },
+  {
+    "objectID": "chemostat/index.html#section-1",
+    "href": "chemostat/index.html#section-1",
+    "title": "Chemostat Bioreactor",
+    "section": "",
+    "text": "Jason M. Graham"
+  },
+  {
+    "objectID": "chemostat/index.html#section-3",
+    "href": "chemostat/index.html#section-3",
+    "title": "Chemostat Bioreactor",
+    "section": "",
+    "text": "Jason M. Graham"
   }
 ]

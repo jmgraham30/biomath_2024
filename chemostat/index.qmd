@@ -21,3 +21,37 @@ format:
 [![](https://www.dropbox.com/scl/fi/rncv952or6koqoufqg7bp/chemostat_photo.jpeg?rlkey=gj1jyfhd37auresqz2rr6zb54&raw=1){fig-align="right" width=6in height=6in}](https://www.wired.com/2014/09/why-chemostats-may-be-one-of-microbiologys-greatest-tools/)
 
 :::
+
+## Modeling Assumptions
+
+1) There is a regular supply of nutrient of constant concentration $C_{0}$ that is pumped into the growth chamber at a volumetric flow rate $F$. 
+
+2) The growth chamber is kept at constant volume $V$. 
+
+3) After being well-mixed with nutrient in the growth chamber, any excess nutrient and biomass $N(t)$ are removed at a volumetric flow rate $F$. 
+
+4) The growth rate of the microorganism is a function of the concentration of nutrient $C(t)$ within the growth chamber. 
+
+## Compartment Diagram
+
+![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/chemostatCompartments.png?raw=true)
+
+## Model Equations
+
+\begin{align}
+\frac{dVN}{dt} &= G(C)VN - FN,  \\
+\frac{dVC}{dt} &= FC_{0} - \alpha G(C)VN - FC,
+\end{align}
+
+##
+
+![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/basic_reactions.png?raw=true)
+
+##
+
+![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/substrateProtein.png?raw=true)
+
+##
+
+![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/cellTransport.png?raw=true)
+
