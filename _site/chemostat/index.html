@@ -390,8 +390,30 @@ Jason M. Graham
 <section id="section-3" class="slide level2">
 <h2></h2>
 
+<img data-src="https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/cellTransport.png?raw=true" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="nutrient-transport-reactions" class="slide level2">
+<h2>Nutrient Transport Reactions</h2>
+<p><span class="math display">\[\begin{align}
+\frac{dc}{dt} &amp;=  -k_{1}cx_{0} + k_{-1}x_{1}\\
+\frac{dx_{0}}{dt} &amp;= -k_{1}cx_{0} + k_{-1}x_{1} + k_{2}x_{1} \\
+\frac{dx_{1}}{dt} &amp;= k_{1}cx_{0} - k_{-1}x_{1} - k_{2}x_{1} \\
+\frac{dp}{dt} &amp;=  k_{2}x_{1}
+\end{align}\]</span></p>
+</section>
+<section id="model-simplifications" class="slide level2">
+<h2>Model Simplifications</h2>
+<ul>
+<li><p>Fourth equation decouples</p></li>
+<li><p><span class="math inline">\(x_{0} + x_{1} = r\)</span></p></li>
+<li><p>Quasi-steady-state assumption <span class="math inline">\(\frac{dx_{1}}{dt}=0\)</span></p></li>
+</ul>
+<p>Leads to</p>
+<p><span class="math display">\[\begin{align}
+\frac{dc}{dt} &amp;=  -k_{1}rc + (k_{-1} + k_{1}c)x_{1} \\
+x_{1} &amp;= r\frac{c}{\frac{k_{-1} + k_{2}}{k_{1}} + c}
+\end{align}\]</span></p>
 
-<img data-src="https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/cellTransport.png?raw=true" class="quarto-figure quarto-figure-center r-stretch"><div class="quarto-auto-generated-content">
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Jason M. Graham</p>
 </div>

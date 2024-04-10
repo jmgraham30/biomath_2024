@@ -55,3 +55,26 @@ format:
 
 ![](https://github.com/jmgraham30/TopicsInBiomath/blob/master/Figures/cellTransport.png?raw=true){fig-align="center"}
 
+## Nutrient Transport Reactions
+
+\begin{align}
+\frac{dc}{dt} &=  -k_{1}cx_{0} + k_{-1}x_{1}\\
+\frac{dx_{0}}{dt} &= -k_{1}cx_{0} + k_{-1}x_{1} + k_{2}x_{1} \\
+\frac{dx_{1}}{dt} &= k_{1}cx_{0} - k_{-1}x_{1} - k_{2}x_{1} \\
+\frac{dp}{dt} &=  k_{2}x_{1} 
+\end{align}
+
+## Model Simplifications
+
+* Fourth equation decouples
+
+* $x_{0} + x_{1} = r$
+
+* Quasi-steady-state assumption $\frac{dx_{1}}{dt}=0$
+
+Leads to 
+
+\begin{align}
+\frac{dc}{dt} &=  -k_{1}rc + (k_{-1} + k_{1}c)x_{1} \\
+x_{1} &= r\frac{c}{\frac{k_{-1} + k_{2}}{k_{1}} + c}
+\end{align}

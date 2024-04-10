@@ -803,5 +803,19 @@
     "title": "Chemostat Bioreactor",
     "section": "",
     "text": "Jason M. Graham"
+  },
+  {
+    "objectID": "chemostat/index.html#nutrient-transport-reactions",
+    "href": "chemostat/index.html#nutrient-transport-reactions",
+    "title": "Chemostat Bioreactor",
+    "section": "Nutrient Transport Reactions",
+    "text": "Nutrient Transport Reactions\n\\[\\begin{align}\n\\frac{dc}{dt} &=  -k_{1}cx_{0} + k_{-1}x_{1}\\\\\n\\frac{dx_{0}}{dt} &= -k_{1}cx_{0} + k_{-1}x_{1} + k_{2}x_{1} \\\\\n\\frac{dx_{1}}{dt} &= k_{1}cx_{0} - k_{-1}x_{1} - k_{2}x_{1} \\\\\n\\frac{dp}{dt} &=  k_{2}x_{1}\n\\end{align}\\]"
+  },
+  {
+    "objectID": "chemostat/index.html#model-simplifications",
+    "href": "chemostat/index.html#model-simplifications",
+    "title": "Chemostat Bioreactor",
+    "section": "Model Simplifications",
+    "text": "Model Simplifications\n\nFourth equation decouples\n\\(x_{0} + x_{1} = r\\)\nQuasi-steady-state assumption \\(\\frac{dx_{1}}{dt}=0\\)\n\nLeads to\n\\[\\begin{align}\n\\frac{dc}{dt} &=  -k_{1}rc + (k_{-1} + k_{1}c)x_{1} \\\\\nx_{1} &= r\\frac{c}{\\frac{k_{-1} + k_{2}}{k_{1}} + c}\n\\end{align}\\]\n\n\n\nJason M. Graham"
   }
 ]
