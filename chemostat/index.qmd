@@ -78,3 +78,12 @@ Leads to
 \frac{dc}{dt} &=  -k_{1}rc + (k_{-1} + k_{1}c)x_{1} \\
 x_{1} &= r\frac{c}{\frac{k_{-1} + k_{2}}{k_{1}} + c}
 \end{align}
+
+## Dimensionless Model for Chemostat
+
+\begin{align}
+\frac{dx}{dt} &= \alpha_{1}x\frac{y}{1+y} - x\\
+\frac{dy}{dt} &= \alpha_{2} - x\frac{y}{1+y} - y
+\end{align}
+
+

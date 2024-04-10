@@ -816,6 +816,13 @@
     "href": "chemostat/index.html#model-simplifications",
     "title": "Chemostat Bioreactor",
     "section": "Model Simplifications",
-    "text": "Model Simplifications\n\nFourth equation decouples\n\\(x_{0} + x_{1} = r\\)\nQuasi-steady-state assumption \\(\\frac{dx_{1}}{dt}=0\\)\n\nLeads to\n\\[\\begin{align}\n\\frac{dc}{dt} &=  -k_{1}rc + (k_{-1} + k_{1}c)x_{1} \\\\\nx_{1} &= r\\frac{c}{\\frac{k_{-1} + k_{2}}{k_{1}} + c}\n\\end{align}\\]\n\n\n\nJason M. Graham"
+    "text": "Model Simplifications\n\nFourth equation decouples\n\\(x_{0} + x_{1} = r\\)\nQuasi-steady-state assumption \\(\\frac{dx_{1}}{dt}=0\\)\n\nLeads to\n\\[\\begin{align}\n\\frac{dc}{dt} &=  -k_{1}rc + (k_{-1} + k_{1}c)x_{1} \\\\\nx_{1} &= r\\frac{c}{\\frac{k_{-1} + k_{2}}{k_{1}} + c}\n\\end{align}\\]"
+  },
+  {
+    "objectID": "chemostat/index.html#dimensionless-model-for-chemostat",
+    "href": "chemostat/index.html#dimensionless-model-for-chemostat",
+    "title": "Chemostat Bioreactor",
+    "section": "Dimensionless Model for Chemostat",
+    "text": "Dimensionless Model for Chemostat\n\\[\\begin{align}\n\\frac{dx}{dt} &= \\alpha_{1}x\\frac{y}{1+y} - x\\\\\n\\frac{dy}{dt} &= \\alpha_{2} - x\\frac{y}{1+y} - y\n\\end{align}\\]\n\n\n\nJason M. Graham"
   }
 ]
