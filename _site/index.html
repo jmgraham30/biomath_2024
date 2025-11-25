@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Biomath 2024 - MATH 463 Topics in Biomathematics</title>
+<title>MATH 463 Topics in Biomathematics – Biomath 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,24 +30,34 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-1ac49dc45d461ba7e3f4755605d38e4c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-482c505b42a27fe86bbc845866694eac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-1ac49dc45d461ba7e3f4755605d38e4c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,70 +66,259 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
-
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Biomath 2024</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Syllabus</span></a>
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./links.html" rel="" target="">
- <span class="menu-text">Links</span></a>
+    <a class="nav-link" href="./links.html"> 
+<span class="menu-text">Links</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./biomath_r.html" rel="" target="">
- <span class="menu-text">R for Biomath</span></a>
+    <a class="nav-link" href="./biomath_r.html"> 
+<span class="menu-text">R for Biomath</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./biomath_julia.html" rel="" target="">
- <span class="menu-text">Julia for Biomath</span></a>
+    <a class="nav-link" href="./biomath_julia.html"> 
+<span class="menu-text">Julia for Biomath</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./biomath_python.html" rel="" target="">
- <span class="menu-text">Python for Biomath</span></a>
+    <a class="nav-link" href="./biomath_python.html"> 
+<span class="menu-text">Python for Biomath</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jmgraham30/biomath_2024" rel="" target=""><i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/jmgraham30/biomath_2024"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -189,10 +388,11 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">MATH 463 Topics in Biomathematics</h1>
-<p class="subtitle lead">Spring 2024</p>
+<p class="subtitle lead">Spring 2026</p>
 </div>
 
 
@@ -205,23 +405,25 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <section id="course-syllabus" class="level1">
 <h1>Course Syllabus</h1>
-<p>Welcome to MATH 463 <em>Topics in Biomathematics</em> for Spring 2024! This page contains the syllabus for the course. We begin with a brief description of Biomathematics, followed by information about the instructor, course materials, and course policies.</p>
+<p>Welcome to MATH 463 <em>Topics in Biomathematics</em> for Spring 2026! This page contains the syllabus for the course. We begin with a brief description of Biomathematics, followed by information about the instructor, course materials, and course policies.</p>
 <section id="what-is-biomathematics" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-biomathematics">What is Biomathematics?</h2>
 <p><a href="https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology#:~:text=Mathematical%20and%20theoretical%20biology%2C%20or,opposed%20to%20experimental%20biology%20which">Biomathematics</a> is concerned with the use of mathematical methods (<em>e.g.</em>, linear algebra, differential equations, dynamical systems, and probability theory) to understand phenomenon in the life sciences, it is part of the larger field of <a href="https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology#:~:text=Mathematical%20and%20theoretical%20biology%20is,biology%20which%20deals%20with%20the">mathematical and theoretical biology</a>. Mathematical and theoretical biology provide a solid foundation for computational and quantitative approaches to investigations in biology and medicine.</p>
 </section>
 <section id="instructor-information" class="level2">
 <h2 class="anchored" data-anchor-id="instructor-information">Instructor Information</h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[30,70]">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
 <p><img src="https://www.dropbox.com/scl/fi/0zg0j0n394jj8hrsyjqcb/IMG_0571.jpeg?rlkey=oubphrcdet6otvy1n4e8ksplk&amp;raw=1" class="img-fluid"></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <ul>
 <li><p><strong>Instructor:</strong> <a href="https://sites.google.com/site/jasonmgrahamus/">Jason M. Graham</a></p></li>
 <li><p><strong>Office Location:</strong> LSC 319A</p></li>
@@ -241,21 +443,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="course-materials">Course Materials</h2>
 <section id="required-course-materials" class="level3">
 <h3 class="anchored" data-anchor-id="required-course-materials">Required Course Materials</h3>
-<p>All students in MATH 463 from Spring, 2024 will be expected to have access to the following required textbook:</p>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
-<ul>
-<li><p><a href="https://bookstore.ams.org/view?ProductCode=AMSTEXT/59"><em>Topics in Applied Mathematics and Modeling: Concise Theory with Case Studies</em></a> by <a href="https://web.ma.utexas.edu/users/og/">Oscar Gonzalez</a>, ISBN: 978-1-4704-6991-7</p></li>
-<li><p><em>Topics in Applied Mathematics and Modeling</em> (TAMM) covers basic concepts and techniques in mathematical modeling and applied mathematics that we will use throughout the course. We will study all of chapters 1 - 4 and possibly some of chapter 5. Many problems from the book will be assigned for homework.</p></li>
-</ul>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
-<p><img src="https://ebus.ams.org/ProductImages/amstext-59-e-cov-1.jpg" class="img-fluid" width="170"></p>
-</div>
-</div>
-</div>
-<p>Additionally, we will often refer to the following journal articles:</p>
+<p>There is no required textbook, but we will often refer to the following journal articles:</p>
 <ul>
 <li><p><a href="https://www.nature.com/articles/s41598-023-49949-7"><em>Susceptible-Infected-Susceptible type COVID-19 spread with collective effects</em></a>, Amanda Crocker and Daniel Strömbom, <em>Scientific Reports</em> <strong>13</strong>, Article number 22600 (2023).</p></li>
 <li><p><a href="https://www.pnas.org/doi/full/10.1073/pnas.2211637119"><em>Why Wolbachia-induced cytoplasmic incompatibility is so common</em></a>, Michael Turelli, Andrew Katznelson, and Paul S. Ginsberg. <em>Proceedings of the National Academy of Sciences</em>, 119, no. 47 (2022): e2211637119.</p></li>
@@ -265,12 +453,38 @@ ul.task-list li input[type="checkbox"] {
 <section id="recommended-texts-and-readings" class="level3">
 <h3 class="anchored" data-anchor-id="recommended-texts-and-readings">Recommended Texts and Readings</h3>
 <p>Occasionally in the course we will make reference to topics from the following recommended texts. These books are not required for the course and students are not expected to purchase them.</p>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[70,30]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
+<ul>
+<li><p><a href="https://bookstore.ams.org/view?ProductCode=AMSTEXT/59"><em>Nonlinear Dyanmics and Chaos</em></a> by <a href="https://math.cornell.edu/steven-strogatz">Steven Strogatz</a>, ISBN: 978-0813349107</p></li>
+<li><p><em>Nonlinear Dyanmics and Chaos</em> (NDAC) covers basic concepts and techniques from nonlinear dynamical systems that are commonly applied in biomathematics. Chapters 2, 3, 5, 6, 7, 8, and 10 are highly relevant.</p></li>
+</ul>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<p><img src="https://m.media-amazon.com/images/I/61WZn4nX2fL._SY522_.jpg" class="img-fluid" width="170"></p>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout="[70,30]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
+<ul>
+<li><p><a href="https://bookstore.ams.org/view?ProductCode=AMSTEXT/59"><em>Topics in Applied Mathematics and Modeling: Concise Theory with Case Studies</em></a> by <a href="https://web.ma.utexas.edu/users/og/">Oscar Gonzalez</a>, ISBN: 978-1-4704-6991-7</p></li>
+<li><p><em>Topics in Applied Mathematics and Modeling</em> (TAMM) covers basic concepts and techniques in mathematical modeling and applied mathematics that we will use throughout the course. Chapters 1 - 4 and possibly some of chapter 5 are specifically relevant for this course.</p></li>
+</ul>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<p><img src="https://ebus.ams.org/ProductImages/amstext-59-e-cov-1.jpg" class="img-fluid" width="170"></p>
+</div>
+</div>
+</div>
+<div class="quarto-layout-panel" data-layout="[30,70]">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
 <p><img src="https://m.media-amazon.com/images/I/51s38BLS-pL._AC_UF1000,1000_QL80_.jpg" class="img-fluid" width="155"></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <ul>
 <li><p><a href="https://epubs.siam.org/doi/book/10.1137/1.9780898718256"><em>A Course in Mathematical Biology: Quantitative Modeling with Mathematical and Computational Methods</em></a> by <a href="https://apps.ualberta.ca/directory/person/gerda">Gerda de Vries</a>, <a href="https://www.math.ualberta.ca/~thillen/">Thomas Hillen</a>, <a href="https://lewisresearchlab.org/">Mark Lewis</a>, <a href="https://www.math.cit.tum.de/en/math/people/professors/mueller-johannes/">Johannes Müller</a>, and <a href="https://homepage.uni-tuebingen.de/birgitt.schoenfisch/">Birgitt Schönfisch</a>. ISBN: 978-0-89871-612-2.</p></li>
 <li><p><em>A Course in Mathematical Biology</em> (ACMB) covers common approaches to the mathematical modeling of biological systems. We will study select topics from the book based on the interests of the students and instructor, and as time permits.</p></li>
@@ -278,12 +492,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[30,70]">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
 <p><img src="https://ebus.ams.org/ProductImages/amstext-50-e-cov-1.jpg" class="img-fluid" width="170"></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <ul>
 <li><p><a href="https://bookstore.ams.org/amstext-50/#:~:text=%22Biology%20in%20Time%20and%20Space,numerical%20tools%20for%20their%20analysis."><em>Biology in Time and Space: A Partial Differential Equation Modeling Approach</em></a> by <a href="https://www.math.utah.edu/~keener/">James P. Keener</a>, ISBN: 978-1-4704-5428-9</p></li>
 <li><p><em>Biology in Time and Space</em> (BTS) covers common approaches to the mathematical modeling of biological systems using differential equations. We will study select topics from the book based on the interests of the students and instructor, and as time permits.</p></li>
@@ -291,12 +505,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-panel" data-layout="[30,70]">
+<div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
 <p><img src="https://m.media-amazon.com/images/I/618Ro+QvQdL._AC_UF1000,1000_QL80_.jpg" class="img-fluid" width="155"></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <ul>
 <li><p><a href=""><em>Solving Differential Equations in R</em></a> by <a href="https://www.nioz.nl/en/about/organisation/staff/karline-soetaert">Karline Soetaert</a>, <a href="https://dl.acm.org/profile/81100328323">Jeff Cash</a>, and <a href="https://archimede.uniba.it/~mazzia/mazzia/">Francesca Mazzia</a>. ISBN: 978-3-642-28069-6.</p></li>
 <li><p>This book covers practical aspects of using <a href="https://www.r-project.org/">R</a> in solving numerically the types of differential equations we will study in this course as mathematical models for biological systems.</p></li>
@@ -310,9 +524,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="suggestions-for-further-reading" class="level3">
 <h3 class="anchored" data-anchor-id="suggestions-for-further-reading">Suggestions for Further Reading</h3>
 <p>To go deeper into the topics covered in this course, the following books are recommended. These books are not required for the course and students are not expected to purchase them. However, these may be valuable sources for topics for a final project or for further study.</p>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
+<div class="quarto-layout-panel" data-layout="[70,30]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <ul>
 <li><p><a href="https://link.springer.com/book/10.1007/b98868"><em>Mathematical Biology</em></a> by <a href="https://en.wikipedia.org/wiki/James_D._Murray">J.D. Murray</a>, ISBN: 978-0-387-95223-9</p></li>
 <li><p><em>Mathematical Biology</em> is an influential text covering a wide range of topics in mathematical biology. The most recent third edition of the book consists of two volumes, see <a href="https://en.wikipedia.org/wiki/Mathematical_Biology">the Wikipedia article on the book</a> for more details.</p></li>
@@ -322,8 +536,8 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-0-387-22437-4?as=webp.png" class="img-fluid" width="160"></p>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <ul>
 <li><p><a href="https://link-springer-com.ezp.scranton.edu/book/10.1007/978-3-319-51171-9"><em>An Introduction to Modeling Neuronal Dynamics</em></a> by <a href="https://christophborgers.com/about">Christoph Börgers</a>, ISBN: 978-3-319-84585-2</p></li>
 <li><p><em>An Introduction to Modeling Neuronal Dynamics</em> covers the basics of mathematical and computational neuroscience. In particular, the book covers the <a href="https://en.wikipedia.org/wiki/Hodgkin%E2%80%93Huxley_model">Hodgkin-Huxley</a> model of the action potential, the <a href="https://en.wikipedia.org/wiki/FitzHugh%E2%80%93Nagumo_model">FitzHugh-Nagumo</a> model, and the <a href="https://en.wikipedia.org/wiki/Wilson%E2%80%93Cowan_model">Wilson-Cowan</a> model of interacting populations of neurons. The book also covers some mathematical techniques for analyzing nonlinear dynamical systems models for neuroscience.</p></li>
@@ -333,8 +547,8 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-3-319-51171-9?as=webp.png" class="img-fluid" width="160"></p>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <ul>
 <li><p><a href="https://link.springer.com/book/10.1007/978-3-030-33645-5"><em>An Introduction to Undergraduate Research in Computational and Mathematical Biology From Birdsongs to Viscosities</em></a> edited by <a href="https://www.up.edu/academics/faculty-profiles/2020-new-faculty-profiles1/hannah-callender-highlander.html">Hannah Callender Highlander</a>, <a href="https://sites.google.com/view/alex-capaldi">Alex Capaldi</a>, and <a href="https://inquire.catapult.bates.edu/">Carrie Diaz Eaton</a>, ISBN: 978-3-030-33647-9</p></li>
 <li><p><em>An Introduction to Undergraduate Research in Computational and Mathematical Biology From Birdsongs to Viscosities</em> contains chapters covering a variety of topics in current research in computational and mathematical biology meant to engage undergraduate students.</p></li>
@@ -344,8 +558,8 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-3-030-33645-5?as=webp.png" class="img-fluid" width="160"></p>
 </div>
 </div>
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <ul>
 <li><p><a href="https://link.springer.com/book/10.1007/978-3-030-33645-5"><em>Dynamics of cancer</em></a> by <a href="https://www.math.uci.edu/~komarova/">Natalia Komarova</a> and <a href="https://faculty.sites.uci.edu/wodarz/">Dominik Woodarz</a>, ISBN: 978-981-4566-36-0</p></li>
 <li><p><em>Dynamics of cancer</em> aims to provide an introduction to mathematical models that describe the dynamics of tumor growth and the evolution of tumor cells. The book has a strong evolutionary component and reflects the viewpoint that cancer can be understood rationally through a combination of mathematical and biological tools.</p></li>
@@ -382,10 +596,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="student-learning-objectives-and-assessment" class="level2">
 <h2 class="anchored" data-anchor-id="student-learning-objectives-and-assessment">Student Learning Objectives and Assessment</h2>
 <div class="cell">
+<div id="tbl-objectives" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-objectives-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Course objectives and assessment.
+</figcaption>
+<div aria-describedby="tbl-objectives-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-objectives" class="anchored">
-<table class="lightable-paper table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Table&nbsp;1: Course objectives and assessment.</caption>
+<table class="lightable-paper do-not-create-environment cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">After taking this course, the student should be able to:</th>
@@ -412,8 +630,8 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
-
-
+</div>
+</figure>
 </div>
 </div>
 <section id="link-with-mathematics-program-learning-outcomes" class="level3">
@@ -450,10 +668,14 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="grade-scale">Grade Scale</h4>
 <p>Letter grades will be assigned based on the following scale:</p>
 <div class="cell">
+<div id="tbl-grades" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-grades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Letter grade scale.
+</figcaption>
+<div aria-describedby="tbl-grades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-grades" class="anchored">
-<table class="lightable-paper lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Table&nbsp;2: Letter grade scale.</caption>
+<table class="lightable-paper lightable-striped do-not-create-environment cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Grade Range</th>
@@ -508,8 +730,8 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
-
-
+</div>
+</figure>
 </div>
 </div>
 </section>
@@ -570,10 +792,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="important-dates" class="level3">
 <h3 class="anchored" data-anchor-id="important-dates">Important Dates</h3>
 <div class="cell">
+<div id="tbl-important_dates" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-important_dates-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Important Dates
+</figcaption>
+<div aria-describedby="tbl-important_dates-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="tbl-important_dates" class="anchored">
-<table class="lightable-paper lightable-striped table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>Table&nbsp;3: Important Dates</caption>
+<table class="lightable-paper lightable-striped do-not-create-environment cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Event</th>
@@ -644,8 +870,8 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
-
-
+</div>
+</figure>
 </div>
 </div>
 </section>
@@ -696,7 +922,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The instructor reserves the right to modify this syllabus; students will immediately be notified of any such changes and an updated syllabus will be made available to the class via the course learning management system.</p>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png?raw=1" class="img-fluid figure-img" style="width:15.0%"></a></p>
+<p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png?raw=1" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:15.0%"></a></p>
 </figure>
 </div>
 
@@ -704,160 +930,73 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div>CC BY-NC-SA 4.0</div></div></section></div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
     }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
         }
       }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
       return false;
     }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  let localAlternateSentinel = 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
     }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
@@ -865,195 +1004,348 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
       return codeEl.innerText;
     }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-  function tippyHover(el, contentFn) {
-    const config = {
-      allowHTML: true,
-      content: contentFn,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start'
-    };
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      return note.innerHTML;
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
       });
     }
-  }
-});
-</script>
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
+
 
 
 

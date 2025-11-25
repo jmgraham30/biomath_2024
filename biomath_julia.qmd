@@ -8,7 +8,7 @@ format:
 execute:
   echo: true
   message: false
-jupyter: julia-1.9
+jupyter: julia-1.12
 bibliography: biomath_2024.bib
 license: "CC BY-NC-SA 4.0"
 ---
