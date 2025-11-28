@@ -183,7 +183,7 @@ A study of discrete and continuous mathematical models in biology.  Topics inclu
 The prerequisites for this course is MATH 341 *Differential Equations* and MATH 351 *Linear Algebra*. Specifically, the students are expected to have a solid foundation in calculus, and a working knowledge of elementary linear algebra and basic ordinary differential equations (ODEs). Some topics from probability and statistics will be used, but these will be reviewed as needed. Additionally, some topics from linear algebra and differential equations may be reviewed or presented from a different perspective than MATH 341 or MATH 351. No background in programming is assumed.
 
 
-## Student Learning Objectives and Assessment
+## Student Learning Outcomes and Assessment
 
 ```{r}
 #| include: false
@@ -198,7 +198,7 @@ slos_assess <- tibble::tibble("After taking this course, the student should be a
 
 ```{r}
 #| label: tbl-objectives
-#| tbl-cap: Course objectives and assessment.
+#| tbl-cap: Course outcomes and assessment.
 #| echo: false
 
 
@@ -210,13 +210,13 @@ kbl(slos_assess) %>%
 
 ### Link with Mathematics Program Learning Outcomes
 
-The student learning objectives of this course are linked with the Mathematics Program Learning Outcome 
+The student learning outcomes of this course are linked with the Mathematics Program Learning Outcomes 
 
 - "Demonstrate competence in analytical and critical reasoning."
 
 - "Demonstrate college-level knowledge in applied mathematics."
 
-### Link with General Education Goals and Objectives
+### Link with General Education Goals and Outcomes
 
 MATH 463 has been designated an [EPW Level II](https://www.scranton.edu/academics/provost/EP%20Level%20II%20Rhetorical.shtml) course. In order to fulfill the learning objectives for EPW Level II students will be asked to complete two writing intensive assignments. These are 
 
