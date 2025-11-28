@@ -288,7 +288,7 @@ Do not underestimate the value (and joy) of carefully working through homework p
 
 ### Exams
 
-The in-class exams are meant to assess  1) students' understanding of the material covered in class and in homework assignments, 2) students' understanding of the core concepts, 3) students' problem solving abilities, and 4) students' ability to think independently. Exam 1 is scheduled for March 6, and Exam 2 is scheduled for May 1. In writing the tests, I assume that you have been studying the material at least 6 hours per week outside of class. 
+The in-class exams are meant to assess  1) students' understanding of the material covered in class and in homework assignments, 2) students' understanding of the core concepts, 3) students' problem solving abilities, and 4) students' ability to think independently. Exam 1 is scheduled for March 11, and Exam 2 is scheduled for May 6. In writing the tests, I assume that you have been studying the material at least 6 hours per week outside of class. 
 
 ### Model Report
 
@@ -298,9 +298,9 @@ As part of the required coursework for *Topics in Biomathematics*, students are 
 
 ### Final Project
 
-It should be recognized that the mathematical techniques developed in class are applicable in broader situations than can be covered in lectures and homework. Thus, students are asked to individually explore a topic in biomathematics beyond what is covered in lecture by means of a final project. Final projects should be an 8-12 page manuscript prepared using $\LaTeX$ or [R Markdown](https://rmarkdown.rstudio.com/),  and students must submit at least two drafts of their written final projects. The final draft is **due no later than 5:00pm on Wednesday May 15.** All written and presented work must be original, explained in your own words, and use proper citation for works referenced. 
+It should be recognized that the mathematical techniques developed in class are applicable in broader situations than can be covered in lectures and homework. Thus, students are asked to individually explore a topic in biomathematics beyond what is covered in lecture by means of a final project. Final projects should be an 8-12 page manuscript prepared using $\LaTeX$ or [R Markdown](https://rmarkdown.rstudio.com/),  and students must submit at least two drafts of their written final projects. The final draft is **due no later than 5:00pm on Wednesday May 13.** All written and presented work must be original, explained in your own words, and use proper citation for works referenced. 
 
-A set of guidelines for the final project is posted on the course learning management system. **You must choose a topic for your final project and submit a one to two paragraph description of your proposed project along with at least two scholarly references to me no later than 5:00pm on March 1.**
+A set of guidelines for the final project is posted on the course learning management system. **You must choose a topic for your final project and submit a one to two paragraph description of your proposed project along with at least two scholarly references to me no later than 5:00pm on March 2.**
 
 
 ## Course Timeline
@@ -308,39 +308,39 @@ A set of guidelines for the final project is posted on the course learning manag
 ### Weekly Schedule
 
 
-- Week 1 (01/22-01/26):  Introduction to Biomathematics
+ - Week 1 (01/28-01/30):  Introduction to Biomathematics
  
- - Week 2 (01/29-02/02): Dimensional Analysis and Scaling
+ - Week 2 (02/02-02/06): Dimensional Analysis and Scaling
  
- - Week 3 (02/05-02/09):  One-Dimensional Dynamics and Introduction to Population Dynamics
+ - Week 3 (02/09-02/13):  One-Dimensional Dynamics and Introduction to Population Dynamics
  
- - Week 4 (02/12-02/16): Bifurcation Theory and Compartment Models
+ - Week 4 (02/16-02/20): Bifurcation Theory and Compartment Models
  
- - Week 5 (02/19-02/23): SIR Type Models and The Chemostat Bio-reactor
+ - Week 5 (02/23-02/27): SIR Type Models and The Chemostat Bio-reactor
  
- - Week 6 (02/26-03/01): Functional Forms
+ - Week 6 (03/02-03/06): Functional Forms
  
- - Week 7 (03/04-03/08): Exam 1
+ - Week 7 (03/09-03/13): Exam 1
  
- - Week 8 (03/11-03/15): Spring Break
+ - Week 8 (03/16-03/20): Spring Break
  
- - Week 9 (03/18-03/22): Two-Dimensional Dynamics and Phase Plane Analysis
+ - Week 9 (03/23-03/27): Two-Dimensional Dynamics and Phase Plane Analysis
  
- - Week 10 (03/25-03/29): Mass Action and Reaction Kinetics/ Easter Break; Model Report Draft 1 Due
+ - Week 10 (03/30-04/03): Mass Action and Reaction Kinetics/ Easter Break; Model Report Draft 1 Due
  
- - Week 11 (04/01-04/05): Easter Break/ Mass Action and Reaction Kinetics
+ - Week 11 (04/06-04/10): Easter Break/ Mass Action and Reaction Kinetics
  
- - Week 12 (04/08-04/12): Mathematical Physiology
+ - Week 12 (04/13-04/17): Mathematical Physiology
  
- - Week 13 (04/15-04/19): Perturbation Methods
+ - Week 13 (04/20-04/24): Perturbation Methods
  
- - Week 14 (04/22-04/26): Additional Topics
+ - Week 14 (04/27-05/01): Additional Topics
  
- - Week 15 (04/29-05/03): Exam 2; Model Report Final Draft Due
+ - Week 15 (05/04-05/08): Exam 2; Model Report Final Draft Due
  
- - Week 16 (05/06-05/10): Dead Week
+ - Week 16 (05/11-05/15): Last week of classes
  
- - Week 17 (05/13-05/17): Final Exams; Final Project Due
+ - Week 17 (05/18-05/22): Final Exams; Final Project Due
 
 ### Important Dates
 
@@ -364,21 +364,21 @@ events <- c("Classes begin",
             "Final exams begin",
             "Final exams end")
 
-event_date <- c("Wednesday, January 24",
-                "Tuesday, January 30",
-                "Friday, February 2",
-                "Friday, February 23",
-                "Wednesday, March 6",
-                "Friday, March 8",
-                "Monday, March 18",
-                "Wednesday, March 20",
-                "Wednesday, March 27",
-                "Tuesday, April 2",
-                "Friday, April 12",
-                "Wednesday, May 1",
-                "Friday, May 10",
-                "Monday, May 13",
-                "Friday, May 17")
+event_date <- c("Wednesday, January 28",
+                "Tuesday, February 3",
+                "Friday, February 6",
+                "Friday, February 27",
+                "Wednesday, March 10",
+                "Friday, March 12",
+                "Monday, March 22",
+                "Wednesday, March 24",
+                "Wednesday, April 1",
+                "Tuesday, April 7",
+                "Friday, April 17",
+                "Wednesday, May 6",
+                "Friday, May 15",
+                "Monday, May 18",
+                "Friday, May 22")
 
 important_dates_df <- tibble::tibble("Event"=events,"Date"=event_date)
 ```
