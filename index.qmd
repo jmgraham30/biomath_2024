@@ -65,7 +65,7 @@ Occasionally in the course we will make reference to topics from the following r
 
 ::: {layout="[70,30]"}
 
-* [*Nonlinear Dyanmics and Chaos*](https://bookstore.ams.org/view?ProductCode=AMSTEXT/59) by [Steven Strogatz](https://math.cornell.edu/steven-strogatz), ISBN: 978-0813349107
+* [*Nonlinear Dyanmics and Chaos*](https://www.taylorfrancis.com/books/mono/10.1201/9780429492563/nonlinear-dynamics-chaos-steven-strogatz) by [Steven Strogatz](https://math.cornell.edu/steven-strogatz), ISBN: 978-0813349107
 
 * *Nonlinear Dyanmics and Chaos* (NDAC) covers basic concepts and techniques from nonlinear dynamical systems that are commonly applied in biomathematics. Chapters 2, 3, 5, 6, 7, 8, and 10 are highly relevant.
 
