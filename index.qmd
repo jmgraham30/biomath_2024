@@ -113,7 +113,7 @@ Occasionally in the course we will make reference to topics from the following r
 
 * This book covers practical aspects of using [R](https://www.r-project.org/) in solving numerically the types of differential equations we will study in this course as mathematical models for biological systems. 
 
-* Electronic access to *Solving Differential Equations in R* is available through the [Weinberg Memorial Library](https://www.scranton.edu/academics/wml/index.shtml). [Access the book](https://link-springer-com.ezp.scranton.edu/book/10.1007/978-3-642-28070-2).   See also the article [Solving Differential Equations in R](https://journal.r-project.org/archive/2010-2/RJournal_2010-2_Soetaert~et~al.pdf).
+* Electronic access to *Solving Differential Equations in R* is available through the [Weinberg Memorial Library](https://www.scranton.edu/academics/wml/index.shtml). [Access the book](https://link.springer.com/book/10.1007/978-3-642-28070-2).   See also the article [Solving Differential Equations in R](https://journal.r-project.org/archive/2010-2/RJournal_2010-2_Soetaert~et~al.pdf).
 
 :::
 
