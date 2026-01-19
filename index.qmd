@@ -154,7 +154,7 @@ From Birdsongs to Viscosities* contains chapters covering a variety of topics in
 
 * *Dynamics of cancer* aims to provide an introduction to mathematical models that describe the dynamics of tumor growth and the evolution of tumor cells. The book has a strong evolutionary component and reflects the viewpoint that cancer can be understood rationally through a combination of mathematical and biological tools. 
 
-![](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71dktcR71NL._AC_UF1000,1000_QL80_.jpg){width=160}
+![](https://m.media-amazon.com/images/I/51bHb0pLENL.jpg){width=160}
 
 :::
 
