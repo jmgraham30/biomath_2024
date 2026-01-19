@@ -100,6 +100,48 @@ ggplot(df, aes(x = time, y = x)) +
 
 ### Part c
 
+Let's use the `deSolve` package to numerically solve the differential equation and compare it to our analytical solution.
+
+```{r}
+#| message: false
+#| warning: false
+
+# define the differential equation
+diff_eq <- function(t, state, parameters) {
+  with(as.list(c(state, parameters)), {
+    dxdt <- a * x
+    list(c(dxdt))
+  })
+}
+  
+# parameters and initial state
+parameters <- c(a = 0.5)
+state <- c(x = 2)
+times <- seq(0, 10, by = 0.1)
+# solve the differential equation
+out <- ode(y = state, times = times, func = diff_eq, parms = parameters
+)
+
+# convert output to a data frame
+out_df <- as.data.frame(out)
+```
+
+
+```{r}
+#| message: false
+#| warning: false
+#| label: fig-diff-eq-solution-numerical
+#| fig.cap: "Plot of the numerical solution to the differential equation $\\frac{dx}{dt} = ax$ with $a = 0.5$ and $x_0 = 2$."
+
+# plot the numerical solution
+ggplot(out_df, aes(x = time, y = x)) +
+  geom_line(color = "red") +
+  labs(title = "Numerical Solution of dx/dt = ax using deSolve",
+       x = "Time",
+       y = "x(t)")
+```
+
+
 
 ## Exercise 2
 
