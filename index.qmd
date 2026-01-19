@@ -134,7 +134,7 @@ To go deeper into the topics covered in this course, the following books are rec
 ![](https://media.springernature.com/full/springer-static/cover-hires/book/978-0-387-22437-4?as=webp){width=160}
 
 
-* [*An Introduction to Modeling Neuronal Dynamics*](https://link-springer-com.ezp.scranton.edu/book/10.1007/978-3-319-51171-9) by [Christoph Börgers](https://christophborgers.com/about), ISBN: 978-3-319-84585-2
+* [*An Introduction to Modeling Neuronal Dynamics*](https://link.springer.com/book/10.1007/978-3-319-51171-9) by [Christoph Börgers](https://christophborgers.com/about), ISBN: 978-3-319-84585-2
 
 * *An Introduction to Modeling Neuronal Dynamics* covers the basics of mathematical and computational neuroscience. In particular, the book covers the [Hodgkin-Huxley](https://en.wikipedia.org/wiki/Hodgkin%E2%80%93Huxley_model) model of the action potential, the [FitzHugh-Nagumo](https://en.wikipedia.org/wiki/FitzHugh%E2%80%93Nagumo_model) model, and the [Wilson-Cowan](https://en.wikipedia.org/wiki/Wilson%E2%80%93Cowan_model) model of interacting populations of neurons. The book also covers some mathematical techniques for analyzing nonlinear dynamical systems models for neuroscience.
 
