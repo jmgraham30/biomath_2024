@@ -1,0 +1,132 @@
+---
+title: "Homework Number"
+author: "Your Name"
+date: "`r Sys.Date()`"
+format: 
+  html:
+    echo: true
+    code-fold: true
+    code-summary: "Show the code"
+    toc: true
+    toc-location: left
+    self-contained: true
+bibliography: bib_template.bib
+---
+
+```{r}
+#| message: false
+#| warning: false
+
+# load essential packages
+library(tidyverse) # for data manipulation and visualization
+library(deSolve)     # for solving DEs
+
+# set a default theme for ggplot2
+theme_set(theme_bw())
+```
+
+
+## Exercise 1
+
+
+### Part a
+
+$$
+\frac{dx}{dt} = ax; \quad x(0) = x_0
+$$
+
+To solve the differential equation, we can separate the variables (see for example, [@strogatz2015]):
+$$
+\frac{1}{x} dx = a dt
+$$
+
+Integrating both sides, we get:
+$$
+\int \frac{1}{x} dx = \int a dt
+$$
+
+This gives us:
+$$
+\ln|x| = at + C
+$$
+
+Exponentiating both sides, we have:
+$$
+|x| = e^{at + C} = e^C e^{at}
+$$
+
+Letting $e^C = K$, we can write:
+$$
+x = K e^{at}
+$$
+
+To find the constant $K$, we use the initial condition $x(0) = x_0$:
+$$
+x_0 = K e^{a \cdot 0} = K
+$$
+
+Thus, the solution to the differential equation is given by:
+
+$$
+x(t) = x_0 e^{at}
+$$
+
+### Part b
+
+Here's a plot of a typical solution (when $a = 0.5$ and $x_0 = 2$):
+```{r}
+#| message: false
+#| warning: false
+#| label: fig-diff-eq-solution
+#| fig.cap: "Plot of the solution to the differential equation $\\frac{dx}{dt} = ax$ with $a = 0.5$ and $x_0 = 2$."
+
+# parameters
+a <- 0.5
+x0 <- 2
+# time sequence
+time <- seq(0, 10, by = 0.1)
+# solution
+x_t <- x0 * exp(a * time)
+# create a data frame for plotting
+df <- data.frame(time = time, x = x_t)
+# plot
+ggplot(df, aes(x = time, y = x)) +
+  geom_line(color = "blue") +
+  labs(title = "Solution of dx/dt = ax",
+       x = "Time",
+       y = "x(t)")
+```
+
+
+### Part c
+
+
+## Exercise 2
+
+
+
+...and so on...
+
+
+
+# References
+
+
+::: {#refs}
+:::
+
+
+:::{.callout-tip collapse="true"}
+## Expand for Session Info
+```{r}
+#| echo: false
+
+
+library(sessioninfo)
+# save the session info as an object
+pkg_sesh <- session_info(pkgs = "attached")
+# print it out
+pkg_sesh
+```
+
+:::

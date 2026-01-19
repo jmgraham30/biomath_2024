@@ -831,5 +831,26 @@
     "title": "MATH 463 Topics in Biomathematics",
     "section": "",
     "text": "Table 1: Course outcomes and assessment.\n\n\n\n\n\n\nAfter taking this course, the student should be able to:\nMethods of assessment\n\n\n\n\nUse mathematical tools from calculus, differential equations, and linear algebra to analyze foundational mathematical models arising in the life sciences.\nHomework assignments and in-class written exams.\n\n\nInterpret the meaning of mathematical equations or models representing various biological processes.\nHomework assignments, model reports, and final project.\n\n\nUtilize computing tools such as R to analyze and interpret data-driven mathematical models.\nHomework assignments, model reports, and final project.\n\n\nCommunicate effectively in writing their work in applying the techniques of applied mathematics to problems arising in the life sciences.\nHomework, model reports, and final project consisting of a written paper.\n\n\n\n\n\n\n\n\n\n\nThe student learning outcomes of this course are linked with the Mathematics Program Learning Outcomes\n\n“Demonstrate competence in analytical and critical reasoning.”\n“Demonstrate college-level knowledge in applied mathematics.”\n\n\n\n\nMATH 463 has been designated an EPW Level II course. In order to fulfill the learning objectives for EPW Level II students will be asked to complete two writing intensive assignments. These are\n\na model report assignment,\nand a final project.\n\nDetails for these assignments are described below and additional guidelines are posted on the course learning management system."
+  },
+  {
+    "objectID": "quarto_hw_template/quarto_hw_template.html",
+    "href": "quarto_hw_template/quarto_hw_template.html",
+    "title": "Homework Number",
+    "section": "",
+    "text": "Show the code\n# load essential packages\nlibrary(tidyverse) # for data manipulation and visualization\nlibrary(deSolve)     # for solving DEs\n\n# set a default theme for ggplot2\ntheme_set(theme_bw())"
+  },
+  {
+    "objectID": "quarto_hw_template/quarto_hw_template.html#exercise-1",
+    "href": "quarto_hw_template/quarto_hw_template.html#exercise-1",
+    "title": "Homework Number",
+    "section": "Exercise 1",
+    "text": "Exercise 1\n\nPart a\n\\[\n\\frac{dx}{dt} = ax; \\quad x(0) = x_0\n\\]\nTo solve the differential equation, we can separate the variables (see for example, (Strogatz 2015)): \\[\n\\frac{1}{x} dx = a dt\n\\]\nIntegrating both sides, we get: \\[\n\\int \\frac{1}{x} dx = \\int a dt\n\\]\nThis gives us: \\[\n\\ln|x| = at + C\n\\]\nExponentiating both sides, we have: \\[\n|x| = e^{at + C} = e^C e^{at}\n\\]\nLetting \\(e^C = K\\), we can write: \\[\nx = K e^{at}\n\\]\nTo find the constant \\(K\\), we use the initial condition \\(x(0) = x_0\\): \\[\nx_0 = K e^{a \\cdot 0} = K\n\\]\nThus, the solution to the differential equation is given by:\n\\[\nx(t) = x_0 e^{at}\n\\]\n\n\nPart b\nHere’s a plot of a typical solution (when \\(a = 0.5\\) and \\(x_0 = 2\\)):\n\n\nShow the code\n# parameters\na &lt;- 0.5\nx0 &lt;- 2\n# time sequence\ntime &lt;- seq(0, 10, by = 0.1)\n# solution\nx_t &lt;- x0 * exp(a * time)\n# create a data frame for plotting\ndf &lt;- data.frame(time = time, x = x_t)\n# plot\nggplot(df, aes(x = time, y = x)) +\n  geom_line(color = \"blue\") +\n  labs(title = \"Solution of dx/dt = ax\",\n       x = \"Time\",\n       y = \"x(t)\")\n\n\n\n\n\n\n\n\nFigure 1: Plot of the solution to the differential equation \\(\\frac{dx}{dt} = ax\\) with \\(a = 0.5\\) and \\(x_0 = 2\\).\n\n\n\n\n\n\n\nPart c"
+  },
+  {
+    "objectID": "quarto_hw_template/quarto_hw_template.html#exercise-2",
+    "href": "quarto_hw_template/quarto_hw_template.html#exercise-2",
+    "title": "Homework Number",
+    "section": "Exercise 2",
+    "text": "Exercise 2\n…and so on…"
   }
 ]
