@@ -141,7 +141,7 @@ ggplot(out_df, aes(x = time, y = x)) +
        y = "x(t)")
 ```
 
-
+Compare @fig-diff-eq-solution and @fig-diff-eq-solution-numerical to see that they match perfectly, confirming the accuracy of our analytical solution.
 
 ## Exercise 2
 
