@@ -150,7 +150,7 @@ From Birdsongs to Viscosities* contains chapters covering a variety of topics in
 ![](https://media.springernature.com/full/springer-static/cover-hires/book/978-3-030-33645-5?as=webp){width=160}
 
 
-* [*Dynamics of cancer*](https://link.springer.com/book/10.1007/978-3-030-33645-5) by [Natalia Komarova](https://www.math.uci.edu/~komarova/) and [Dominik Woodarz](https://faculty.sites.uci.edu/wodarz/), ISBN: 978-981-4566-36-0
+* [*Dynamics of cancer*](https://www.worldscientific.com/worldscibooks/10.1142/8973?srsltid=AfmBOoqZqQAAC6ME7jeOPHrbhlbJu5TaUVrHLJPn9qrdsfIWyd2xx2of#t=aboutBook) by [Natalia Komarova](https://www.math.uci.edu/~komarova/) and [Dominik Woodarz](https://faculty.sites.uci.edu/wodarz/), ISBN: 978-981-4566-36-0
 
 * *Dynamics of cancer* aims to provide an introduction to mathematical models that describe the dynamics of tumor growth and the evolution of tumor cells. The book has a strong evolutionary component and reflects the viewpoint that cancer can be understood rationally through a combination of mathematical and biological tools. 
 
