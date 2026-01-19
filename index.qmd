@@ -20,7 +20,7 @@ Welcome to MATH 463 *Topics in Biomathematics* for Spring 2026! This page contai
 
 ## What is Biomathematics? 
 
-[Biomathematics](https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology#:~:text=Mathematical%20and%20theoretical%20biology%2C%20or,opposed%20to%20experimental%20biology%20which) is concerned with the use of mathematical methods (*e.g.*, linear algebra, differential equations, dynamical systems, and probability theory) to understand phenomenon in the life sciences, it is part of the larger field of [mathematical and theoretical biology](https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology#:~:text=Mathematical%20and%20theoretical%20biology%20is,biology%20which%20deals%20with%20the). Mathematical and theoretical biology provide a solid foundation for computational and quantitative approaches to investigations in biology and medicine.
+[Biomathematics](https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology#:~:text=Mathematical%20and%20theoretical%20biology%2C%20or,opposed%20to%20experimental%20biology%20which) is concerned with the use of mathematical methods (*e.g.*, linear algebra, differential equations, dynamical systems, and probability theory) to understand phenomenon in the life sciences. It is part of the larger field of [mathematical and theoretical biology](https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology#:~:text=Mathematical%20and%20theoretical%20biology%20is,biology%20which%20deals%20with%20the), fields that provide a solid foundation for computational and quantitative approaches to investigations in biology and medicine.
 
 
 ## Instructor Information
