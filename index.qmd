@@ -55,7 +55,7 @@ There is no required textbook, but we will often refer to the following journal 
 
 * [*Why Wolbachia-induced cytoplasmic incompatibility is so common*](https://www.pnas.org/doi/full/10.1073/pnas.2211637119), Michael Turelli, Andrew Katznelson, and Paul S. Ginsberg. *Proceedings of the National Academy of Sciences*, 119, no. 47 (2022): e2211637119.
 
-* [*General model of inflammation*](https://link-springer-com.ezp.scranton.edu/content/pdf/10.1007/s11538-009-9468-9.pdf), Megan C. Herald, *Bulletin of mathematical biology*, 72, (2010) pp. 765-779.
+* [*General model of inflammation*](https://link.springer.com/content/pdf/10.1007/s11538-009-9468-9.pdf), Megan C. Herald, *Bulletin of mathematical biology*, 72, (2010) pp. 765-779.
 
 
 ### Recommended Texts and Readings
